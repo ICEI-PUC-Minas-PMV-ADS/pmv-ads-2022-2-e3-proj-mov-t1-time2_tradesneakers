@@ -1,23 +1,28 @@
-# TÍTULO DO PROJETO
+# Trade shoes
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio`
 
-`SEMESTRE`
+`TERCEIRO SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Nosso projeto chama-se <b>Trade shoes</b>. É um app com o intuito facilitar e inovar  a experienciado usuário na troca de seus calçados,gerando economia e de quebra ainda ajuda contra a degradação do meio ambiente.
+Nosso foco será proporcionar aos usuários uma maneira de trocarem seus calçados 
+de forma segura, rápida e fácil,fazendo um bom ambiente de interação.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Alex Junio
+* Álvaro Alfaya Fonseca
+* Denio Gonçalves de Lima
+* Hestefani Romão Durães
+* Mychel Costa da Silva
+* Sérgio Luiz De Menezes Filho
+* Talles Monteiro Góis
 
 ## Orientador
 
-* Nome completo do professor 1
+* Will Ricardo Dos Santos Machado
 
 ## Instruções de utilização
 
