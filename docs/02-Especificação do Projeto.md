@@ -79,13 +79,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado. | ALTA | 
-|RF-002| Disponibilizar aos usuários uma plataforma uma página de produtos aonde poderão visualizar tênis cadastrados por outros usuários.   | ALTA |
-|RF-003| Disponibilizar um sistema de mensagens onde os usuários poderão conversar entre si a respeito dos produtos e combinar possíveis trocas.   | MÉDIA |
-|RF-004| Disponibilizar um sistema onde os usuários poderão fazer “ofertas” de trocas de um produto cadastrado pelo outro. Sendo que o usuário a qual a oferta foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas. | MÉDIA |
-|RF-005| Disponibilizar um sistema de envio das mercadorias primeiro para a empresa (que realizará a curadoria dos produtos para determinar se estão em bom estado) e depois para os clientes. | ALTA |
-|RF-006| Disponibilizar uma tabela de medida em centímetros do pé de acordo com a numeração do tênis, afim de solucionar problemas de devoluções. | ALTA |
-|RF-007| Disponibilizar um sistema de login e autenticação, onde o usuário poderá criar uma conta com dados válidos e realizar login. | ALTA |
+|RF-001| Disponibilizar um sistema de login e autenticação, onde o usuário poderá criar uma conta com dados válidos e realizar login. | ALTA |
+|RF-002| Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado. | ALTA | 
+|RF-003| Disponibilizar aos usuários uma plataforma uma página de produtos aonde poderão visualizar tênis cadastrados por outros usuários.   | ALTA |
+|RF-004| Disponibilizar um sistema de mensagens onde os usuários poderão conversar entre si a respeito dos produtos e combinar possíveis trocas.   | MÉDIA |
+|RF-005| Disponibilizar um sistema onde os usuários poderão fazer “ofertas” de trocas de um produto cadastrado pelo outro. Sendo que o usuário a qual a oferta foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas. | MÉDIA |
+|RF-006| Disponibilizar um formulário de envio das mercadorias, que ocorreira primeiro para a empresa (que realizará a curadoria dos produtos para determinar se estão em bom estado) e depois para os clientes. | ALTA |
+|RF-007| Disponibilizar um sistema de pagamento para que os usuários possam pagar os custos relativos ao envio, serviço de curadoria e preço do produto em caso de compra. | ALTA |
+|RF-008| Disponibilizar uma tabela de medida em centímetros do pé de acordo com a numeração do tênis, afim de solucionar problemas de devoluções. | ALTA |
+
 
 
 ### Requisitos não Funcionais
