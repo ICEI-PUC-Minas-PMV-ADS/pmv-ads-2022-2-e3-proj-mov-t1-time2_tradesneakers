@@ -39,6 +39,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Felipe Souza        | Poder buscar por modelos de tênis específicos e visualizar todas as informações relevantes aos mesmos. | Poder avaliar se os tênis anunciado atendem às suas expectativas antes de realizar a transação. |
 |Felipe Souza        | Realizar a troca de seus tênis por meio de uma empresa segura que garanta a integridade do produto e o assegure em caso de fraude. | Poder obter os modelos de tênis que deseja sem o risco de receber produtos falsificados ou em estado de conservação ruim. |
 |Douglas Gonçalves   | Poder trocar seus tênis de esportes de alto rendimento antigos em bom estado por outros tênis diferentes| Poder trocar seus tênis de alto rendimento por outros variados, já que os de alto rendimento ele sempre compra lançamentos e não quer acumular espaços com os antigos. |
+|Luiz Felize         | Poder comprar ou trocar tênis de uma determinada marca por outros tênis da mesma marca, porém modelos diferentes| Encontrar pessoas com jordans de edições limitadas para realizar a troca ou compra. |
 
 ## Modelagem do Processo de Negócio 
 
