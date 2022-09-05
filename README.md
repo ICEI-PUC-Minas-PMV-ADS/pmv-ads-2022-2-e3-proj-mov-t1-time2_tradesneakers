@@ -1,4 +1,4 @@
-# Trade shoes
+# Trade sneakers
 
 `ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
@@ -6,8 +6,8 @@
 
 `TERCEIRO SEMESTRE`
 
-Nosso projeto chama-se <b>Trade shoes</b>. É um app com o intuito facilitar e inovar  a experienciado usuário na troca de seus calçados,gerando economia e de quebra ainda ajuda contra a degradação do meio ambiente.
-Nosso foco será proporcionar aos usuários uma maneira de trocarem seus calçados 
+Nosso projeto chama-se <b>Trade shoes</b>. É um app com o intuito facilitar e inovar  a experienciado usuário na troca de seus tênis,gerando economia e de quebra ainda ajuda contra a degradação do meio ambiente.
+Nosso foco será proporcionar aos usuários uma maneira de trocarem seus tênis 
 de forma segura, rápida e fácil,fazendo um bom ambiente de interação.
 
 ## Integrantes
