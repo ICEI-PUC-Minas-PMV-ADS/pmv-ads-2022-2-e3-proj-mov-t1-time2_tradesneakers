@@ -20,13 +20,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 |Luiz Felipe     | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|![user1 (1)](https://user-images.githubusercontent.com/74699119/188511351-52a27f49-ea87-41e0-8b1a-7a8270e8d78a.png)| **Idade:** 32 <br> **Ocupação:**  Analista financeiro,<br> apaixonado por esportes |**Aplicativos:**<br>● Instagram<br>● Pinterest<br>● LinkedIn |
-|**Motivações:**<br>● Defender sua tese de doutorado.<br>● Encontrar uma comunidade que adora Jordans.|**Frustrações:**<br>● Dificuldade em encontrar pessoas que queiram realizar a troca de Jordans. |**Hobbies:**<br>● Tocar Violão<br>● Correr<br>● Assistir Futebol |
+|![user1](https://user-images.githubusercontent.com/74699119/188512033-5845ba9d-3fa3-47ea-8059-381ed1f3370b.png)| **Idade:** 32 <br> **Ocupação:**  Analista financeiro,<br> apaixonado por esportes |**Aplicativos:**<br>● Instagram<br>● Pinterest<br>● LinkedIn |
+|**Motivações:**<br>● Defender sua tese de<br> doutorado.<br>● Encontrar uma comunidade<br> que adora Jordans.|**Frustrações:**<br>● Dificuldade em encontrar pessoas que <br>queiram realizar a troca de Jordans. |**Hobbies:**<br>● Tocar Violão<br>● Correr<br>● Assistir Futebol |
 
 |Douglas Gonçalves     | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
 |![2](https://user-images.githubusercontent.com/91163177/186244072-906f4b5e-fe53-41f5-8eb2-306ec98d297f.png)| **Idade:** 33 <br> **Ocupação:**  Advogado,<br> apaixonado por esportes |**Aplicativos:**<br>● Instagram<br>● Facebook<br>● LinkedIn |
-|**Motivações:**<br>● Trocar seus tênis esportivos antigos por outros diferentes<br>● Conhecer pessoas que pratiquem esportes e queiram trocar tênis esportivos |**Frustrações:**<br>● Dificuldade para armazenar seus tênis que estão em bom estado<br> por estar comprando sempre lançamentos e acumulando. |**Hobbies:**<br>● Colecionar tênis esportivos<br>● Praticar esportes |
+|**Motivações:**<br>● Trocar seus tênis esportivos <br> antigos por<br> outros diferentes<br>● Conhecer pessoas que<br> pratiquem esportes e queiram<br> comprar ou trocar seus tênis<br> por tênis esportivos usados. |**Frustrações:**<br>● Dificuldade para armazenar seus tênis<br> que estão em bom estado<br> por estar comprando sempre lançamentos <br> e acumulando. |**Hobbies:**<br>● Colecionar tênis<br> esportivos<br>● Praticar esportes |
 
 ## Histórias de Usuários
 
