@@ -111,7 +111,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 O diagrama ilustrado abaixo demonstra as principais ligações entre casos de uso e atores em relação aos Requisitos Funcionais do projeto.
 
-![diagrama_de_casos_de_uso_trade_shoes](https://user-images.githubusercontent.com/74699119/187210056-5e50f320-c12e-45a6-a974-ba18407cc9f1.png)
+![diagrama_de_casos_de_uso_trade_sneakers](https://user-images.githubusercontent.com/74699119/188343962-e3b3ebae-1d29-4948-92f9-33d80ad8e366.png)
 <p align="center">
 <b>Figura 1 </b> – Diagrama de casos de uso.
 </p>
