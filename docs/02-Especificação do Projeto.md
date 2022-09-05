@@ -20,7 +20,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 |Luiz Felipe     | Informações:                       |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|![2](img/user1.png)| **Idade:** 32 <br> **Ocupação:**  Analista financeiro,<br> apaixonado por esportes |**Aplicativos:**<br>● Instagram<br>● Pinterest<br>● LinkedIn |
+|![user1 (1)](https://user-images.githubusercontent.com/74699119/188511351-52a27f49-ea87-41e0-8b1a-7a8270e8d78a.png)| **Idade:** 32 <br> **Ocupação:**  Analista financeiro,<br> apaixonado por esportes |**Aplicativos:**<br>● Instagram<br>● Pinterest<br>● LinkedIn |
 |**Motivações:**<br>● Defender sua tese de doutorado.<br>● Encontrar uma comunidade que adora Jordans.|**Frustrações:**<br>● Dificuldade em encontrar pessoas que queiram realizar a troca de Jordans. |**Hobbies:**<br>● Tocar Violão<br>● Correr<br>● Assistir Futebol |
 
 |Douglas Gonçalves     | Informações:                       |                                        |
@@ -148,4 +148,5 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 ## Gestão de Orçamento
 
-![Orçamento](img/orcamento.jpeg)
+![orcamento](https://user-images.githubusercontent.com/74699119/188511321-3a3ebaba-cd7c-42b4-a135-844c1d1c52e0.jpeg)
+
