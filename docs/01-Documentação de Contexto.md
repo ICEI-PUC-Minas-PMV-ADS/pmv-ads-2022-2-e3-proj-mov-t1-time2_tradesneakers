@@ -17,11 +17,11 @@ Diante do exposto, percebe-se que há três problemas a serem sanados: a urgênc
 
 Nosso objetivo é desenvolver um aplicativo para que possamos criar uma rede de usuários em que eles possam solicitar por meio de uma curadoria solicitar a troca ou venda de seus tênis usados de acordo com os modelos de seu interesse. Com isso reduzindo o consumo, e ajudando o meio ambiente. Como objetivos específicos, podemos ressaltar:
 
-° Permitir que os usuários possam anunciar seu tênis.
+° Permitir que os usuários possam anunciar seu tênis;
 
-° Permitir que o usuário tenha auxílio de um funcionalidade que possa filtrar e pesquisar por tenis específicos
+° Permitir que o usuário tenha auxílio de um funcionalidade que possa filtrar e pesquisar por tenis específicos;
 
-° Permitir que os usuários possam propor trocas de seus tênis cadastrados por outros tênis e/ou definir um preço para vende-los
+° Permitir que os usuários possam propor trocas de seus tênis cadastrados por outros tênis e/ou definir um preço para vende-los;
 
 ° Atuar como intermediário na troca ou venda dos tênis, realizando a curadoria dos produtos para garantir sua autenticidade e que estejam em bom estado e coordenando o processo de entrega dos produtos aos clientes.
 
