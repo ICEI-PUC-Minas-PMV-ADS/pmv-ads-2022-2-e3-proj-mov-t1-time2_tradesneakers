@@ -1,10 +1,6 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A definição exata do problema e dos pontos mais relevantes deste projeto foi realizada através de discussões entre os membros da equipe. Os principais pontos levantados durante o processo foram consolidados na forma de personas e histórias de usuário mostradas a seguir.
 
 ## Personas
 
@@ -30,7 +26,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
@@ -74,7 +70,7 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas que abaixo apresentam os requisitos funcionais e não funcionais que delimitam o escopo do projeto, bem como uma descrição do processo utilizado para determinar a prioridade de cada requisito apresentado.
 
 ### Requisitos Funcionais
 
@@ -127,11 +123,9 @@ O diagrama ilustrado abaixo demonstra as principais ligações entre casos de us
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+A matriz de rastreabilidade mostrada abaixo ilustra o relacionamento entre requisitos e outros artefatos ou objetos deste projeto, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio.
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
-
-![Exemplo de matriz de rastreabilidade](img/matriz.png)
+![matriz_rastreabilidade](https://user-images.githubusercontent.com/74699119/189455983-06f82ded-4be4-4205-b375-caf63bc5c3dd.png)
 
 # Gerenciamento de Projeto
 
