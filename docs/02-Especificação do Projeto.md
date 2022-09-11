@@ -34,8 +34,8 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |Tamara Silva        | Poder trocar tênis dos quais já enjoei por outros tênis de valor similar. | Poder economizar dinheiro na hora de obter novos modelos de tênis. |
 |Felipe Souza        | Poder buscar por modelos de tênis específicos e visualizar todas as informações relevantes aos mesmos. | Poder avaliar se os tênis anunciado atendem às suas expectativas antes de realizar a transação. |
 |Felipe Souza        | Realizar a troca de seus tênis por meio de uma empresa segura que garanta a integridade do produto e o assegure em caso de fraude. | Poder obter os modelos de tênis que deseja sem o risco de receber produtos falsificados ou em estado de conservação ruim. |
+|Luiz Felipe         | Poder comprar ou trocar tênis de uma determinada marca por outros tênis da mesma marca, porém modelos diferentes| Encontrar pessoas com jordans de edições limitadas para realizar a troca ou compra. |
 |Douglas Gonçalves   | Poder trocar seus tênis de esportes de alto rendimento antigos em bom estado por outros tênis diferentes| Poder trocar seus tênis de alto rendimento por outros variados, já que os de alto rendimento ele sempre compra lançamentos e não quer acumular espaços com os antigos. |
-|Luiz Felize         | Poder comprar ou trocar tênis de uma determinada marca por outros tênis da mesma marca, porém modelos diferentes| Encontrar pessoas com jordans de edições limitadas para realizar a troca ou compra. |
 
 ## Modelagem do Processo de Negócio 
 
