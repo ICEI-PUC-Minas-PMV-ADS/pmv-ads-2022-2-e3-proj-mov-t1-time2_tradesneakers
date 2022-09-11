@@ -37,11 +37,11 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |Luiz Felipe         | Poder comprar ou trocar tênis de uma determinada marca por outros tênis da mesma marca, porém modelos diferentes| Encontrar pessoas com jordans de edições limitadas para realizar a troca ou compra. |
 |Douglas Gonçalves   | Poder trocar seus tênis de esportes de alto rendimento antigos em bom estado por outros tênis diferentes| Poder trocar seus tênis de alto rendimento por outros variados, já que os de alto rendimento ele sempre compra lançamentos e não quer acumular espaços com os antigos. |
 
-## Modelagem do Processo de Negócio 
+## Modelagem do Processo de Negócio
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
 
 ### Descrição Geral da Proposta
 
@@ -49,7 +49,7 @@ Apresente aqui uma descrição da sua proposta abordando seus limites e suas lig
 
 ### Processo 1 – NOME DO PROCESSO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN.
 
 ![Processo 1](img/02-bpmn-proc1.png)
 
@@ -61,12 +61,12 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores.
 
-Usar o seguinte modelo: 
+Usar o seguinte modelo:
 
 ![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori.
 
 ## Requisitos
 
@@ -77,7 +77,7 @@ As tabelas que abaixo apresentam os requisitos funcionais e não funcionais que 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| Disponibilizar um sistema de login e autenticação, onde o usuário poderá criar uma conta com dados válidos e realizar login. | ALTA |
-|RF-002| Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado. | ALTA | 
+|RF-002| Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado. | ALTA |
 |RF-003| Disponibilizar aos usuários uma plataforma uma página de produtos aonde poderão visualizar tênis cadastrados por outros usuários.   | ALTA |
 |RF-004| Disponibilizar um sistema de mensagens onde os usuários poderão conversar entre si a respeito dos produtos e combinar possíveis trocas.   | MÉDIA |
 |RF-005| Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas. | ALTA |
@@ -91,11 +91,11 @@ As tabelas que abaixo apresentam os requisitos funcionais e não funcionais que 
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| O sistema deverá ser desenvolvido utilizando-se o framework React Native. |  ALTA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA |
+|RNF-002| O sistema deverá ser desenvolvido utilizando-se o framework React Native. |  ALTA |
 |RNF-003| O sistema deverá garantir a segurança dos dados sensíveis do usuário por meio de criptografia. |  ALTA |
 |RNF-004| A aplicação deve ser intuitiva, de fácil utilização e entendimento, descartando a necessidade de treinamentos. |  MÉDIA |
-|RNF-005| A aplicação deve possuir uma interface limpa, com visualização voltada apenas para as necessidades do usuário no momento, também como forma de melhorar a performance e o desempenho. | MÉDIA | 
+|RNF-005| A aplicação deve possuir uma interface limpa, com visualização voltada apenas para as necessidades do usuário no momento, também como forma de melhorar a performance e o desempenho. | MÉDIA |
 
 A técnica para priorização de requisitos utilizada foi a Escala de Três Níveis. Uma das abordagens mais diretas para o levantamento da prioridade dos requisitos de um software é identificar, quais valores devem ser atribuídos ao atributo "Prioridade", sendo possível reduzirmos essas prioridades a três níveis: Alto, Médio e Baixo.
 Assim, a técnica da Escala de Três Níveis busca delimitar o universo de possíveis valores desse atributo para tais possibilidades, de modo que a prioridade seja uniformizada e melhor entendida por todos do time.
@@ -139,9 +139,10 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados.
 
-![Simple Project Timeline](img/02-project-timeline.png)
+![Gerenciamento de equipe](img/gerenciamento-equipe.jpeg) ![Gerenciamento de equipe com estimativa de tempo](img/gerenciamento-equipe1.jpeg)
+
 
 ## Gestão de Orçamento
 
