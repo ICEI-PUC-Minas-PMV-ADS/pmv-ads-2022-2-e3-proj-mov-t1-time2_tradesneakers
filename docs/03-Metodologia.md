@@ -12,10 +12,10 @@ As alternativas do projeto são elaboradas a partir de diversas plataformas e a 
 Ambiente|Plataforma|Link de Acesso
 |:--------|:----------:|:-------------:|
 |Repositório de código fonte|GitHub| [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers)|
-|Documentos do Projeto|GitHub (docs/)|[Projeto Radar Literario](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/blob/main/README.md)|
+|Documentos do Projeto|GitHub (docs/)|[Projeto Trade sneakers](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/blob/main/README.md)|
 |Criação de Diagramas|  | []()|
 |Projeto de Interface e Wireframes|  | []()|
-|Gerenciamento do Projeto| Trello |[Trello]()|
+|Gerenciamento do Projeto| Trello |[]()|
 
 ## Controle de Versão
 
