@@ -92,14 +92,29 @@ Quando pronto, o revisor tem a função de fechar a issue e mergear o branch cri
 
 As ferramentas empregadas no projeto são:
 
+- Ferramenta de Comunicação.
+- Repositório.
 - Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Ferramenta de criação de Diagramas.
+- Ferramenta de criação Interface e Wireframes.
+- Ferramenta de gerenciamento do Projeto e Tarefas.
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+|Função    | Plataforma  | Link de Acesso |
+|------|-----------------------------------------|----|
+| Ferramenta de comunicação | Microsoft Teams| [teams.microsoft.com](https://teams.microsoft.com/)|
+| Repositório | Github | [Projeto Tradesneakers](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/blob/main/README.md) |
+| Editor de código | Visual Studio Code| [visualstudio.com](https://code.visualstudio.com/)|
+| Ferramenta de criação de Diagramas |  | []()|
+| Ferramenta de criação Interface e Wireframes |  | []()|
+| Ferramenta de gerenciamento do Projeto | Trello |[]()|
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
+<br>
 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**:
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+Com o intuito de economizar tempo e evitar o uso de múltiplas ferramentas com a mesma função, o grupo deu preferência para o uso das ferramentas já usadas e sugeridas pelo curso. 
+
+Por isso, usamos o teams/ microsoft para comunicação, apresentação e guardar documentos. Seguindo a mesma linha, mas também por ser uma ferramenta crucial no mercado de trabalho, decidimos pelo uso do Github como repositório. 
+
+Para organização de tarefas e gerenciamento de projeto utilizamos o Trello, uma ferramenta bem conhecida, já consolidada no mercado e que pode ser utilizada de forma gratuita.
+
+O editor de código foi escolhido porque ele é gratuito, é um dos mais populares para desenvolvimento front-end e possui uma integração com o
+sistema de versão. 
