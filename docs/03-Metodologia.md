@@ -15,7 +15,7 @@ Ambiente|Plataforma|Link de Acesso
 |Documentos do Projeto|GitHub (docs/)|[Projeto Tradesneakers](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/blob/main/README.md)|
 |Criação de Diagramas|  | []()|
 |Projeto de Interface e Wireframes|  | []()|
-|Gerenciamento do Projeto| Trello |[]()|
+|Gerenciamento do Projeto| Trello |[Trello](https://trello.com/b/FFDjL827/trade-sneakers)|
 
 ## Controle de Versão
 
