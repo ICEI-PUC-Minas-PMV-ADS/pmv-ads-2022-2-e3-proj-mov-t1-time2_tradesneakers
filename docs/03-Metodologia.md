@@ -73,20 +73,22 @@ Dentre as etiquetas temos:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Desenvolvimento
-Cada colaborador deve então escolher uma tarefa e movê-la para a aba Doing.
+#### Desenvolvimento
+Cada colaborador deve então escolher uma tarefa na aba de Backlog e movê-la para a aba Doing.
 
 O desenvolvedor deve verificar se ele tem todas as informações e ferramentas necessárias para realizar a tarefa, assim como deve verificar se não há nenhuma coisa que impeça sua realização.
 
 Caso a tarefa seja de código, o desenvolvedor deve criar um branch para a tarefa e, quando finalizada e devidamente testada, solicitar que um colega revise.
 
-Revisão
-Quando a tarefa estiver completa, ela deve ser movida para a aba de review. Quem estiver responsável por revisar deve, realizar testes, conferir se o código esta dentro do padrão, além de verificar se a tarefa foi de fato resolvida.
+#### Revisão
+Quando a tarefa estiver completa, ela deve ser movida para a aba de review. Caso a tarefa precise ser testada então o responsável deve move-la para a aba testing, neste caso quem estiver responsável por revisar e testar deve, realizar testes, conferir se o código esta dentro do padrão e verificar se a tarefa foi de fato resolvida.
 
 Caso seja encontrado algum problema, o revisor deve retornar com a tarefa para a aba Doing, comunicar ao desenvolvedor e solicitar a correção.
 
-Finalização
-Quando pronto, o revisor tem a função de fechar a issue e mergear o branch criado com o branch estável.
+#### Finalização
+Quando pronto, o revisor tem a função de fechar a issue, mergear o branch criado com o branch estável e mover a tarefa para aba Done.
+
+![Processo 1](img/trello.jpeg)
 
 ### Ferramentas
 
