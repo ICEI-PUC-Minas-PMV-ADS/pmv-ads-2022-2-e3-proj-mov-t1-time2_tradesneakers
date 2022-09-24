@@ -106,7 +106,7 @@ As ferramentas empregadas no projeto são:
 | Ferramenta de comunicação | Microsoft Teams| [teams.microsoft.com](https://teams.microsoft.com/)|
 | Repositório | Github | [Projeto Tradesneakers](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/blob/main/README.md) |
 | Editor de código | Visual Studio Code| [visualstudio.com](https://code.visualstudio.com/)|
-| Ferramenta de criação de Diagramas |  | []()|
+| Ferramenta de criação de Diagramas | Figma | [figma.com](https://www.figma.com/file/cOspOpPO836PiuVPmz1Qoy/Diagrama-de-Fluxo?node-id=0%3A1)|
 | Ferramenta de criação Interface e Wireframes |  | []()|
 | Ferramenta de gerenciamento do Projeto | Trello |[]()|
 
@@ -117,6 +117,8 @@ Com o intuito de economizar tempo e evitar o uso de múltiplas ferramentas com a
 Por isso, usamos o teams/ microsoft para comunicação, apresentação e guardar documentos. Seguindo a mesma linha, mas também por ser uma ferramenta crucial no mercado de trabalho, decidimos pelo uso do Github como repositório. 
 
 Para organização de tarefas e gerenciamento de projeto utilizamos o Trello, uma ferramenta bem conhecida, já consolidada no mercado e que pode ser utilizada de forma gratuita.
+
+Para criação de diagramas utilizamos a ferramenta Figma, uma ferramenta bem simples de ser usar e entender os fluxos porém completa com todos os recursos necessários.
 
 O editor de código foi escolhido porque ele é gratuito, é um dos mais populares para desenvolvimento front-end e possui uma integração com o
 sistema de versão. 
