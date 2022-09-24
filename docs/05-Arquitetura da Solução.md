@@ -55,8 +55,37 @@ Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como
 
 No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software. Com base nessas características e nas respectivas sub-características, identificamos as sub-características que melhor de relacionam com projeto de software proposto, considerando-se alguns aspectos simples de qualidade. 
+
+| Característica de qualidade | Subcaracteristicas de qualidade escolhidas |     Justificativa     | 
+|-----------------------------|--------------------------------------------|-----------------------|
+| Funcionalidade | Adequação; Segurança de Acesso | Verificar os atributos do software que evidenciam a apropriação para tarefas especificadas e que evidenciam sua capacidade de evitar o acesso não autorizado a dados | 
+| Usabilidade | Conformidade; Apreensibilidade | Pensar em usabilidade é fundamental para entregar uma experiência positiva e alcançar os objetivos propostos | 
+| Eficiência | Comportamento em relação ao tempo | Avaliar o relacionamento entre o nível de desempenho do software e a quantidade de recursos utilizada , sob condições estabelecidas  |
+| Portabilidade | Adaptabilidade; Capacidade de instalação | Testar a facilidade de instalação a capacidade do software em ser transferido de um ambiente para outro | 
+| Manutenibilidade | Estabilidade; Testabilidade | Validar o software e avaliar o risco de efeitos inesperados ocasionados por modificações |
+
+
+
+| Subcaracterística  |                      Métricas  de Qualidade de Software               |  Peso  |
+|--------------------|-----------------------------------------------------------------------|--------|
+| Adequação | O software corresponde ao esperado para funcionalidade proposta? | Alto
+| Adequação | O software é capaz de executar completamente todas as funções propostas? | Alto |
+| Segurança de Acesso | Os dados coletados no cadastro estão armazenados de forma segura?  | Alto |
+| Segurança de Acesso | O software possui etapas de autorização e autenticação no momento do acesso?  | Alto |
+| Conformidade | O software está em conformidade com a Lei Geral de Proteção de Dados? | Alto |
+| Conformidade | O software está em conformidade com as normas, convenções e regulamentações previstas em lei para a atividade proposta? | Alto |
+| Apreensibilidade | O software apresenta telas que são de uso intuitivo? | Alto |
+| Apreensibilidade | O software apresenta funcionalidades que são compreendidas facilmente? | Alto |
+| Comportamento em relação ao tempo | O software apresenta tempo de resposta esperado em troca de telas? | Alto |
+| Comportamento em relação ao tempo | O software apresenta velocidade na execução e no processamento de suas funções? | Alto |
+| Adaptabilidade | O software é capaz de executar todas as suas funções em diferentes dispositivos?  | Alto |
+| Capacidade de instalação | O software pode ser instalado de maneira rápida e intuitiva? | Alto |
+| Estabilidade | O software apresenta falhas? | Alto |
+| Estabilidade | O software apresenta comportamento inesperado após modificações? | Alto |
+| Testabilidade | O software pode ser testado após modificações?| Alto |
+| Testabilidade | O software possui registro de testes antes de atualizações? | Alto |
+
 
 > **Links Úteis**:
 >
