@@ -61,12 +61,13 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores.
-
-Usar o seguinte modelo:
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori.
+|#|Indicador|Objetivos|Descrição|Calculo|Fonte|Perspectiva|
+|--|------|--------|--------|---------|--------|-----------|
+|1|download|Acompanhar a taxa de crescimento do aplicativo|Avaliar a taxa de downloads realizados|numero de downloads|Playstore/AppleStore|Crescimento do app|
+|2|Avaliaçao na PlayStore/AppleStore|acompanhar o feedback dos usuarios|Medir a media das avaliaçoes dadas pelo usuarios|Numero das estrela dada pelo usuario|Playstore/AppleStore|qualidade do produto| 
+|3|Desinstalação|Avaliar o que pode ser mudado para prevenir outras desinstalações do aplicativo|entender oque levou o usuario a desintalar o app|numero de desinstalações feitas|Playstore/AppleStore|qualidade do produto|
+|4|taxa de vendas/trocas feitas|acompanhar as vendas/trocas que estao sendo feitas pelos os usuarios|verificar a quantidade de trocas/vendas que estao sendo feitas|numero de trocas/vendas que  foram concluidas|Banco de dados|melhoria continua|
+|5|Curadoria|verificar se a curadoria estar prestando o serviços corretamente|avaliar os serviços prestados pela curadoria|Avaliçao dos usuarios|banco de dados|qualidade do produto|
 
 ## Requisitos
 
