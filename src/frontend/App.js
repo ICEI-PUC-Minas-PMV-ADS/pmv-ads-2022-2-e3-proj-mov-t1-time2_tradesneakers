@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Main from './src/navigations/Main';
 
+import UserProvider from './src/context/UserContext';
 import SearchQueryProvider from './src/context/SearchQueryContext';
 
 import Constants from 'expo-constants';
@@ -13,11 +14,13 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
+    <UserProvider>
     <SearchQueryProvider>
       <NavigationContainer styles={styles.container}>
         <Main/>
       </NavigationContainer>
     </SearchQueryProvider>
+    </UserProvider>
   );
 }
 
