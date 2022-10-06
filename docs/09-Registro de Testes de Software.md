@@ -1,12 +1,20 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
-
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+|Caso de teste 01     | CT 01 - Registrar conta de usuário |
+|-------|-------------------------
+|Objetivo do teste| Verificar a funcionalidade de registro de novos usuários no sistema. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. | 
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+|Caso de teste 02     | CT 02 - Realizar login na plataforma |
+|-------|-------------------------
+|Objetivo do teste| Verificar a funcionalidade de login e autenticação do sistema. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente, embora ainda não existam funcionalidades que requerem o login e a funcionalidade de realizar logoff ainda precise ser implementada. | 
+
+|Caso de teste 03     | CT 03 - Realizar busca de produtos por nome de tamanho do tênis |
+|-------|-------------------------
+|Objetivo do teste| Verificar a funcionalidade de busca e visualização de produtos cadastrados na plataforma. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente, embora a baixa quantidade de produtos cadastrados faça as buscas precisarem ser bastante específicas. Mais produtos serão cadastrados no futuro | 
