@@ -6,17 +6,16 @@ import BottomNavigation from '../components/BottomNavigation';
 
 import Colors from '../config/Colors';
 
-const HomePage = () => {
-
+const OrderHistoryPage = () => {
   return (
     <View style = {styles.homePage}>
       <Header/>
       <SearchBar/>
       <Text style={{fontSize: 30}}>
-        HomePage
+        Pedidos
       </Text>
       <BottomNavigation
-        currentBottomNavigationTabIndex={0}
+        currentBottomNavigationTabIndex={3}
       />
     </View>
   );
@@ -30,4 +29,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomePage;
+export default OrderHistoryPage;
