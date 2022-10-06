@@ -27,17 +27,12 @@ Os testes funcionais a serem realizados na solução estão descritos a seguir:
 |-------|-------------------------
 |Requisitos Associados | RF-01: Disponibilizar um sistema de login e autenticação, onde o usuário poderá criar uma conta com dados válidos e realizar login.
 |Objetivo do teste| Verificar a funcionalidade de login e autenticação do sistema. |
-|Passos |	1) Caso o backend ainda não esteja hospedado, rodar o backend da aplicação no VS Code e expor via URL com o localtunnel conforme as instruções de utilização. 1) Acessar o navegador. 2) Informar a URL do projeto do Snack. 3) Rodar o projeto no emulador de Android, IoS ou em um aparelho celular através do Expo Go através do QR Code disponibilizado no Snack. 4) Clicar na mensagem de "Fazer login" presente no canto direito do cabeçalho. 5) Visualizar tela de login. 6) Informar o e-mail e senha e clicar em "login". 7) Caso as informações fornecidas estejam corretas, o sistema deverá realizar o login e redirecionar o usuário para a tela anterior, o nome do usuário logado deverá agora aparecer no canto superior direito do cabeçalho aonde a mensagem de "Fazer login" costumava estar. |
-|Critérios de êxito| - O sistema deverá realizar o login do usuário caso os dados informados estejam corretos.<br>- Uma mensagem com o nome de usuário logado deverá aparecer no canto superior direito do cabeçalho após o login bem sucedido.<br>- O sistema deverá retornar uma mensagem de erro caso o usuário informe dados incorretos durante o login. |
- 
-## Ferramentas de Testes (Opcional)
+|Passos |	1) Caso o backend ainda não esteja hospedado, rodar o backend da aplicação no VS Code e expor via URL com o localtunnel conforme as instruções de utilização. 1) Acessar o navegador. 2) Informar a URL do projeto do Snack. 3) Rodar o projeto no emulador de Android, IoS ou em um aparelho celular através do Expo Go através do QR Code disponibilizado no Snack. 4) Clicar na mensagem de "Fazer login" presente no canto direito do cabeçalho. 5) Visualizar tela de login. 6) Informar o e-mail e senha e clicar em "login". 7) Caso as informações fornecidas estejam corretas, o sistema deverá realizar o login e redirecionar o usuário para a tela anterior, um icone de usuário deverá agora aparecer no canto superior direito do cabeçalho aonde a mensagem de "Fazer login" costumava estar. |
+|Critérios de êxito| - O sistema deverá realizar o login do usuário caso os dados informados estejam corretos.<br>- A mensagem de "Fazer login" deverá ser substituida por um icone de usuário após o login bem sucedido.-<br>- O sistema deverá retornar uma mensagem de erro caso o usuário informe dados incorretos durante o login. |
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+|Caso de teste 03     | CT 03 - Realizar busca de produtos por nome de tamanho do tênis |
+|-------|-------------------------
+|Requisitos Associados | RF-03: Disponibilizar aos usuários uma plataforma uma página de produtos aonde poderão visualizar tênis cadastrados por outros usuários.
+|Objetivo do teste| Verificar a funcionalidade de busca e visualização de produtos cadastrados na plataforma. |
+|Passos |	1) Caso o backend ainda não esteja hospedado, rodar o backend da aplicação no VS Code e expor via URL com o localtunnel conforme as instruções de utilização. 1) Acessar o navegador. 2) Informar a URL do projeto do Snack. 3) Rodar o projeto no emulador de Android, IoS ou em um aparelho celular através do Expo Go através do QR Code disponibilizado no Snack. 4) Clicar no icone "buscar" presente no menu de navegação inferior. 5) Visualizar tela de busca de produtos. 6) Digitar o nome do produto que deseja buscar na caixa de busca e clicar no icone da lupa ao lado dela. 7) Visualizar resultados da busca. 8) Selecionar um tamanho de tênis dentre as opções presentes na caixa de seleção ao lado do texto "Filtrar por tamanho". 9) Visualizar resultados filtrados por tamanho. |
+|Critérios de êxito| - O sistema deverá retornar os resultados das buscas conforme os critérios informados pelo usuário (palavras chave e numeração), sendo que as buscas podem resultar em nenhum resultado caso não exista nenhum produto cadastrado que se encaixe nos filtros informados. |
