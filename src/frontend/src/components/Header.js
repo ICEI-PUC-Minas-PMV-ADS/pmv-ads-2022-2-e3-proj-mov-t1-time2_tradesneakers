@@ -1,33 +1,85 @@
 import react, {useState} from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import { Appbar } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 
-const Header = () => {
+import {useUser} from '../context/UserContext';
+
+import Colors from '../config/Colors';
+
+const Header = (props) => {
+
+  const {signed, name} = useUser();
 
   const navigation = useNavigation();
   
-  const [searchQuery, setSearchQuery] = react.useState('');
 
-  const onChangeSearch = query => setSearchQuery(query);
-
-  const _goToHomepage = () => {
-
+  function ShowSigned(props) {
+  if (signed) {
+    return <Appbar.Action style={styles.loginIcon} icon="account-circle" size={28} color = {Colors.headerTextColor}  />
+  }
+  else {
+    return <Appbar.Content style={styles.fazerLogin} title="Fazer login" titleStyle={styles.fazerLoginText} onPress={() => navigation.navigate('LoginPage')} />
+  }
+}
+  function ShowGoBack() {
+    if (props.goBackEnabled) {
+      return <Appbar.Action icon="arrow-left" size={28} color = {Colors.headerTextColor} onPress={() => navigation.goBack()} />
+    }
   }
 
   return (
-    <View style={styles.header}>
-      <Appbar.Header>
-        <Appbar.Action icon="folder-home" onPress={() => navigation.navigate('HomePage')} />
-        <Appbar.Content title="Header" />
-      </Appbar.Header>
+    <View style={styles.headerContainer}>
+      <Appbar.Header style={styles.header}>
+        <ShowGoBack/>
+        <Appbar.Content style={styles.headerTitle} title="Trade Sneakers" titleStyle={styles.headerTitleText} onPress={() => navigation.navigate('HomePage')} />
+        <ShowSigned />
+      </Appbar.Header> 
+      <Text></Text>
     </View>
-  );
+  ); 
 }
 
 const styles = StyleSheet.create({
-  header: {
+  headerContainer: {
     width: '100%',
+  },
+  header: {
+    backgroundColor: Colors.headerColor,
+  },
+    headerTitle: {
+    alignSelf: 'center',
+    cursor: 'pointer',
+    position: 'absolute',
+    width: 180,
+    left: '50%',
+    marginLeft: -90,
+    marginTop: 1
+  },
+    headerTitleText: {
+    alignSelf: 'center',
+    color: Colors.headerTextColor,
+    fontSize: 18,
+  },
+  fazerLogin: {
+    marginTop: 4,
+    cursor: 'pointer',
+    alignSelf: 'center',
+    position: 'absolute',
+    width: 105,
+    right: 0,
+  },
+  fazerLoginText: {
+    fontSize: 16,
+    textAlign: 'center',
+    color: Colors.headerTextColor,
+    alignSelf: 'center',
+     width: 150,
+  },
+  loginIcon: {
+    position: 'absolute',
+    width: 36,
+    right: 0,
   },
 });
 
