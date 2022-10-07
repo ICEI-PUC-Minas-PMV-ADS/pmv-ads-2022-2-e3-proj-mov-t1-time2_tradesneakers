@@ -63,11 +63,11 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 |#|Indicador|Objetivos|Descrição|Calculo|Fonte|Perspectiva|
 |--|------|--------|--------|---------|--------|-----------|
-|1|download|Acompanhar a taxa de crescimento do aplicativo|Avaliar a taxa de downloads realizados|numero de downloads|Playstore/AppleStore|Crescimento do app|
-|2|Avaliaçao na PlayStore/AppleStore|acompanhar o feedback dos usuarios|Medir a media das avaliaçoes dadas pelo usuarios|Numero das estrela dada pelo usuario|Playstore/AppleStore|qualidade do produto| 
-|3|Desinstalação|Avaliar o que pode ser mudado para prevenir outras desinstalações do aplicativo|entender oque levou o usuario a desintalar o app|numero de desinstalações feitas|Playstore/AppleStore|qualidade do produto|
-|4|taxa de vendas/trocas feitas|acompanhar as vendas/trocas que estao sendo feitas pelos os usuarios|verificar a quantidade de trocas/vendas que estao sendo feitas|numero de trocas/vendas que  foram concluidas|Banco de dados|melhoria continua|
-|5|Curadoria|verificar se a curadoria estar prestando o serviços corretamente|avaliar os serviços prestados pela curadoria|Avaliçao dos usuarios|banco de dados|qualidade do produto|
+|1|numero de downloads|Acompanhar a taxa de crescimento do aplicativo|Avaliar a taxa de downloads realizados|numero mensal de download da aplicaçao ao longo do tempo|Estatisticas fornecidas pela Playstore/AppleStore|Crescimento do app|
+|2|Avaliaçao na PlayStore/AppleStore|acompanhar o feedback dos usuarios|Medir a media das avaliaçoes dadas pelo usuarios|nota media dada pelos usuarios para a aplicaçao ao longo do tempo|Estatisticas fornecidas pela Playstore/AppleStore|qualidade do produto| 
+|3|Desinstalação|Avaliar o que pode ser mudado para prevenir outras desinstalações do aplicativo|entender oque levou o usuario a desintalar o app|numero de usuarios que desinstalaram o aplicativo ao longo do tempo|Estatisticas fornecidas pela Playstore/AppleStore|melhoria continua|
+|4|numero de vendas/trocas feitas|acompanhar as vendas/trocas que estao sendo feitas pelos os usuarios|verificar a quantidade de trocas/vendas que estao sendo feitas|numero de trocas/vendas realizadas atraves do app ao longo do tempo|Banco de dados da aplicaçao|monitorar adesao dos usuarios ao uso da plataforma|
+|5|numero de reclamaçoes sobre a qualidade do produto recebido|verificar se a curadoria estar prestando o serviços corretamente|avaliar os serviços prestados pela curadoria|numero de reclamações encaminhadas a empresa relativas a qualidade do produto recebido|reclamações prestadas á ouvidoria da empresa|avaliar a melhorar a qualidade do produto serviço prestado|
 
 ## Requisitos
 
