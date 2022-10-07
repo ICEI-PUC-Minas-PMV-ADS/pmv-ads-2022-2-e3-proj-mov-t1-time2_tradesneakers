@@ -1,8 +1,53 @@
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+Os testes de usabilidade foram executado por um integrante do grupo que supervisionou a utilização do sistema por usuários de fora do grupo. Os resultados observados e o feedback dos usuários após o fim do teste foram anotados e utilizados para determinar o sucesso ou falha do teste, bem como as possíveis melhorias a serem implementadas nas funcionalidades testadas.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas abaixo:
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT-01 – Realizar cadastro na plataforma</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a usabilidade da funcionalidade de cadastro na plataforma</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram realizar o cadastro de maneira intuitiva sem maiores dificuldades.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+<table> 
+<tr><th>Caso de Teste </th>
+<th>CT-02 – Realizar login na plataforma com a conta préviamente cadastrada</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a usabilidade da funcionalidade de login na plataforma</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram realizar o login com suas contas recém cadastradas sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
+
+<table> 
+<tr><th>Caso de Teste </th>
+<th>CT-03 – Realizar busca de produtos na plataforma</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a usabilidade da funcionalidade de busca de produtos na plataforma</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram localizar a tela de busca de produtos e realizar as buscas de maneira satisfatória, mas alguns levaram algum tempo para localizar o icone de "Buscar" no menu inferior para acessar a página.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th> Tornar a identificação do caminho para a tela de busca mais fácil para os usuários.</th></tr>
+  </table>
+
+<table> 
+<tr><th>Caso de Teste </th>
+<th>CT-04 – Filtrar resultados da busca de produto por tamanho do tênis</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a usabilidade da funcionalidade de filtrar busca de produtos por tamanho do tênis na plataforma</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram filtrar os resultados da busca pela numeração sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
