@@ -16,7 +16,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 Diagrama que descreve o conjunto de entidades do sistema, seus atributos e relacionamentos.
 
-![](img/Modelo_ER.png)
+![](img/Diagrama_Modelo_ER.png)
 
 ## Esquema Relacional
 
