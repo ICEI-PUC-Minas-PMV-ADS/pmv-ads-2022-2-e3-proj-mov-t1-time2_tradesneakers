@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <View style = {styles.homePage}>
       <Header/>
-      <SearchBar/>
+
       <Text style={{fontSize: 30}}>
         HomePage
       </Text>
