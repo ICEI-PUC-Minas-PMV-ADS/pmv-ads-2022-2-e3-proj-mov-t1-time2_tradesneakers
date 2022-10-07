@@ -45,7 +45,7 @@ const SearchPage = ({route, navigation}) => {
 
   // Aplicação de outros filtros nestes dados //
   let listaDeProdutos = useMemo( () => {
-      if (numeracaoDoCalcado >= -1 && numeracaoDoCalcado != "") {
+      if (numeracaoDoCalcado > -1 && numeracaoDoCalcado != "") {
       produtosFiltrados = listaDeProdutosFiltradosSomentePorNome.filter(produto => produto.tamanho == numeracaoDoCalcado);
       return produtosFiltrados;
       }
@@ -115,7 +115,7 @@ const SearchPage = ({route, navigation}) => {
       selectedValue={numeracaoDoCalcado}
       onValueChange={(itemValue) =>
       setNumeracaoDoCalcado(itemValue)}>
-          <Picker.Item label="---" value={null} /> 
+          <Picker.Item label="---" value={-1} /> 
           <Picker.Item label="30" value={30} /> 
           <Picker.Item label="31" value={31} />
           <Picker.Item label="32" value={32} />
