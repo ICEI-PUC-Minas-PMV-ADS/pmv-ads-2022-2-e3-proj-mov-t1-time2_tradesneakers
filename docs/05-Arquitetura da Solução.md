@@ -50,7 +50,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 |GITHUB|
 |TRELLO|
 
-![tecnologias](img/relacionamentos%20das%20tecnologias%20usadas.png)
+![tecnologias](img/relacionameto-entre-tecnologia-usuario.png)
 
 ## Hospedagem
 
