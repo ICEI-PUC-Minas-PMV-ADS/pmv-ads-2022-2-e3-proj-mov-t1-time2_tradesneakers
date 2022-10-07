@@ -30,17 +30,18 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
 |**LINGUAGEM**|
 |:---------:|
 |JAVASCRIPT|
 |**FRAMEWORK**|       
-|REACT|
 |REACT NATIVE|
 |**BIBLIOTECAS**|
+|JSON SERVER|
+|JSON SSERVER AUTH|
+|REACT NAVIGATION|
+|AXIOS|
+|REACT NATIVE VECTOR ICON|
+|REACT NATIVE ASYNC STORAGE|
 |REACT NATIVE PAPER|
 |**IDES**|
 |EXPO DEV SNACKS|
@@ -48,6 +49,8 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 |MICROSOFT TEAMS|
 |GITHUB|
 |TRELLO|
+
+- [tecnologias-usadas](img/relacionamentos%20das%20tecnologias%20usadas.jpeg)
 
 ## Hospedagem
 
