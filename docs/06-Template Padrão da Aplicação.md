@@ -1,12 +1,9 @@
 # Template Padrão da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+O template padrão da aplicação seguirá um modelo em que todas as telas apresentarão o mesmo componente de cabeçalho compartilhado entre elas. As telas de "Homepage", "Buscar produto", "Cadastrar produto" e "Pedidos" poderão ser acessadas através de um menu de navegação localizado na parte de baixo da tela, estando presente em todas elas para navegação rápida entre essas telas principais. O conteúdo presente no meio entre esses dois elementos fixos do layout variará de acordo com a tela em que o usuário se encontra. A figura abaixo demonstra visualmente este layout padrão:
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+![template-padrao-tradeSneakers-1](https://user-images.githubusercontent.com/74699119/194441615-1103a277-980f-4eb0-9577-c2ba73099a1e.png)
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+Para as demais telas, o layout padrão manterá o cabeçalho presente nas outras telas adicionado de uma opção de voltar para a tela anterior (presente sob o icone de uma seta para a esquerda presente no canto esquerdo do cabeçalho). O menu de navegação inferior não estará presente nestas telas. A figura abaixo ilustra o layout padrão para estas telas:
+
+![template-padrao-tradeSneakers-2](https://user-images.githubusercontent.com/74699119/194441620-0b816880-1564-4a87-be41-8c46bbf7fcc9.png)
