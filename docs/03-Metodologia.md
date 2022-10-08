@@ -105,8 +105,9 @@ As ferramentas empregadas no projeto são:
 |------|-----------------------------------------|----|
 | Ferramenta de comunicação | Microsoft Teams| [teams.microsoft.com](https://teams.microsoft.com/)|
 | Repositório | Github | [Projeto Tradesneakers](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/blob/main/README.md) |
-| Editor de código | Visual Studio Code| [visualstudio.com](https://code.visualstudio.com/)|
+| Editor de código | Expo Snack | [snack.expo.dev](https://snack.expo.dev/@sergiomenezes/tradesneakers)|
 | Ferramenta de criação de Diagramas | Figma | [figma.com](https://www.figma.com/file/cOspOpPO836PiuVPmz1Qoy/Diagrama-de-Fluxo?node-id=0%3A1)|
+| Ferramenta de criação Modelagem Processo de Negócios | LucidChart | [lucidchart.com](https://lucid.app/lucidchart/5130d6b9-41bb-48d6-87ec-5241f9bc1e4b/edit?invitationId=inv_10e21f06-ed1e-434c-b449-d38a1faef097&page=VjMd39PQffTe#)|
 | Ferramenta de criação Interface e Wireframes |  | []()|
 | Ferramenta de gerenciamento do Projeto | Trello |[]()|
 
@@ -120,5 +121,6 @@ Para organização de tarefas e gerenciamento de projeto utilizamos o Trello, um
 
 Para criação de diagramas utilizamos a ferramenta Figma, uma ferramenta bem simples de ser usar e entender os fluxos porém completa com todos os recursos necessários.
 
-O editor de código foi escolhido porque ele é gratuito, é um dos mais populares para desenvolvimento front-end e possui uma integração com o
-sistema de versão. 
+Foi usado o LucidChart para criação de processos de modelo de negócios, já que a plataforma oferece bastante facilidade e visibilidade na criação dos processos.
+
+O editor de código escolhido foi o Expo Snack, indicado pelo microfundamento da faculdade. A plataforma é de código aberto para executar aplicativos React Native no navegador, conseguindo agrupar e executar o código no Expo Cliente ou em um reprodutor da web. O código pode ser salvo como lanches e facilmente compartilhado com outras pessoas.
