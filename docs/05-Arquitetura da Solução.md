@@ -8,21 +8,25 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-![UML class TradeSneakers](https://user-images.githubusercontent.com/74699119/191073477-12c42435-6cd4-461a-93a1-bc1dbefdd355.png)
-<p align="center"><b>Figura X</b> - Diagrama de classes do projeto</p>
+![diagrama_de_classes](https://user-images.githubusercontent.com/74699119/194731339-9bedf0a9-34be-4dd2-a03d-efa1ef766926.png)
+<p align="center"><b>Figura</b> - Diagrama de classes do projeto</p>
 <br>
 
 ## Modelo ER
 
 Diagrama que descreve o conjunto de entidades do sistema, seus atributos e relacionamentos.
 
-![](img/Diagrama_Modelo_ER.png)
+![Modelo_ER](https://user-images.githubusercontent.com/74699119/194731348-b6bb3883-fe0d-4756-9d54-1ae52a5fd36b.png)
+<p align="center"><b>Figura</b> - Modelo ER do projeto</p>
+<br>
 
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-![](img/Diagrama_Esquema_Relacional.png)
+![esquema_relacional](https://user-images.githubusercontent.com/74699119/194731352-93c70263-702e-4ded-a88d-a9223daed3ab.png)
+<p align="center"><b>Figura</b> - Esquema Relacional do projeto</p>
+<br>
 
 ## Modelo Físico
 
@@ -50,7 +54,9 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 |GITHUB|
 |TRELLO|
 
-![tecnologias](img/relacionameto-entre-tecnologia-usuario.png)
+![tecnologiasUtilizadas](https://user-images.githubusercontent.com/74699119/194731366-8a069894-0665-4d86-b0ce-633d1d9df0ad.png)
+<p align="center"><b>Figura</b> - Relação as tecnologias utilizadas no projeto</p>
+<br>
 
 ## Hospedagem
 
