@@ -41,17 +41,19 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
+Atualmente existem algumas ferramentas de negócio que viabilizam a venda de calçados usados, porém, como uma proposta inovadora nosso modelo de negócio além de vendas vamos disponibilizar também a troca de calçados para pessoas que querem trocar seus tênis que estejam em bom estado por outros.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A nossa proposta de negócio conta com um time de curadoria que assume a responsabilidade de verificar o estado dos tênis, originalidade e informa ao usuário que almeja a troca ou a compra. O aplicativo por sua vez garante que o usuário consiga visualizar anúncios de tênis, publicar para troca, venda e também a busca para compra. De grande importância também é a interação que os usuário podem ter com eles mesmos e também com o setor de curadoria que garante bastante segurança para eles.
 
 ### Processo 1 – PROCESSO OLX
+Nesse processo acontece a interação entre o usuário e o aplicativo para publicar, buscar anúncio e fazer o contato com o vendedor.
 
 ![Processo 1](img/processo-olx.png)
 
 ### Processo 2 – PROCESSO TRADESNEAKERS
+A proposta do nosso negócio incluindo o setor de curadoria que permite a segurança dos usuário em relação ao estado do produto.
 
 ![Processo 2](img/usurio-compra-troca.png)
 
