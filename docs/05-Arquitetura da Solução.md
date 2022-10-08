@@ -53,7 +53,7 @@ O modelo físico do projeto encontra-se em um arquivo banco.sql hospedado dentro
 |TRELLO|
 
 ![tecnologiasUtilizadas](https://user-images.githubusercontent.com/74699119/194731366-8a069894-0665-4d86-b0ce-633d1d9df0ad.png)
-<p align="center"><b>Figura</b> - Relação as tecnologias utilizadas no projeto</p>
+<p align="center"><b>Figura</b> - Relação das tecnologias utilizadas no projeto</p>
 <br>
 
 ## Hospedagem
