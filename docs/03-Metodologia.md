@@ -1,9 +1,7 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+Encontra-se descrita nesta seção a metodologia de trabalho adotada pelo grupo no desenvolvimento da solução. As seções presentes abaixo descrevem os ambientes de trabalhos utilizados pela equipe, além da estrutura utilizada para gestão do código fonte e a definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
 
 ## Relação de Ambientes de Trabalho
 
@@ -12,9 +10,9 @@ As alternativas do projeto são elaboradas a partir de diversas plataformas e a 
 Ambiente|Plataforma|Link de Acesso
 |:--------|:----------:|:-------------:|
 |Repositório de código fonte|GitHub| [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers)|
-|Documentos do Projeto|GitHub (docs/)|[Projeto Tradesneakers](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/blob/main/README.md)|
-|Criação de Diagramas|  | []()|
-|Projeto de Interface e Wireframes|  | []()|
+|Documentos do Projeto|GitHub (docs/)|[Projeto Tradesneakers](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/tree/main/docs)|
+|Criação de Diagramas| Figma, Lucidchart | [figma.com](https://www.figma.com/file/cOspOpPO836PiuVPmz1Qoy/Diagrama-de-Fluxo?node-id=0%3A1), [lucid.app](https://lucid.app/lucidchart/1d503f68-7142-471c-ad32-1c52bbc2a96e/edit?viewport_loc=-255%2C-118%2C5211%2C2535%2CUJ9R_lgPRyr9&invitationId=inv_38747e0a-3e2b-4a51-8178-ee6e51f13cf8#), [lucid.app](https://lucid.app/lucidchart/bf915dfa-c6eb-47d7-960a-5beeb6a6c3d6/edit?invitationId=inv_d993440a-48f2-4d67-91cd-b3923b651223&page=0_0#) |
+|Projeto de Interface e Wireframes| Figma | [Figma](https://www.figma.com/proto/DsketTFONtcTTb3mKTRZzn/Wireframes )|
 |Gerenciamento do Projeto| Trello |[Trello](https://trello.com/b/FFDjL827/trade-sneakers)|
 
 ## Controle de Versão
@@ -60,8 +58,7 @@ Divisão de papéis entre os membros do grupo.
 
 Para dividir nossos processos vamos utilizar a metodologia Scrum. Nossas sprints tem uma semana sendo a divisão das tarefas feitas na Terça-feira e baseada na entrega semanal ao cliente que deve ser feita geralmente na Segunda-feira às 18:00hs.
 
-Backlog
-No início do nosso processo levantamos os requisitos necessários para a próxima entrega e colocamos no kanban do projeto na aba To Do para que cada integrante escolha suas tarefas.
+Ao início de cada Sprint (possuindo geralmente duração de 1 semana), o grupo se reúne para definir quais tarefas serão realizadas, selecionando-as do Backlog do produto presente no quadro Kanban Trello (mostrado na figura abaixo). Após definir quais membros serão responsáveis por quais tarefas naquela Sprint, os itens selecionados são associados aos membros da equipe responsáveis por eles e movidos para a aba "To Do" do Kanban, correspondente à backlog da Sprint.
 
 As tarefas, que são criadas como issues, devem estar devidamente descritas com todas as informações necessárias e com as etiquetas corretas.
 
@@ -74,7 +71,8 @@ Dentre as etiquetas temos:
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
 #### Desenvolvimento
-Cada colaborador deve então escolher uma tarefa na aba de Backlog e movê-la para a aba Doing.
+
+Ao iniciar uma tarefa, cada colaborador deve selecionar a tarefa em questão na aba "To Do" e movê-la para a aba "Doing".
 
 O desenvolvedor deve verificar se ele tem todas as informações e ferramentas necessárias para realizar a tarefa, assim como deve verificar se não há nenhuma coisa que impeça sua realização.
 
@@ -108,8 +106,8 @@ As ferramentas empregadas no projeto são:
 | Editor de código | Expo Snack | [snack.expo.dev](https://snack.expo.dev/@sergiomenezes/tradesneakers)|
 | Ferramenta de criação de Diagramas | Figma | [figma.com](https://www.figma.com/file/cOspOpPO836PiuVPmz1Qoy/Diagrama-de-Fluxo?node-id=0%3A1)|
 | Ferramenta de criação Modelagem Processo de Negócios | LucidChart | [lucidchart.com](https://lucid.app/lucidchart/5130d6b9-41bb-48d6-87ec-5241f9bc1e4b/edit?invitationId=inv_10e21f06-ed1e-434c-b449-d38a1faef097&page=VjMd39PQffTe#)|
-| Ferramenta de criação Interface e Wireframes |  | []()|
-| Ferramenta de gerenciamento do Projeto | Trello |[]()|
+| Ferramenta de criação Interface e Wireframes | Figma, Lucidchart | [figma.com](https://www.figma.com/file/cOspOpPO836PiuVPmz1Qoy/Diagrama-de-Fluxo?node-id=0%3A1), [lucid.app](https://lucid.app/lucidchart/1d503f68-7142-471c-ad32-1c52bbc2a96e/edit?viewport_loc=-255%2C-118%2C5211%2C2535%2CUJ9R_lgPRyr9&invitationId=inv_38747e0a-3e2b-4a51-8178-ee6e51f13cf8#), [lucid.app](https://lucid.app/lucidchart/bf915dfa-c6eb-47d7-960a-5beeb6a6c3d6/edit?invitationId=inv_d993440a-48f2-4d67-91cd-b3923b651223&page=0_0#) |
+| Ferramenta de gerenciamento do Projeto | Trello |[Trello](https://trello.com/b/FFDjL827/trade-sneakers)|
 
 <br>
 
@@ -119,7 +117,7 @@ Por isso, usamos o teams/ microsoft para comunicação, apresentação e guardar
 
 Para organização de tarefas e gerenciamento de projeto utilizamos o Trello, uma ferramenta bem conhecida, já consolidada no mercado e que pode ser utilizada de forma gratuita.
 
-Para criação de diagramas utilizamos a ferramenta Figma, uma ferramenta bem simples de ser usar e entender os fluxos porém completa com todos os recursos necessários.
+Para criação de diagramas utilizamos as ferramentas Figma e Lucidchart, ferramentas simples de ser usar e entender os fluxos porém completas com todos os recursos necessários.
 
 Foi usado o LucidChart para criação de processos de modelo de negócios, já que a plataforma oferece bastante facilidade e visibilidade na criação dos processos.
 
