@@ -19,8 +19,8 @@ Após a realização destas etapas para rodar o backend, o usuário deverá aces
 - Caso deseje rodar a aplicação em um emulador de Android ou IoS, clicar na taba "Android" ou "IoS" na página do Snack.
 Observação: Algumas funcionalidades como o sistema de alertas não funciona apropriadamente ao rodar a aplicação no modo "Web" do Snack. Por isto, é recomendado rodar a aplicação nos emuladores de Android, IoS ou em um dispositivo físico através do Expo Go.
 
-Cadastro de conta de usuário (RF-01)
-A funcionalida de cadastro de conta de usuário pode ser acessada a partir da tela de login (acessada ao clicar na opção "Fazer login" presente no canto direito do cabeçalho quando nenhum usuário está logado) clicando-se no botão "Registrar-se". O usuário deverá informar seu nome de usuário, e-mail, telefone e a senha que deseja usar (além de repetir a senha). Caso todas as informações sejam válidas e e o e-mail já não esteja em uso por outro usuário, o usuário terá sua conta cadastrada receberá uma mensagem de "Cadastro realizado com sucesso" ao clicar no botão "Confirmar".
+## Cadastro de conta de usuário (RF-01)
+A funcionalidade de cadastro de conta de usuário pode ser acessada a partir da tela de login (acessada ao clicar na opção "Fazer login" presente no canto direito do cabeçalho quando nenhum usuário está logado) clicando-se no botão "Registrar-se". O usuário deverá informar seu nome de usuário, e-mail, telefone e a senha que deseja usar (além de repetir a senha). Caso todas as informações sejam válidas e o e-mail já não esteja em uso por outro usuário, o usuário terá sua conta cadastrada receberá uma mensagem de "Cadastro realizado com sucesso" ao clicar no botão "Confirmar".
 
 Estrutura de dados:
 Os dados prenchidos no formulário de cadastro são enviados para o backend em formato JSON na seguinte estrutura:
@@ -33,7 +33,7 @@ Os dados prenchidos no formulário de cadastro são enviados para o backend em f
     }
 
 A senha é então encriptada utilizando-se o bcrypjs e os dados são armazenados em formato JSON no backend simulado do JSON server na seguinte estrutura de dados.
-
+```
 "users": [
     {
       "email": "Usuario@email.com",
@@ -43,14 +43,14 @@ A senha é então encriptada utilizando-se o bcrypjs e os dados são armazenados
       "id": 15
     },
 ]
-
-Tela - Tela de cadastro de conta de usuário.
+```
+**Tela - Tela de cadastro de conta de usuário**<br>
 ![cadastro1](https://user-images.githubusercontent.com/74699119/194682734-8e4a73ab-1893-4470-99ff-b8e1b9c88d8e.png)
 
-Alerta - Mensagem de sucesso.
+**Alerta - Mensagem de sucesso**<br>
 ![cadastro2](https://user-images.githubusercontent.com/74699119/194682741-23862030-71dd-4bca-809c-45e128cf1efc.png)
 
-Login de usuário (RF-01)
+## Login de usuário (RF-01)
 A tela de login pode ser acessada clicando na opção "Fazer login" presente no canto direito do cabeçalho, que estará presente caso nenhum usuário esteja logado no sistema. A partir da tela de login, o usuário que já possuir uma conta cadastrada poderá realizar login ao informar seu email e senha cadastrados, sendo redirecionado para a homepage caso o login seja bem sucedido. Após a realização do login, a opção de "Fazer login" no cabeçalho é substituida por um icone de conta de usuário.
 
 Estrutura de dados:
@@ -62,25 +62,25 @@ Os dados prenchidos no formulário de login são enviados em formato JSON para o
     }
 
 Caso as informações de login estejam corretas, o backend responde a requisição retornando um Token JWT na seguinte estrutura:
-
+```
 {
   "accessToken": "xxx.xxx.xxx"
 }
-
-Tela - Tela de login
+```
+**Tela - Tela de login**<br>
 ![login1](https://user-images.githubusercontent.com/74699119/194682839-323020b5-c4b2-4b16-890e-53a8c1a81bae.png)
 
-Cabeçalho após login de usuário
+**Cabeçalho após login de usuário**<br>
 ![login2](https://user-images.githubusercontent.com/74699119/194682859-7e7e2329-4f0a-4df6-8554-254ba1604bed.png)
 
-Busca de produtos (RF-03)
+## Busca de produtos (RF-03)
 A tela de busca de produtos poderá ser acessada ao clicar no icone de "Buscar" representado por uma lupa presente no menu de navegação inferior. Dentro desta tela o usuário é capaz de informar um texto na caixa de busca para realizar uma pesquisa e obter assim a lista de tênis filtados de acordo com as palavras utilizadas na busca. O usuário poderá também nesta tela selecionar um filtro de tamanho/numeração do tênis, que realizará a filtragem dos resultados de modo a mostrar somente tênis que possuam a numeração desejada.
 
 Estrutura de dados:
 As informações sobre os produtos a serem mostrados na tela são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
 
 Obs: Como não possuímos um serviço de armazenamento separado para hospedar as imagens em URLs próprias e o React Native é incapaz de utilizar sources dinâmicos para imagens, as imagens dos produtos estão armazenadas em Base64, com a string completa das imagens tendo sido parcialmente omitidas no exemplo abaixo por serem muito grandes. 
-
+```
     produtos: [
     {
       "id": 1,
@@ -131,14 +131,14 @@ Obs: Como não possuímos um serviço de armazenamento separado para hospedar as
       "preco": 70,
     },
   ]
-
-
-Tela - Tela de busca
+```
+**Tela - Tela de busca**<br>
 ![busca1](https://user-images.githubusercontent.com/74699119/194682865-111f2484-7108-4993-a71a-3a84a1d0529c.png)
 
-Tela - Tela de busca após realização de busca
+**Tela - Tela de busca após realização de busca**<br>
 ![busca2](https://user-images.githubusercontent.com/74699119/194682867-7bfbcded-9342-4e03-b5a4-5a9094c7507a.png)
 
-Tela - Tela de busca após filtrar resultados por numeração do tênis
+**Tela - Tela de busca após filtrar resultados por numeração do tênis**<br>
 ![busca3](https://user-images.githubusercontent.com/74699119/194682872-eccc7ed0-6b88-430c-9540-e26e980c0e8e.png)
+<br>
 ![busca4](https://user-images.githubusercontent.com/74699119/194682875-f21e369a-6929-4978-8999-2fd7f6369c06.png)
