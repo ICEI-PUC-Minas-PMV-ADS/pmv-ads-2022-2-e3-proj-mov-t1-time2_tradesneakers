@@ -1,8 +1,6 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Esta seção descreve como a solução está estruturada em termos dos componentes que fazem parte da mesma, além de descrever o ambiente de hospedagem da aplicação.
 
 ![Arquitetura da Solução](img/02-mob-arch.png)
 
@@ -30,7 +28,7 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+O modelo físico do projeto encontra-se em um arquivo banco.sql hospedado dentro da pasta [src/bd](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/tree/d/atualizar-arquitetura-da-solucao/src/bd).
 
 ## Tecnologias Utilizadas
 
