@@ -60,14 +60,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+A hospedagem do backend simulado da aplicação em JSON Server será realizado na plataforma [Heroku](https://www.heroku.com/). O frontend da aplicação por sua vez ficará hospedado no Snack, acessível através do link https://snack.expo.dev/@sergiomenezes/tradesneakers, que possui a vantagem de possuir um emulador de Android, IoS embutido, bem como a possibilidade de geração de um QR Code para rodar a aplicação através do aplicativo Expo Go.
 
 ## Qualidade de Software
 
