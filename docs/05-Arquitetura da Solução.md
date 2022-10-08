@@ -1,32 +1,34 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Esta seção descreve como a solução está estruturada em termos dos componentes que fazem parte da mesma, além de descrever o ambiente de hospedagem da aplicação.
 
 ![Arquitetura da Solução](img/02-mob-arch.png)
 
 ## Diagrama de Classes
 
-![UML class TradeSneakers](https://user-images.githubusercontent.com/74699119/191073477-12c42435-6cd4-461a-93a1-bc1dbefdd355.png)
-<p align="center"><b>Figura X</b> - Diagrama de classes do projeto</p>
+![diagrama_de_classes](https://user-images.githubusercontent.com/74699119/194731339-9bedf0a9-34be-4dd2-a03d-efa1ef766926.png)
+<p align="center"><b>Figura</b> - Diagrama de classes do projeto</p>
 <br>
 
 ## Modelo ER
 
 Diagrama que descreve o conjunto de entidades do sistema, seus atributos e relacionamentos.
 
-![](img/Diagrama_Modelo_ER.png)
+![Modelo_ER](https://user-images.githubusercontent.com/74699119/194731348-b6bb3883-fe0d-4756-9d54-1ae52a5fd36b.png)
+<p align="center"><b>Figura</b> - Modelo ER do projeto</p>
+<br>
 
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-![](img/Diagrama_Esquema_Relacional.png)
+![esquema_relacional](https://user-images.githubusercontent.com/74699119/194731352-93c70263-702e-4ded-a88d-a9223daed3ab.png)
+<p align="center"><b>Figura</b> - Esquema Relacional do projeto</p>
+<br>
 
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+O modelo físico do projeto encontra-se em um arquivo banco.sql hospedado dentro da pasta [src/bd](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/tree/d/atualizar-arquitetura-da-solucao/src/bd).
 
 ## Tecnologias Utilizadas
 
@@ -50,18 +52,13 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 |GITHUB|
 |TRELLO|
 
-![tecnologias](img/relacionameto-entre-tecnologia-usuario.png)
+![tecnologiasUtilizadas](https://user-images.githubusercontent.com/74699119/194731366-8a069894-0665-4d86-b0ce-633d1d9df0ad.png)
+<p align="center"><b>Figura</b> - Relação das tecnologias utilizadas no projeto</p>
+<br>
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+A hospedagem do backend simulado da aplicação em JSON Server será realizado na plataforma [Heroku](https://www.heroku.com/). O frontend da aplicação por sua vez ficará hospedado no Snack, acessível através do link https://snack.expo.dev/@sergiomenezes/tradesneakers, que possui a vantagem de possuir um emulador de Android, IoS embutido, bem como a possibilidade de geração de um QR Code para rodar a aplicação através do aplicativo Expo Go.
 
 ## Qualidade de Software
 
