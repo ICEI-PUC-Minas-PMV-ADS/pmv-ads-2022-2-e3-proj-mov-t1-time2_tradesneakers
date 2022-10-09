@@ -39,7 +39,7 @@ O modelo físico do projeto encontra-se em um arquivo banco.sql hospedado dentro
 |REACT NATIVE|
 |**BIBLIOTECAS**|
 |JSON SERVER|
-|JSON SSERVER AUTH|
+|JSON SERVER AUTH|
 |REACT NAVIGATION|
 |AXIOS|
 |REACT NATIVE VECTOR ICON|
