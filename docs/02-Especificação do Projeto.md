@@ -69,11 +69,11 @@ No caso do usuário que deseja comprar um produto em vez de realizar uma troca, 
 
 |#|Indicador|Objetivos|Descrição|Calculo|Fonte|Perspectiva|
 |--|------|--------|--------|---------|--------|-----------|
-|1|numero de downloads|Acompanhar a taxa de crescimento do aplicativo|Avaliar a taxa de downloads realizados|numero mensal de download da aplicaçao ao longo do tempo|Estatisticas fornecidas pela Playstore/AppleStore|Crescimento do app|
-|2|Avaliaçao na PlayStore/AppleStore|acompanhar o feedback dos usuarios|Medir a media das avaliaçoes dadas pelo usuarios|nota media dada pelos usuarios para a aplicaçao ao longo do tempo|Estatisticas fornecidas pela Playstore/AppleStore|qualidade do produto| 
-|3|Desinstalação|Avaliar o que pode ser mudado para prevenir outras desinstalações do aplicativo|entender oque levou o usuario a desintalar o app|numero de usuarios que desinstalaram o aplicativo ao longo do tempo|Estatisticas fornecidas pela Playstore/AppleStore|melhoria continua|
-|4|numero de vendas/trocas feitas|acompanhar as vendas/trocas que estao sendo feitas pelos os usuarios|verificar a quantidade de trocas/vendas que estao sendo feitas|numero de trocas/vendas realizadas atraves do app ao longo do tempo|Banco de dados da aplicaçao|monitorar adesao dos usuarios ao uso da plataforma|
-|5|numero de reclamaçoes sobre a qualidade do produto recebido|verificar se a curadoria estar prestando o serviços corretamente|avaliar os serviços prestados pela curadoria|numero de reclamações encaminhadas a empresa relativas a qualidade do produto recebido|reclamações prestadas á ouvidoria da empresa|avaliar a melhorar a qualidade do produto serviço prestado|
+|1|Número de downloads|Acompanhar a taxa de crescimento do aplicativo|Avaliar a taxa de downloads realizados|Número mensal de download da aplicaçao ao longo do tempo|Estatisticas fornecidas pela Playstore/AppleStore|Crescimento do app|
+|2|Avaliação na PlayStore/AppleStore|Acompanhar o feedback dos usuarios|Medir a média das avaliações dadas pelo usuários|Nota média dada pelos usuarios para a aplicação ao longo do tempo|Estatísticas fornecidas pela Playstore/AppleStore|Qualidade do produto| 
+|3|Número de desinstalações|Avaliar o que pode ser mudado para prevenir outras desinstalações do aplicativo|Entender oque levou o usuario a desintalar o app|Numero de usuarios que desinstalaram o aplicativo ao longo do tempo|Estatísticas fornecidas pela Playstore/AppleStore|Melhoria continua|
+|4|Número de vendas/trocas feitas|Acompanhar as vendas/trocas que estão sendo feitas pelos os usuários|Verificar a quantidade de trocas/vendas que estão sendo feitas|Número de trocas/vendas realizadas atraves do app ao longo do tempo|Banco de dados da aplicação|Monitorar a adesão dos usuários ao uso da plataforma|
+|5|Número de reclamações sobre a qualidade do produto recebido|Verificar se a curadoria estar prestando o serviços corretamente|Avaliar os serviços prestados pela curadoria|Número de reclamações encaminhadas a empresa relativas a qualidade do produto recebido|Reclamações prestadas à ouvidoria da empresa|avaliar a melhorar a qualidade do produto e do serviço prestado|
 
 ## Requisitos
 
