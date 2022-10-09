@@ -41,7 +41,7 @@ Na tela de busca, o usuário vai encontrar um campo de busca e um filtro para se
 
 ### Tela: Postar/Cadastrar produto
 
-Esta tela é acessível apenas para usuários conectados. O usuário encontrará na tela campos para cadastrar informações do seu tênis, escrever uma descrição sobre o estado de conservação e um campo para adicionar a URL de imagens do tênis, podendo adicionar outras imagens clicando no botão "Adicionar Mais Imagens". 
+Esta tela é acessível apenas para usuários conectados. O usuário encontrará na tela campos para cadastrar informações do seu tênis, escrever uma descrição sobre o estado de conservação e um campo para adicionar a URL de imagens do tênis, podendo adicionar outras imagens clicando no botão "Adicionar Mais Imagens".
 
 O cabeçalho e o menu de navegação presente na tela inicial também aparece na tela de busca.
 
@@ -99,10 +99,22 @@ O menu de navegação presente na tela inicial desaparece nesta tela. O cabeçal
 
 ### Tela: Meus Pedidos
 
+Esta tela é acessível apenas para usuários conectados e apresentará o status dos pedidos efetuados pelo usuário, possuíndo as seguintes abas:
+* **Não pago**: Que serão os pedidos que foram adicionados no carrinho mas não foi efetuado o pagamento;
+* **Processando**: Que serão os pedidos com o pagamento em processamento;
+* **Enviado**: Pedidos que já foram enviados para o cliente;
+* **Finalizado**: Pedidos que o pagamento foi aprovado e já foi entregue ao cliente final.
 
+<div align="center">
+    <img src="img/Wireframes/pedidos.png" alt="Imagem da tela de pedidos">
+</div>
 
 ### Tela: Lista de conversas
+Esta tela apresentará o histórico de todas as conversas já iniciadas pelo usuário, assim como na anterior, o usuário deverá estar logado para ter acesso. Nesta tela será apresentada foto de perfil, nome, pré visualização da última mensagem enviada com horário da mesma e o status de visualização.
 
+<div align="center">
+    <img src="img/Wireframes/lista-de-conversas.png" alt="Imagem da tela de conversas">
+</div>
 
 
 ### Tela: Chat
