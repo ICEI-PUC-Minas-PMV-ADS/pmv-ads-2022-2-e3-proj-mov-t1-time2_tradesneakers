@@ -41,23 +41,29 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
+No mercado atual existem muitos sites de vendas em que usuários podem cadastrar seus produtos, bem como alguns sites especializados na venda de produtos usados como a OLX e Enjoei. No entanto, muitas dessas plataformas atuam apenas na mediação entre o comprador e vendedor, não havendo um controle de qualidade realizado pela empresa em relação aos produtos. Além disso, embora muitos serviços disponibilizem a venda de produtos, não há no mercado soluções que permitam a troca de produtos usados, de modo que o usuário interesado em realizar a compra deve sempre possuir a quantia necessária em mãos sem a possibilidade de negociar uma troca por um produto similar no qual não tem mais interesse.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+Nossa proposta busca disponibilizar uma plataforma de troca e venda de tênis usados aonde os usuários poderão contar com a mediação da empresa em todo o processo. Por ser um item de vestuário o qual muitas pessoas tem interesse, existe sempre a demanda de pessoas que procuram obter novos tênis para variar sua vestimenta no dia a dia, podendo já ter enjoado dos produtos que possuem. A TradeSneakers é uma solução que busca facilitar que as pessoas sejam capazes de suprir esta demanda por meio da troca de tênis usados em bom estado que não desejam mais com outros usuários em uma situação semelhante. A plataforma oferecerá também uma opção de venda para aqueles usuários que desejam obter apenas o valor em dinheiro. O principal diferencial da solução além da possibilidade de realizar trocas é o serviço de curadoria e entrega oferecidos, que oferece ao usuário uma maior garantia de que o produto que estão obtendo está em bom estado e de acordo com a descrição do anúncio, podendo recorrer à empresa em casos de insatisfação com o produto e tendo assim uma maior garantia. 
 
-### Processo 1 – NOME DO PROCESSO
+### Processo Atual – Compra de produtos usados na OLX
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN.
+Neste processo, a entrega do produto é combinada diretamente com o vendedor, de modo que a qualidade do produto deve ser assegurada pelo próprio vendedor e não pela empresa, podendo resultar em complicações.
 
-![Processo 1](img/02-bpmn-proc1.png)
+![BPMN 2 0 - OLX comparação](https://user-images.githubusercontent.com/74699119/194733039-a3618c64-cfc2-4f4b-8101-30631a2d3131.png)
 
-### Processo 2 – NOME DO PROCESSO
+### Processo Proposto 1 – Venda ou troca por outro produto na nossa plataforma (Tradesneakers)
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+Nosso processo para troca e venda de produtos passará por um setor de curadoria, que atuará garantindo a autenticidade, estado de conservação e conformidade com o anúncio (ex: numeração) dos produtos, solicitando o cancelamento da transação e a devolução dos produtos para seus respectivos donos caso a qualidade não esteja em conformidade com estes fatores.
 
-![Processo 2](img/02-bpmn-proc2.png)
+![bpmn_tradeSneakers_troca_ou_venda](https://user-images.githubusercontent.com/74699119/194733127-3dfd6988-3175-4fb0-b6ec-98c7f93f66a4.png)
+
+### Processo Proposto 2 – Compra de produto na nossa plataforma (Tradesneakers)
+
+No caso do usuário que deseja comprar um produto em vez de realizar uma troca, o processo será similar ao processo proposto 1, com o produto comprado passando pelo setor de curadoria da mesma forma. A principal diferença será a retenção do pagamento, que só será liberado para o vendedor após a confirmação da qualidade do produto pela curadoria.
+
+![bpmn_tradeSneakers_compra](https://user-images.githubusercontent.com/74699119/194733158-5006538c-7f03-4e14-8a28-ec6c87ff93d9.png)
 
 ## Indicadores de Desempenho
 
