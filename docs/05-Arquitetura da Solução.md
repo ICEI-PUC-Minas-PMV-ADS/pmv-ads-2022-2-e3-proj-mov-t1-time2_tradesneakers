@@ -22,7 +22,7 @@ Diagrama que descreve o conjunto de entidades do sistema, seus atributos e relac
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-![esquema_relacional](https://user-images.githubusercontent.com/74699119/194765741-d936be71-ec9e-4d2c-b561-6d0c1b62538e.png)
+![esquema_relacional](https://user-images.githubusercontent.com/74699119/194769166-8a9c0e0d-6017-4c6b-97d0-783fd6e5cdf7.png)
 <p align="center"><b>Figura</b> - Esquema Relacional do projeto</p>
 <br>
 
