@@ -7,6 +7,9 @@ import PostProductPage from '../pages/PostProductPage';
 import OrderHistoryPage from '../pages/OrderHistoryPage';
 import LoginPage from '../pages/LoginPage';
 import RegisterPage from '../pages/RegisterPage';
+import ChatPage from '../pages/ChatPage';
+import NewChatPage from '../pages/NewChatPage';
+import ViewChatPage from '../pages/ViewChatPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,7 +44,7 @@ const Main = () => {
           header: () => null,
         }}
         />
-                <Stack.Screen
+        <Stack.Screen
         name="LoginPage"
         component={LoginPage}
         options={{
@@ -51,6 +54,27 @@ const Main = () => {
         <Stack.Screen
         name="RegisterPage"
         component={RegisterPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="ChatPage"
+        component={ChatPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="NewChatPage"
+        component={NewChatPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="ViewChatPage"
+        component={ViewChatPage}
         options={{
           header: () => null,
         }}

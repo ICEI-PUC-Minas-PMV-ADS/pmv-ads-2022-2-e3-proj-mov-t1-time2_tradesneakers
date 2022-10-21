@@ -24,7 +24,7 @@ const Header = (props) => {
 }
   function ShowGoBack() {
     if (props.goBackEnabled) {
-      return <Appbar.Action icon="arrow-left" size={28} color = {Colors.headerTextColor} onPress={() => navigation.goBack()} />
+      return <Appbar.Action style={{width: 24}} icon="arrow-left" size={28} color = {Colors.headerTextColor} onPress={() => navigation.goBack()} />
     }
   }
 
@@ -32,10 +32,10 @@ const Header = (props) => {
     <View style={styles.headerContainer}>
       <Appbar.Header style={styles.header}>
         <ShowGoBack/>
+        <Appbar.Action style={{width: 24}} icon="message-outline" size={24} color = {Colors.headerTextColor} onPress={() => navigation.navigate('ChatPage')} />
         <Appbar.Content style={styles.headerTitle} title="Trade Sneakers" titleStyle={styles.headerTitleText} onPress={() => navigation.navigate('HomePage')} />
         <ShowSigned />
       </Appbar.Header> 
-      <Text></Text>
     </View>
   ); 
 }
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   fazerLogin: {
-    marginTop: 4,
+    marginTop: 2,
     cursor: 'pointer',
     alignSelf: 'center',
     position: 'absolute',

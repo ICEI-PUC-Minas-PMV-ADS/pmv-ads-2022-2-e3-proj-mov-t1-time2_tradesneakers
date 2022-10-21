@@ -7,13 +7,12 @@ import Colors from '../config/Colors';
 
 import {register} from '../services/auth.services';
 
-import { useNavigation } from '@react-navigation/native';
-
 import {getUsers} from '../services/auth.services';
 
-const RegisterPage = () => {
+import {getEmailAlreadyUsed} from '../services/auth.services';
 
-  const navigation = useNavigation();
+const RegisterPage = ({navigation}) => {
+
 
   const [nomeDeUsuario, setNomeDeUsuario] = useState("");
   const [email, setEmail] = useState("");
@@ -53,26 +52,22 @@ const RegisterPage = () => {
         phone: telefone,
         password: senha
       }).then( res => {
-        if(res){
-
-          Alert.alert('Atenção', 'Usuário Cadastrado com sucesso!',[
-            { text: "OK", onPress: () => navigation.goBack() }
-          ]);
-
+            if(res){
+              Alert.alert('Atenção', 'Usuário Cadastrado com sucesso!',[
+                { text: "OK", onPress: () => navigation.goBack() }
+              ]);
+            }
+            else{
+              getEmailAlreadyUsed(email).then(response => {
+              if (response) {
+                Alert.alert('Atenção', 'Email já cadastrado!');
+              }
+              else {
+                Alert.alert('Atenção', "Um erro ocorreu durante o cadastro!");
+              }       
+            }
+          );     
         }
-        else{
-              getUsers().then(response => {
-                if (response.find(u => u.email == email)) {
-                  Alert.alert('Atenção', 'Email já cadastrado!');
-                }
-                else {
-                  Alert.alert('Atenção', "Um erro ocorreu durante o cadastro!");
-                }       
-      }
-    );
-          
-        }
-
       });
     }
   }

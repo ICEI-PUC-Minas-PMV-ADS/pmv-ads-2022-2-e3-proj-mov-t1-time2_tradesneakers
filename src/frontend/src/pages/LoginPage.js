@@ -7,16 +7,13 @@ import Colors from '../config/Colors';
 
 import {login} from '../services/auth.services';
 
-import { useNavigation } from '@react-navigation/native';
 import {useUser} from '../context/UserContext';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const LoginPage = () => {
+const LoginPage = ({navigation}) => {
 
-  const navigation = useNavigation();
-
-  const {signed, setSigned, setName} = useUser();
+  const {signed, setSigned, setName, setUserId} = useUser();
 
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -33,6 +30,7 @@ const LoginPage = () => {
       if(res && res.user){
         setSigned(true);
         setName(res.user.name);
+        setUserId(res.user.id);
         AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
         navigation.navigate('HomePage')
       }else{
