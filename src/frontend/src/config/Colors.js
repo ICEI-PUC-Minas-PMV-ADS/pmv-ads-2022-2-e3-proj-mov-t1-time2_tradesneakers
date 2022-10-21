@@ -6,5 +6,9 @@ export default {
     headerTextColor: 'black',
     backgroundColor: 'white',
     inactiveTextColor: 'gray',
+    mutedTextColor: 'gray',
     selectedTabColor: "#d9e5df",
+    messageColorUser: "#c8e7de",
+    messageColorOtherUser: "#edf0ed",
+    checkMarkSeenColor: 'cyan'
 };

@@ -1,7 +1,6 @@
 import react from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import Header from '../components/Header';
-import SearchBar from '../components/SearchBar';
 import BottomNavigation from '../components/BottomNavigation';
 
 import Colors from '../config/Colors';

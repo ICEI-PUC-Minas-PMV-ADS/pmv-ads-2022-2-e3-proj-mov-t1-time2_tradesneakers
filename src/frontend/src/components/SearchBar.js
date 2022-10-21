@@ -1,5 +1,5 @@
 import react, {useState, useEffect} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Keyboard} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import { Searchbar } from 'react-native-paper';
@@ -19,6 +19,7 @@ const SearchBar = (props) => {
   const onChangeSearch = query => setSearchQuery(query);
 
   _goToSearchPage = () => {
+    Keyboard.dismiss();
     navigation.navigate('SearchPage', {passarSearchQuery: searchQuery} );
   }
 

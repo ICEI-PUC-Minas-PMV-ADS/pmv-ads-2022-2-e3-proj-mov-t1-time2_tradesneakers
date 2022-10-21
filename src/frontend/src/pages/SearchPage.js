@@ -1,7 +1,9 @@
 import react, {useState, useEffect, useRef, useMemo} from 'react';
 import {View, Text, StyleSheet, FlatList} from 'react-native';
 import { TextInput } from 'react-native-paper';
-import { Picker } from '@react-native-community/picker'
+import { Picker } from '@react-native-community/picker';
+
+import {normalizarTextoParaComparacao} from '../config/CommonFunctions';
 
 import Colors from '../config/Colors';
 
@@ -19,10 +21,6 @@ const SearchPage = ({route, navigation}) => {
   const flatlistRef = useRef();
 
   const [numeracaoDoCalcado, setNumeracaoDoCalcado] = useState();
-
-  const normalizarTextoParaComparacao = (texto) => {
-    return texto.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
-  }
 
   const [produtosDataSource, setProdutosDataSource] = useState([]);
   const [produtosDataSourceLoaded, setProdutosDataSourceLoaded] = useState(false);
