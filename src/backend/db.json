@@ -63,7 +63,7 @@
     {
       "email": "ab@a.com",
       "password": "$2a$10$wat6KIyT2nspn5VW6vMWzOj3aDZ32ymo8T//qAX5QsHehWDLEp83a",
-      "name": "",
+      "name": "Aba",
       "id": 11
     },
     {
@@ -92,6 +92,344 @@
       "name": "Usuario",
       "phone": "99999999",
       "id": 15
+    },
+    {
+      "email": "z@z.com",
+      "password": "$2a$10$HVnNhAGI8rVvbsMxJg74xufMODjCnzydyIGQm.FiFwbTdyiKBmTV2",
+      "name": "z",
+      "phone": "99999999999",
+      "id": 16
+    },
+    {
+      "email": "z@zz.com",
+      "password": "$2a$10$D0yqotjqilFBnHP0c.ixiOcNIHh5hOKQxWi20FqMmoYVCYPYLJnOK",
+      "name": "zz",
+      "phone": "999999999",
+      "id": 17
+    },
+    {
+      "email": "zy@z.com",
+      "password": "$2a$10$heZbDIztXLoEhaEs0WO4pO6zpAhKID9JKqzFTRLqcjYFrG2IP1ccC",
+      "name": "z",
+      "phone": "2423423423423423",
+      "id": 18
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "message": "Teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:31:20",
+      "dateSentInTicks": 1666107080965,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 2,
+      "message": "Teste",
+      "authorId": 1,
+      "destinataryId": 14,
+      "dateSent": "Oct 18 2022 12:32:35",
+      "dateSentInTicks": 1666107155885,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 3,
+      "message": "A",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:33:21",
+      "dateSentInTicks": 1666107201188,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 4,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:43:16",
+      "dateSentInTicks": 1666107796571,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 5,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:44:41",
+      "dateSentInTicks": 1666107881650,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 6,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 14,
+      "dateSent": "Oct 18 2022 12:44:46",
+      "dateSentInTicks": 1666107886354,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 7,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:45:07",
+      "dateSentInTicks": 1666107907842,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 8,
+      "message": "A",
+      "authorId": 1,
+      "destinataryId": 12,
+      "dateSent": "Oct 18 2022 12:45:19",
+      "dateSentInTicks": 1666107919042,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 9,
+      "message": "a",
+      "authorId": 1,
+      "destinataryId": 3,
+      "dateSent": "Oct 18 2022 12:45:58",
+      "dateSentInTicks": 1666107958594,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 10,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 14,
+      "dateSent": "Oct 18 2022 13:05:30",
+      "dateSentInTicks": 1666109130287,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 11,
+      "message": "aaa",
+      "authorId": 1,
+      "destinataryId": 13,
+      "dateSent": "Oct 18 2022 13:06:00",
+      "dateSentInTicks": 1666109160566,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 12,
+      "message": "Teste",
+      "authorId": 2,
+      "destinataryId": 1,
+      "dateSent": "Oct 18 2022 13:15:07",
+      "dateSentInTicks": 1666109707260,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 13,
+      "message": "Teste",
+      "authorId": 2,
+      "destinataryId": 10,
+      "dateSent": "Oct 18 2022 13:15:12",
+      "dateSentInTicks": 1666109712572,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 14,
+      "message": "Teste",
+      "authorId": 2,
+      "destinataryId": 10,
+      "dateSent": "Oct 18 2022 13:15:12",
+      "dateSentInTicks": 1666109712572,
+      "messageHasBeenSeen": true
+    },
+    {
+      "message": "a",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 13:57:49",
+      "dateSentInTicks": 1666112269044,
+      "messageHasBeenSeen": true,
+      "id": 15
+    },
+    {
+      "message": "a",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:15:09",
+      "dateSentInTicks": 1666113309905,
+      "messageHasBeenSeen": true,
+      "id": 16
+    },
+    {
+      "message": "Test",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:18:14",
+      "dateSentInTicks": 1666113494697,
+      "messageHasBeenSeen": true,
+      "id": 17
+    },
+    {
+      "message": "t",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:18:27",
+      "dateSentInTicks": 1666113507008,
+      "messageHasBeenSeen": true,
+      "id": 18
+    },
+    {
+      "message": "aa",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:19:20",
+      "dateSentInTicks": 1666113560912,
+      "messageHasBeenSeen": true,
+      "id": 19
+    },
+    {
+      "message": "b",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:19:23",
+      "dateSentInTicks": 1666113563048,
+      "messageHasBeenSeen": true,
+      "id": 20
+    },
+    {
+      "message": "sss",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:19:39",
+      "dateSentInTicks": 1666113579144,
+      "messageHasBeenSeen": true,
+      "id": 21
+    },
+    {
+      "id": 22,
+      "message": "tete",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:20:10",
+      "dateSentInTicks": 1666113610088,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 23,
+      "message": "s",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:20:18",
+      "dateSentInTicks": 1666113618976,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 24,
+      "message": "tetete",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:20:22",
+      "dateSentInTicks": 1666113622671,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 25,
+      "message": "hehehe",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:20:27",
+      "dateSentInTicks": 1666113627752,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 26,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:37:09",
+      "dateSentInTicks": 1666114629341,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 27,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:37:19",
+      "dateSentInTicks": 1666114639188,
+      "messageHasBeenSeen": true
+    },
+    {
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 3,
+      "dateSent": "Oct 18 2022 14:48:55",
+      "dateSentInTicks": 1666115335058,
+      "messageHasBeenSeen": false,
+      "id": 28
+    },
+    {
+      "id": 29,
+      "message": "teste",
+      "authorId": 2,
+      "destinataryId": 1,
+      "dateSent": "Oct 18 2022 14:49:56",
+      "dateSentInTicks": 1666115396885,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 30,
+      "message": "Ola",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:50:37",
+      "dateSentInTicks": 1666115437195,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 31,
+      "message": "Tudo bem?",
+      "authorId": 2,
+      "destinataryId": 1,
+      "dateSent": "Oct 18 2022 14:50:47",
+      "dateSentInTicks": 1666115447413,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 32,
+      "message": "Te",
+      "authorId": 1,
+      "destinataryId": 2,
+      "dateSent": "Oct 18 2022 14:51:42",
+      "dateSentInTicks": 1666115502514,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 33,
+      "message": "h",
+      "authorId": 2,
+      "destinataryId": 1,
+      "dateSent": "Oct 18 2022 14:51:49",
+      "dateSentInTicks": 1666115509628,
+      "messageHasBeenSeen": true
+    },
+    {
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 14,
+      "dateSent": "Oct 21 2022 13:11:14",
+      "dateSentInTicks": 1666368674306,
+      "messageHasBeenSeen": false,
+      "id": 34
+    },
+    {
+      "message": "Ola",
+      "authorId": 16,
+      "destinataryId": 11,
+      "dateSent": "Oct 21 2022 13:13:33",
+      "dateSentInTicks": 1666368813794,
+      "messageHasBeenSeen": false,
+      "id": 35
     }
   ],
   "produtos": [
