@@ -16,7 +16,7 @@ const Header = (props) => {
 
   function ShowSigned(props) {
   if (signed) {
-    return <Appbar.Action style={styles.loginIcon} icon="account-circle" size={28} color = {Colors.headerTextColor}  />
+    return <Appbar.Action style={styles.loginIcon} icon="account-circle" size={28} color = {Colors.headerTextColor} onPress={() => navigation.navigate('InfoUpdatePage')} />
   }
   else {
     return <Appbar.Content style={styles.fazerLogin} title="Fazer login" titleStyle={styles.fazerLoginText} onPress={() => navigation.navigate('LoginPage')} />
