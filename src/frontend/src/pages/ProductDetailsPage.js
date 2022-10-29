@@ -5,7 +5,7 @@ import { Button } from 'react-native-paper';
 import Header from '../components/Header';
 import Colors from '../config/Colors';
 
-import { getProduto } from '../services/produto.services';
+import { getProduto } from '../services/produtos.services';
 
 const ProductDetailsPage = ({ route }) => {
   const [produto, setProduto] = useState();
