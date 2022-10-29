@@ -64,3 +64,16 @@ As tabelas abaixo demonstram cada caso de teste:
 <tr><th>Critérios de Êxito</th>	
   <th>•	Usuário deve ser capaz de visualizar os produtos resultantes de sua busca na tela de busca de produtos, desta vez filtrados pelo tamanho do tênis.</th></tr>
   </table>
+
+<table> 
+<tr><th>Caso de Teste </th>
+<th>CT-05 – Visualizar detalhes do produto selecionado na tela de busca</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a usabilidade da funcionalidade de após filtrar um produto na tela busca de produtos, clicar no botão "ver detalhes" e ser redirecionado para a página de visualização do produto</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - Usuário realiza a busca de produtos conforme descrito no CT-04.<br>
+ 2- Usuário clica na caixa de "Filtrar por tamanho" e seleciona o tamanho de tênis que deseja.<br>
+ 3– Usuário visualiza resultados da busca e clica no botão "ver detalhes" e é redirecionado para a página de visualização do produto.</th></tr>
+<tr><th>Critérios de Êxito</th>	
+  <th>•	Usuário deve ser capaz de visualizar os detalhes do produto selecionado na tela de busca de produtos após clicar no botão "ver detalhes" e ser redirecionado a página de visualizar o produto.</th></tr>
+  </table>
