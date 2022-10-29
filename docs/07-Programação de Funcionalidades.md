@@ -19,6 +19,12 @@ Após a realização destas etapas para rodar o backend, o usuário deverá aces
 - Caso deseje rodar a aplicação em um emulador de Android ou IoS, clicar na taba "Android" ou "IoS" na página do Snack.
 Observação: Algumas funcionalidades como o sistema de alertas não funciona apropriadamente ao rodar a aplicação no modo "Web" do Snack. Por isto, é recomendado rodar a aplicação nos emuladores de Android, IoS ou em um dispositivo físico através do Expo Go.
 
+# Funcionalidades progamadas por Sérgio Luiz de Menezes Filho
+
+Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Sérgio Luiz de Menezes Filho, bem como o vídeo de apresentação explicando o processo de implementação das mesmas.
+
+## Vídeo de apresentação explicando as funcionalidades:
+
 ## Cadastro de conta de usuário (RF-01)
 A funcionalidade de cadastro de conta de usuário pode ser acessada a partir da tela de login clicando-se no botão "Registrar-se". O usuário deverá informar seu nome de usuário, e-mail, telefone e a senha que deseja usar (além de repetir a senha). Caso todas as informações sejam válidas e o e-mail já não esteja em uso por outro usuário, o usuário terá sua conta cadastrada receberá uma mensagem de "Cadastro realizado com sucesso" ao clicar no botão "Confirmar".
 
@@ -203,3 +209,88 @@ Serviços:
 - Visualizar resultados da busca;
 - Caso deseje filtrar os resultados da busca pela numeração do tênis, selecionar um tamanho na caixa de seleção presente ao lado de "Filtrar por tamanho";
 - Visualizar resultados da busca filtrados pela numeração dos tênis.
+
+
+## Tela de visualizar conversas (RF-04)
+A tela de visualizar conversas poderá ser acessada ao clicar no icone de "Conversas" representado por um balão de conversa presente no canto esquerdo do cabeçalho. Dentro desta tela o usuário poderá visualizar todas as conversas que iniciou com outros usuários da plataforma, podendo visualizar a mensagem mais recente de cada uma delas, bem como a data da mesma, poderá também filtra-las pelo nome do usuário com o qual conversou ao inserir seu nome na caixa de busca presente abaixo do cabeçalho. Dentro dessa tela, o usuário terá a opção de selecionar um novo usuário para iniciar uma nova conversa (clicando no botão "nova conversa" presente na parte inferior da tela e clicando no nome do usuário desejado) ou clicar em uma conversa específica para abri-la na tela de troca de mensagens, aonde poderá visualizar todas as mensagens já trocadas entre ele e o usuário em questão, bem como enviar novas mensagens para a conversa.
+
+**Tela - Tela de visualizar conversas**<br>
+![chatPage](https://user-images.githubusercontent.com/74699119/198773007-dcf97ae2-5ea1-4782-8094-13592fa77a26.png)
+
+**Tela - Tela de visualizar conversas (após filtrar conversas)**<br>
+![chatPage2](https://user-images.githubusercontent.com/74699119/198773097-19d6210a-46aa-434b-ad65-f90b364a9866.png)
+
+Estrutura de dados:
+Como o JSON server é um backend simulado que não permite operações mais complexas a nível de backend, a organização das conversas é feita no frontend a partir dos dados recuperados da tabela "messages" e da tabela "users", de modo que uma lista de conversas é montada baseado na existência ou não de mensagens trocadas com outros usuários, adicionando-se informações como nome e id do usuário em questão, bem como o conteúdo e data da mensagem mais recente trocada entre este e o usuário da aplicação. Os dados das tabelas "messages" e "users" são recuperados nas seguintes estruturas:
+
+**messages**
+```
+"messages": [
+    {
+      "id": 1,
+      "message": "Teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:31:20",
+      "dateSentInTicks": 1666107080965,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 2,
+      "message": "Teste",
+      "authorId": 1,
+      "destinataryId": 14,
+      "dateSent": "Oct 18 2022 12:32:35",
+      "dateSentInTicks": 1666107155885,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 3,
+      "message": "A",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:33:21",
+      "dateSentInTicks": 1666107201188,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 4,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:43:16",
+      "dateSentInTicks": 1666107796571,
+      "messageHasBeenSeen": true
+    },
+  ]
+```
+**users**
+```
+"users": [
+    {
+      "email": "Usuario@email.com",
+      "password": "$2a$10$adRRvEnLyMsJSPuAWA2bwenACnDlQCqKfVbCzuUrxjVoEbTtY8tTa",
+      "name": "Usuario",
+      "phone": "99999999",
+      "id": 15
+    },
+]
+```
+
+### Requisitos atendidos
+- RF-04
+
+### Artefatos da funcionalidade
+Páginas:
+- ChatPage.js
+
+Serviços:
+- auth.services.js
+- messages.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Clicar no icone de balão de conversa no cabeçalho;
+- Visualizar a tela de conversas;
+- Inserir o texto na caixa de busca presente abaixo do cabeçalho caso deseje filtrar as conversas por nome do usuário;
+- Visualizar a tela de conversas com resultados filtrados;
