@@ -468,7 +468,8 @@ Serviços:
 - Visualizar a tela inicial do aplicativo;
 - Clicar no icone de balão de conversa no cabeçalho;
 - Visualizar a tela de conversas;
-- Clicar no botão "Nova conversa";
-- Visualizar a tela de iniciar conversa;
-- Inserir o texto na caixa de busca presente abaixo do cabeçalho caso deseje filtrar os usuário por nome;
-- Visualizar a tela de iniciar conversa com resultados filtrados;
+- Caso já tenha trocado mensagens com o usuário desejado, clicar sobre a conversa em questão já na tela de visualizar conversas, caso não tenha trocado nenhuma mensagem com o usuário em questão ainda, clicar no botão "Nova conversa", visualizar a tela de iniciar conversa e clicar em "Conversar" ao lado do nome do usuário desejado;
+- Visualizar a tela de troca de mensagens;
+- Digitar uma mensagem na caixa de texto presente no canto inferior da tela e clicar no icone de enviar;
+- Visualizar a tela de troca de mensagens contendo a nova mensagem enviada;
+- Caso queira testar a visualização de mensagens e o envio de mensagens pelo outro usuário, fazer login na conta do usuário para o qual a mensagem foi enviada e repetir o mesmo processo;
