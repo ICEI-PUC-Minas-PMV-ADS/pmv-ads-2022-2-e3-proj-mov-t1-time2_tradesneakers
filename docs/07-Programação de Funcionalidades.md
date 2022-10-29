@@ -473,3 +473,55 @@ Serviços:
 - Digitar uma mensagem na caixa de texto presente no canto inferior da tela e clicar no icone de enviar;
 - Visualizar a tela de troca de mensagens contendo a nova mensagem enviada;
 - Caso queira testar a visualização de mensagens e o envio de mensagens pelo outro usuário, fazer login na conta do usuário para o qual a mensagem foi enviada e repetir o mesmo processo;
+
+# Funcionalidades progamadas por Álvaro Alfaya Fonseca
+
+Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Álvaro Alfaya Fonseca, bem como o vídeo de apresentação explicando o processo de implementação das mesmas.
+
+## Vídeo de apresentação explicando as funcionalidades:
+
+https://youtu.be/cPM_4womrFQ
+
+## Visualização do produto selecionado na tela de busca (RF-03)
+A tela de visualização do produto selecionado poderá ser acessada quando o usuário selecionar um produto através do filtro na tela de busca e clicando no botão "Ver Detalhes" que estará abaixo da descrição do produto, sendo assim, ele será redirecionado para a tela de visualização do produto selecionado com os detalhes do mesmo e terá a opção de trocar ou comprar o tênis.
+
+**Tela - Tela de busca com o botão "Ver Detalhes" no produto selecionado**<br>
+![botao-ver-detalhes](https://user-images.githubusercontent.com/91163177/198849506-164de7e4-d10f-436a-bc18-6052b17c0541.png)
+
+**Tela - Tela de visualização do produto selecionado após clicar no botão "Ver Detalhes"**<br>
+![pagina-details-product](https://user-images.githubusercontent.com/91163177/198849539-84ee7c7e-00b2-458b-bc3e-038c8841a176.png)
+
+Estrutura de dados:
+As informações sobre o produto selecionado na tela de busca e também mostrado na tela de visualização são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
+
+```
+    produtos: 
+    {
+      "id": 1,
+      "nome": "Tênis Air Jordan Cinza",
+      "tamanho": 40,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 85.5,
+    },
+
+```
+
+### Requisitos atendidos
+- RF-03
+
+### Artefatos da funcionalidade
+Páginas:
+- ProductDetailsPage.js
+
+Serviços:
+- produtos.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Clicar em "Buscar" no menu de navegação inferior;
+- Visualizar a tela de busca de produtos;
+- Inserir o texto na caixa de busca presente no topo da tela para realizar a busca;
+- Caso deseje filtrar os resultados da busca pela numeração do tênis, selecionar um tamanho na caixa de seleção presente ao lado de "Filtrar por tamanho";
+- Visualizar resultados da busca do produto selecionado e clicar no botão "Ver Detalhes";
+- Após clicar no botão será redirecionado para a página de visualização dos detalhes do produto selecionado onde o usuário trocar ou comprar o tênis.
