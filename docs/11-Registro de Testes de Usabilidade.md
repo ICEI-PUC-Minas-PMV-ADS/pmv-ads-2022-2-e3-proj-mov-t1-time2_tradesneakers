@@ -51,3 +51,15 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
 <tr><th>Melhoria</th>	
   <th>---------------------------------------</th></tr>
   </table>
+
+<table> 
+<tr><th>Caso de Teste </th>
+<th>CT-05 – Visualizar detalhes do produto selecionado na tela de busca.</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a usabilidade da funcionalidade do botão "ver detalhes" que redireciona o usuário para a página de visualização de detalhes do produto selecionado na tela de busca</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram os detalhes do produto selecionado após clicarem no botão ver detalhes e serem redirecionado para a página.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>Desenvolver um método para que os usuários consigam ver os detalhes de todos os produtos que forem selecionados, já que no momento optamos por deixar a visualização apenas do produto id:1</th></tr>
+  </table>
