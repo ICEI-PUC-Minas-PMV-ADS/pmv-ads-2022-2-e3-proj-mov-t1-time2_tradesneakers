@@ -1,5 +1,5 @@
 import react, {useState, useRef, useEffect} from 'react';
-import {View, Text, StyleSheet, Image, FlatList} from 'react-native';
+import {View, Text, StyleSheet, Image, FlatList, Keyboard} from 'react-native';
 import {Button, Searchbar} from 'react-native-paper';
 import Header from '../components/Header';
 import {getUsers} from '../services/auth.services';
