@@ -63,6 +63,9 @@ A senha é então encriptada utilizando-se o bcrypjs e os dados são armazenados
 Páginas:
 - RegisterPage.js
 
+Componentes:
+- Header.js
+
 Serviços:
 - auth.services.js
 
@@ -106,6 +109,9 @@ Caso as informações de login estejam corretas, o backend responde a requisiç�
 ### Artefatos da funcionalidade
 Páginas:
 - LoginPage.js
+
+Componentes:
+- Header.js
 
 Serviços:
 - auth.services.js
@@ -197,6 +203,8 @@ Páginas:
 
 Componentes:
 - SearchBar.js
+- Header.js
+- BottomNavigation.js
 
 Serviços:
 - auth.services.js
@@ -284,6 +292,9 @@ Como o JSON server é um backend simulado que não permite operações mais comp
 Páginas:
 - ChatPage.js
 
+Componentes:
+- Header.js
+
 Serviços:
 - auth.services.js
 - messages.services.js
@@ -294,3 +305,170 @@ Serviços:
 - Visualizar a tela de conversas;
 - Inserir o texto na caixa de busca presente abaixo do cabeçalho caso deseje filtrar as conversas por nome do usuário;
 - Visualizar a tela de conversas com resultados filtrados;
+
+## Tela de iniciar conversa (RF-04)
+A tela de iniciar conversa poderá ser acessada através da tela de conversas ao clicar no botão "Nova conversa" presente na parte de baixo da tela. Ao acessar essa tela, o usuário visualizará uma lista de todos os usuários do sistema em ordem alfabética, podendo clicar no botão "Conversar" para iniciar ou continuar uma conversa com aquele usuário selecionado. O usuário poderá também realizar uma busca nesta tela, filtrando os usuários pelo nome baseado no texto digitado no campo de pesquisa.
+
+**Tela - Tela de iniciar conversa**<br>
+![newChatPage](https://user-images.githubusercontent.com/74699119/198853641-845418a0-b11a-415e-9417-9b65255fcde3.png)
+
+**Tela - Tela de iniciar conversa (após filtrar usuários)**<br>
+![newChatPage2](https://user-images.githubusercontent.com/74699119/198853644-4d00aed3-a21e-4ea1-9578-c5c1e471c666.png)
+
+Estrutura de dados:
+A tela em questão recupera as informações dos usuários do backend, mostrando todos os usuários em ordem alfabética exceto o próprio usuário logado. Os dados são recuperados na seguitne estrutura.
+
+```
+  "users": [
+    {
+      "email": "a@a.com",
+      "password": "$2a$10$/JrNm4sdi6gKOxSZpbQGFuyf.u4bnQ5M71J8uxAEqaUpAWyd7kQgm",
+      "name": "a",
+      "id": 1
+    },
+    {
+      "email": "b@b.com",
+      "password": "$2a$10$EO69.Bu0HC7u4v9MIHvRMu6HTMrdGvAjBVRDPEh7Y9Gv5DR9Ezwzq",
+      "name": "b",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "ddd",
+      "email": "d@d.com",
+      "phone": "3423423423423",
+      "password": "$2a$10$.8txYgJ9t3XiFy0CSYco7u0n43I3tuBrMvpsQO/CelzPTLO2XVXi6"
+    },
+    {
+      "email": "f@f.com",
+      "password": "$2a$10$sqmJ.2SDLzP7zLumWU2TWe5CFdlH7laJh.3.usC8pUdVRpDBihibm",
+      "name": "f",
+      "id": 4
+    },
+  ]
+```
+
+### Requisitos atendidos
+- RF-04
+
+### Artefatos da funcionalidade
+Páginas:
+- NewChatPage.js
+
+Componentes:
+- Header.js
+
+Serviços:
+- auth.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Clicar no icone de balão de conversa no cabeçalho;
+- Visualizar a tela de conversas;
+- Clicar no botão "Nova conversa";
+- Visualizar a tela de iniciar conversa;
+- Inserir o texto na caixa de busca presente abaixo do cabeçalho caso deseje filtrar os usuário por nome;
+- Visualizar a tela de iniciar conversa com resultados filtrados;
+
+## Tela de troca de mensagens (RF-04)
+A tela de troca de mensagens poderá ser acessada ao iniciar ou continuar uma conversa com um usuário específico. Esta tela poderá ser acessada tanto da tela de visualizar conversas (para continuar uma conversa já iniciada) quanto da tela de iniciar conversa (para iniciar uma nova conversa), futuramente poderá se iniciar uma conversa também da tela de visualizar produto (que ainda não está completamente implementada). Esta tela consiste em um chat entre dois usuários, o usuário logado e o usuário com o qual este deseja conversar, onde o usuário poderá compor e enviar mensagens de texto para serem lidas pelo outro usuário. Ao enviar uma nova mensagem, ela será adicionada à conversa com a data de envio e o status de visualização (se foi ou não visualizada pelo destinatário). 
+
+**Tela - Tela de troca de mensages**<br>
+![viewChatPage](https://user-images.githubusercontent.com/74699119/198853827-eb568912-5702-4e8a-91bb-4e7cf32ffd5f.png)
+
+Estrutura de dados:
+As mensagens enviadas pelos usuários são guardadas no backend na seguinte estrutura de dados:
+
+```
+  "messages": [
+    {
+      "id": 1,
+      "message": "Teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:31:20",
+      "dateSentInTicks": 1666107080965,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 2,
+      "message": "Teste",
+      "authorId": 1,
+      "destinataryId": 14,
+      "dateSent": "Oct 18 2022 12:32:35",
+      "dateSentInTicks": 1666107155885,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 3,
+      "message": "A",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:33:21",
+      "dateSentInTicks": 1666107201188,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 4,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:43:16",
+      "dateSentInTicks": 1666107796571,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 5,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 11,
+      "dateSent": "Oct 18 2022 12:44:41",
+      "dateSentInTicks": 1666107881650,
+      "messageHasBeenSeen": true
+    },
+    {
+      "id": 6,
+      "message": "teste",
+      "authorId": 1,
+      "destinataryId": 14,
+      "dateSent": "Oct 18 2022 12:44:46",
+      "dateSentInTicks": 1666107886354,
+      "messageHasBeenSeen": true
+    },
+    ]
+```
+As mensagens serão recuperadas do backend na mesma estrutura de dados, sendo subsequentemente filtradas para excluir todas as mensagens que não possuam o usuário logado como remetente e o usuário com quem ele deseja falar como destinatário ou o inverso (usuário logado como destinatário e usuário com quem deseja falar como remetente), de modo a mostrar apenas as mensagens referentes àquela conversa.
+
+O nome do usuário com quem o usuário logado está conversando também é recuperado do backend através de um método "getUser" que retorna as informações daquele único usuário a partir de seu id, conforme ilustrado abaixo (obs: como estamos utilizando o JSON Server, todas as informações do usuário são recuperadas, em um backend convencional seria solicitado que apenas o nome fosse retornado).
+
+```
+    {
+      "email": "a@a.com",
+      "password": "$2a$10$/JrNm4sdi6gKOxSZpbQGFuyf.u4bnQ5M71J8uxAEqaUpAWyd7kQgm",
+      "name": "a",
+      "id": 1
+    }
+```
+
+### Requisitos atendidos
+- RF-04
+
+### Artefatos da funcionalidade
+Páginas:
+- ViewChatPage.js
+
+Componentes:
+- Header.js
+
+Serviços:
+- auth.services.js
+- messages.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Clicar no icone de balão de conversa no cabeçalho;
+- Visualizar a tela de conversas;
+- Clicar no botão "Nova conversa";
+- Visualizar a tela de iniciar conversa;
+- Inserir o texto na caixa de busca presente abaixo do cabeçalho caso deseje filtrar os usuário por nome;
+- Visualizar a tela de iniciar conversa com resultados filtrados;
