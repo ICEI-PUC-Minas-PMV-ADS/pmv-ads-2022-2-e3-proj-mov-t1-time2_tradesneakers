@@ -495,7 +495,7 @@ Estrutura de dados:
 As informações sobre o produto selecionado na tela de busca e também mostrado na tela de visualização são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
 
 ```
-    produtos: [
+    produtos: 
     {
       "id": 1,
       "nome": "Tênis Air Jordan Cinza",
@@ -504,77 +504,10 @@ As informações sobre o produto selecionado na tela de busca e também mostrado
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 85.5,
     },
-]
+
 ```
-O botão "ver detalhes" criado no componente "CardProduto.js" que fará o navigation.
-```
- <Button
-          style={styles.button}
-          onPress={() =>
-            navigation.navigate('ProductDetailsPage', {
-              paramKey: produtoId,
-            })
-          }
-        >
-```
-A página "ProductDetailsPage.js" que é visualizado os detalhes do produto selecionado na tela de busca.
-```
-const ProductDetailsPage = ({ route }) => {
-  const [produto, setProduto] = useState();
-  const [produtoLoaded, setProdutoLoaded] = useState(false);
-  const produtoId = 1;
-  const formatarPreco = (preco) => {
-    preco = preco.toFixed(2).toString();
-    preco = preco.replace('.', ',');
-    return preco;
-  };
-  const handleTrocar = () => {};
-  const handleComprar = () => {};
-  useEffect(() => {
-    getProduto(produtoId).then((response) => {
-      setProduto(response);
-      if (response != null) {
-        setProdutoLoaded(true);
-      }
-    });
-  }, [produtoId]);
-  if (produtoLoaded) {
-    return (
-      <View style={styles.detailsProduto}>
-        <Header goBackEnabled={true} />
-        <Text style={styles.nomeProdutoText}>{produto.nome}</Text>
-        <Text style={styles.tamanhoProdutoText}>Tamanho {produto.tamanho}</Text>
-        <Image source={{ uri: produto.imagem }} style={styles.imagemProduto} />
-        <Text style={styles.descricaoProduto}>{produto.descricao} </Text>
-        <View style={styles.container}>
-          <Button
-            mode="contained"
-            style={styles.buttonTroca}
-            onPress={handleTrocar}>
-            <Text style={styles.buttonTrocaTexto}>Trocar</Text>
-          </Button>
-          <Button
-            mode="contained"
-            style={styles.buttonComprar}
-            onPress={handleComprar}>
-            <Text style={styles.precoText}>
-              R$ {formatarPreco(produto.preco)} Comprar
-            </Text>
-          </Button>
-        </View>
-      </View>
-    );
-  } else {
-    return (
-      <View>
-        <Header goBackEnabled={true} />
-        <Text> Carregando produto... </Text>
-      </View>
-    );
-  }
-};
-```
-O service "produto.service.js"
+
+O service "produtos.service.js"
 ```
 import API from './webapi.services';
 import {BASE_URL} from './urls';
@@ -602,11 +535,8 @@ export const getProduto = async (id) => {
 Páginas:
 - ProductDetailsPage.js
 
-Componentes:
-- CardProduto.js 
-
 Serviços:
-- produto.services.js
+- produtos.services.js
 
 ### Instruções de acesso
 - Visualizar a tela inicial do aplicativo;
