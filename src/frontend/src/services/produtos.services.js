@@ -52,6 +52,23 @@ export const updateProduto = async (param) => {
   }
 }
 
+export const getProduto = async (id) => {
+  try{
+    return await API.get(`${BASE_URL}/produtos/${id}`).then( 
+      response => {
+        return response.data;
+      },
+      error =>{
+        console.log(error);
+        return  null;
+      }
+    );
+  }catch(error){
+    console.log(error);
+    return null;
+  }
+}
+
 export const deleteProduto = async (id) => {
   try{
     return await API.delete(`${BASE_URL}/660/produtos/${id}`).then( 
