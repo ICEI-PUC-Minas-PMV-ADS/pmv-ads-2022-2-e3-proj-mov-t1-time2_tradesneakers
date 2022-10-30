@@ -597,7 +597,7 @@ A tela de Homepage e a tela inicial do app onde ficara disponivel para o usario 
 
 Estrutura de dados: 
 As informações sobre o produto selecionado na tela HomePage são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
-
+```
    const DATA = [
   
   {
@@ -625,6 +625,8 @@ As informações sobre o produto selecionado na tela HomePage são recuperadas e
     nome: 'yeez',
   }
 ];
+
+```
 
 ### Requisitos atendidos
 - Nossa tela homepage nao se encaixa em nenhum requisito, sendo somente uma tela
