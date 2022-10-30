@@ -107,6 +107,5 @@ As tabelas abaixo demonstram cada caso de teste:
  3- O usuário preenche os campos que ele deseja alterar.<br>
  4- O usuário clica no botão "Confirmar".<br>
 <tr><th>Critérios de Êxito</th>	
-  <th>•	Após preencher todos os dados e clicar em confirmar os dados deverão ser alterados no banco de dados (db.json).</th>
-  <th>•	A aplicação deve permitir que usuário faça o proximo login usando o novo e-mail e nova senha caso o usuário tenha alterado essas informações também.</th></tr>
+  <th>•	Após preencher todos os dados e clicar em confirmar os dados deverão ser alterados no banco de dados (db.json). <br>• A aplicação deve permitir que usuário faça o proximo login usando o novo e-mail e nova senha caso o usuário tenha alterado essas informações também.</th></tr>
   </table>
