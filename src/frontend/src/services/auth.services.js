@@ -88,3 +88,20 @@ export const getUser = async (userId) => {
     return null;
   }
 }
+
+export const updateUsers = async (param) => {
+  try{
+    return await API.put(`${BASE_URL}/660/users/${param.id}`, param).then( 
+      response => {
+        return response.data;
+      },
+      error =>{
+        console.log(error);
+        return  null;
+      }
+    );
+  }catch(error){
+    console.log(error);
+    return null;
+  }
+}

@@ -10,6 +10,7 @@ import RegisterPage from '../pages/RegisterPage';
 import ChatPage from '../pages/ChatPage';
 import NewChatPage from '../pages/NewChatPage';
 import ViewChatPage from '../pages/ViewChatPage';
+import InfoUpdatePage from '../pages/InfoUpdatePage';
 
 const Stack = createNativeStackNavigator();
 
@@ -75,6 +76,13 @@ const Main = () => {
         <Stack.Screen
         name="ViewChatPage"
         component={ViewChatPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="InfoUpdatePage"
+        component={InfoUpdatePage}
         options={{
           header: () => null,
         }}
