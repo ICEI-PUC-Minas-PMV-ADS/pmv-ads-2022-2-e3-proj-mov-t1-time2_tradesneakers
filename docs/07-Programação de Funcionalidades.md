@@ -525,3 +525,55 @@ Serviços:
 - Caso deseje filtrar os resultados da busca pela numeração do tênis, selecionar um tamanho na caixa de seleção presente ao lado de "Filtrar por tamanho";
 - Visualizar resultados da busca do produto selecionado e clicar no botão "Ver Detalhes";
 - Após clicar no botão será redirecionado para a página de visualização dos detalhes do produto selecionado onde o usuário trocar ou comprar o tênis.
+
+# Funcionalidades progamadas por Talles Monteiro Góis
+
+Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Talles Monteiro Góis, bem como o vídeo de apresentação explicando o processo de implementação das mesmas.
+
+## Vídeo de apresentação explicando as funcionalidades:
+https://youtu.be/oHIGnVFBRG8
+
+## Tela de atualizar dados do usuario (RF-09)
+A funcionalidade de atualizar dados do usuário pode ser acessada a partir da tela de principal clicando-se no icone de conta de usuario. A tela de atualizar dados mostra ao usuário todas informações atuais da sua conta, caso o usuário queira mudar algumas dessas informações bastar clicar no campo desejado, inserir a nova informação e clicar em confirmar.
+Caso todas as informações sejam válidas e o e-mail já não esteja em uso por outro usuário, o usuário terá seus dados alterados com sucesso.
+
+**Icone Conta de Usuário - Redireciona o usuario para tela de atualizar informações**<br>
+![atualizardados1](./img/atualizardados1.png)
+
+**Tela - Atualizar informações**<br>
+![atualizardados2](./img/atualizardados2.png)
+
+Estrutura de dados:
+Os dados prenchidos no formulário de atualizar informações são enviados para o backend em formato JSON na seguinte estrutura:
+
+    {
+      "email": "igor@igor.com",
+      "password": "$2a$10$T2ViWfgEYNpdihqyzqSHOu5zCjdOcaXKQblcdu8XzizsDb70BRVSu",
+      "name": "igor.gois",
+      "phone": "(31) 98888-6666",
+      "firstname": "igor",
+      "lastname": "fernandes",
+    }
+
+### Requisitos atendidos
+- RF-09
+
+### Artefatos da funcionalidade
+Páginas:
+- InfoUpdatePage.js
+
+Componentes:
+- Header.js
+
+Serviços:
+- auth.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Clicar em "Fazer login" no canto direito do cabeçalho;
+- Visualizar a tela de login;
+- Preencher as informações solicitadas e realizar o login;
+- Clicar no icone de conta de usuario no canto superior direito;
+- Visualizar os dados atuais do usuário;
+- Preencher informações novas que o usuario deseja alterar;
+- Caso as informações sejam válidas e o e-mail já não tenha sido cadastrado anteriormente, os dados serão alterados com sucesso.

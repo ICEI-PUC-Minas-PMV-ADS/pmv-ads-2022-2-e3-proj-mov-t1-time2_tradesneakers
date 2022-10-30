@@ -28,3 +28,8 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 |-------|-------------------------
 |Objetivo do teste| Verificar a funcionalidade de troca de mensagens entre usuários cadastrados na plataforma. |
 | Resultado | Todos os critérios de exito foram satisfeitos adequadamente. | 
+
+|Caso de teste 06     | CT 06 - Atualizar informações de usuário |
+|-------|-------------------------
+|Objetivo do teste| Verificar a funcionalidade de atualização de dados do usuário. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |

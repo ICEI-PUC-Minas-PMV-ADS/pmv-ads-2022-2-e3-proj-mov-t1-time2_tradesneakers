@@ -91,6 +91,7 @@ As tabelas que abaixo apresentam os requisitos funcionais e não funcionais que 
 |RF-006| Disponibilizar um formulário de envio das mercadorias, que ocorreira primeiro para a empresa (que realizará a curadoria dos produtos para determinar se estão em bom estado) e depois para os clientes. | ALTA |
 |RF-007| Disponibilizar um sistema de pagamento para que os usuários possam pagar os custos relativos ao envio, serviço de curadoria e preço do produto em caso de compra. | ALTA |
 |RF-008| Disponibilizar uma tabela de medida em centímetros do pé de acordo com a numeração do tênis, afim de solucionar problemas de devoluções. | MÉDIA |
+|RF-009| Disponibilizar aos usuários um sistema de alteração de dados como nome de usuário, email, senha, etc. | MÉDIA |
 
 
 
