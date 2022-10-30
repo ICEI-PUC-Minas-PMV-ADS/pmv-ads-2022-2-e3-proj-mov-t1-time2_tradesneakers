@@ -122,3 +122,13 @@ Para criação de diagramas utilizamos as ferramentas Figma e Lucidchart, ferram
 Foi usado o LucidChart para criação de processos de modelo de negócios, já que a plataforma oferece bastante facilidade e visibilidade na criação dos processos.
 
 O editor de código escolhido foi o Expo Snack, indicado pelo microfundamento da faculdade. A plataforma é de código aberto para executar aplicativos React Native no navegador, conseguindo agrupar e executar o código no Expo Cliente ou em um reprodutor da web. O código pode ser salvo como lanches e facilmente compartilhado com outras pessoas.
+
+## Prints do quadro do Trello (retrato atual do status da contribuição dos membros da equipe para o projeto)
+
+### Etapa 3
+
+Segue abaixo o print do quadro do Trello ao final da Etapa 3 (editado em um editor de imagens para mostrar todos os cards em uma única imagem). As tarefas colocadas em "Done" abaixo do Card "Etapa 3" e acima do Card "Etapa 2" correspondem às tarefas que foram finalizadas pelos membros da equipe. Os as tarefas que ainda se encontram em "Doing" correspondem às tarefas que os membros associados a elas não foram capazes de concluir a tempo do prazo de entrega e que portanto, encontram-se ausentes da submissão da tarefa da etapa 3.
+
+![TrelloPrint_Etapa3](https://user-images.githubusercontent.com/74699119/198905025-7a1eca44-81ce-41eb-8a64-4fc80dd78d23.png)
+
+
