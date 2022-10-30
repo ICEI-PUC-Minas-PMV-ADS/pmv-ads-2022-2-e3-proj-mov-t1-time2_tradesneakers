@@ -26,3 +26,8 @@ Observação: Algumas funcionalidades como o sistema de alertas não funciona ap
 #### Adicionado
 - Implementação parcial das primeiras funcionalidades correspondentes aos RFs 01 e 03 (Cadastro, Login e Busca de produtos).
 - Backend ainda não hospedado na internet, frontend pode ser acessado através do Snack em https://snack.expo.dev/@sergiomenezes/tradesneakers.
+
+### [0.1.1] - 30/10/2022
+#### Adicionado
+- Implementação parcial das funcionalidades relativas a troca de mensagens, visualização de detalhes do produto, atualização de informações cadastrais e tabela de numeração (RFs 04, 03, 09 e 08), além da implementação parcial da homepage.
+- Backend ainda não hospedado na internet, frontend pode ser acessado através do Snack em https://snack.expo.dev/@sergiomenezes/tradesneakers.
