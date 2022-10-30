@@ -580,3 +580,65 @@ Serviços:
 - Visualizar os dados atuais do usuário;
 - Preencher informações novas que o usuario deseja alterar;
 - Caso as informações sejam válidas e o e-mail já não tenha sido cadastrado anteriormente, os dados serão alterados com sucesso.
+
+# Funcionalidades progamadas por Alex junio gomes de freitas
+
+Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro alex junio gomes de freitas
+
+## Vídeo de apresentação explicando as funcionalidades:
+
+
+## tela de HomePage
+A tela de Homepage e a tela inicial do app onde ficara disponivel para o usario alguns dos produtos disponiveis no app para a compra e troca, onde o usuario pderar selicionar uns do tenis e ira ser redirecionado para a pagina do produto
+
+**Tela homepage**<br>
+![atualizardados1](./img/telaHomePage.png)
+
+
+Estrutura de dados: 
+As informações sobre o produto selecionado na tela HomePage são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
+
+   const DATA = [
+  
+  {
+    id: 1,
+    nome: 'nike air jordan',
+  },
+  {
+    id: 2,
+    nome: 'nike air force',
+  },
+  {
+    id: 3,
+    nome: 'nike air max',
+  },
+  {
+    id: 4,
+    nome: 'nike air jordan 4',
+  },
+  {
+    id: 4,
+    nome: 'nike shok',
+  },
+   {
+    id: 4,
+    nome: 'yeez',
+  }
+];
+
+### Requisitos atendidos
+- Nossa tela homepage nao se encaixa em nenhum requisito, sendo somente uma tela
+
+### Artefatos da funcionalidade
+Páginas:
+- HomePage.js
+
+Componentes:
+- Header.js
+- cardProduto.js
+- produtos.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Clicar em no produto desejado;
+- sera encaminhado para a page do produto desejado;
