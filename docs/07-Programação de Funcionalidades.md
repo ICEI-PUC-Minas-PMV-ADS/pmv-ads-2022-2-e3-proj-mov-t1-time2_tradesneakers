@@ -24,6 +24,9 @@ Observação: Algumas funcionalidades como o sistema de alertas não funciona ap
 Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Sérgio Luiz de Menezes Filho, bem como o vídeo de apresentação explicando o processo de implementação das mesmas.
 
 ## Vídeo de apresentação explicando as funcionalidades:
+Segue abaixo o link do vídeo hospedado no Youtube contendo a apresentação relacionada à progamação de funcionalidades até o momento presente:
+
+https://youtu.be/7tLjU90fjfw
 
 ## Cadastro de conta de usuário (RF-01)
 A funcionalidade de cadastro de conta de usuário pode ser acessada a partir da tela de login clicando-se no botão "Registrar-se". O usuário deverá informar seu nome de usuário, e-mail, telefone e a senha que deseja usar (além de repetir a senha). Caso todas as informações sejam válidas e o e-mail já não esteja em uso por outro usuário, o usuário terá sua conta cadastrada receberá uma mensagem de "Cadastro realizado com sucesso" ao clicar no botão "Confirmar".
