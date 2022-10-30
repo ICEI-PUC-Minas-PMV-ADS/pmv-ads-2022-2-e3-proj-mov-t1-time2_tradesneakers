@@ -63,3 +63,15 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
 <tr><th>Melhoria</th>	
   <th>Desenvolver um método para que os usuários consigam ver os detalhes de todos os produtos que forem selecionados, já que no momento optamos por deixar a visualização apenas do produto id:1</th></tr>
   </table>
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT-06 – Realizar troca de mensagens com outro usuário na plataforma</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a usabilidade da funcionalidade de troca de mensagens entre usuários na plataforma</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram realizar a troca de mensagens sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th> Usuários sugeriram que seria interessante haver algum aviso de que novas mensagens chegaram mesmo quando estiverem fora da tela de visualizar conversas. </th></tr>
+  </table>
