@@ -95,3 +95,18 @@ As tabelas abaixo demonstram cada caso de teste:
 <tr><th>Critérios de Êxito</th>	
   <th>•	Usuários devem ser capazes de iniciar uma nova conversa e trocar mensagens entre si.</th></tr>
   </table>
+
+ <table> 
+<tr><th>Caso de Teste </th>
+<th>CT-07 – Atualizar informações do usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de atualização de dados do usuário</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realizam logi na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário clica no icone de conta de usuário presente no canto superior direito do cabeçalho.<br>
+ 3- O usuário preenche os campos que ele deseja alterar.<br>
+ 4- O usuário clica no botão "Confirmar".<br>
+<tr><th>Critérios de Êxito</th>	
+  <th>•	Após preencher todos os dados e clicar em confirmar os dados deverão ser alterados no banco de dados (db.json).</th>
+  <th>•	A aplicação deve permitir que usuário faça o proximo login usando o novo e-mail e nova senha caso o usuário tenha alterado essas informações também.</th></tr>
+  </table>

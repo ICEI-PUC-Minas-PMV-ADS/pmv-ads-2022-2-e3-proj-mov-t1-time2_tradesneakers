@@ -75,3 +75,15 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
 <tr><th>Melhoria</th>	
   <th> Usuários sugeriram que seria interessante haver algum aviso de que novas mensagens chegaram mesmo quando estiverem fora da tela de visualizar conversas. </th></tr>
   </table>
+
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT-07 – Atualizar informações do usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de atualização de dados do usuário</th></tr>
+<tr><th>Resultado</th>
+  <th>O usuário conseguiu atualizar todos os seus dados realizar o proximo login usando os dados atuais e visualiza-los na pagina de atualizar informações.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th> Usuario sugeriu colocar um botão de dropdown no icone de conta de usuário com a opção logoff. </th></tr>
+  </table>
