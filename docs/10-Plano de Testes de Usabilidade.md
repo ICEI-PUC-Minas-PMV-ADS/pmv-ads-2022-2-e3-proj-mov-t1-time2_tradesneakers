@@ -77,3 +77,21 @@ As tabelas abaixo demonstram cada caso de teste:
 <tr><th>Critérios de Êxito</th>	
   <th>•	Usuário deve ser capaz de visualizar os detalhes do produto selecionado na tela de busca de produtos após clicar no botão "ver detalhes" e ser redirecionado a página de visualizar o produto.</th></tr>
   </table>
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT-06 – Realizar troca de mensagens com outro usuário na plataforma</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a usabilidade da funcionalidade de troca de mensagens entre usuários na plataforma</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - Dois usuários realizam login na plataforma conforme descrito no CT-02.<br>
+ 2- O primeiro usuário clica no icone de conversas presente no canto esquerdo do cabeçalho.<br>
+ 3- O primeiro usuário clica em "Nova conversa" e seleciona o segundo usuário na lista.<br>
+ 4- O primeiro usuário escreve sua mensagem e clica no botão "Enviar".<br>
+ 5- O segundo usuário clica no icone de conversas presente no canto esquerdo do cabeçalho.<br>
+ 6- O segundo usuário visualiza a conversa recém criada entre ele e o primeiro usuário e clica nela.<br>
+ 7- O segundo usuário visualiza a mensagem recebida e responde com outra mensagem.<br>
+ 8- O primeiro usuário recebe a mensagem do segundo usuário.</th></tr>
+<tr><th>Critérios de Êxito</th>	
+  <th>•	Usuários devem ser capazes de iniciar uma nova conversa e trocar mensagens entre si.</th></tr>
+  </table>
