@@ -604,7 +604,7 @@ As informações sobre o produto selecionado na tela HomePage são recuperadas e
       "nome": "Tênis Air Jordan Cinza",
       "tamanho": 40,
       "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "descricao" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 85.5,
     },
 
