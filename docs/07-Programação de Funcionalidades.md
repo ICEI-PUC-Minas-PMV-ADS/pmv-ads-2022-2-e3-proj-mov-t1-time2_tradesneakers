@@ -592,39 +592,21 @@ Nesta seção se encontra a documentação das funcionalidades progamadas pelo m
 A tela de Homepage e a tela inicial do app onde ficara disponivel para o usario alguns dos produtos disponiveis no app para a compra e troca, onde o usuario pderar selicionar uns do tenis e ira ser redirecionado para a pagina do produto
 
 **Tela homepage**<br>
-![atualizardados1](./img/telaHomePage.png)
+![atualizardados1](./img/tela-home.png)
 
 
 Estrutura de dados: 
 As informações sobre o produto selecionado na tela HomePage são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
 ```
-   const DATA = [
-  
-  {
-    id: 1,
-    nome: 'nike air jordan',
-  },
-  {
-    id: 2,
-    nome: 'nike air force',
-  },
-  {
-    id: 3,
-    nome: 'nike air max',
-  },
-  {
-    id: 4,
-    nome: 'nike air jordan 4',
-  },
-  {
-    id: 4,
-    nome: 'nike shok',
-  },
-   {
-    id: 4,
-    nome: 'yeez',
-  }
-];
+   produtos: 
+    {
+      "id": 1,
+      "nome": "Tênis Air Jordan Cinza",
+      "tamanho": 40,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 85.5,
+    },
 
 ```
 
