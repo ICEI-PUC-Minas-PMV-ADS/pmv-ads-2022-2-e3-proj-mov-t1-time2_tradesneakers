@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
   StyleSheet,
@@ -7,103 +7,97 @@ import {
   ScrollView,
   SafeAreaView,
   FlatList,
+  Animated,
+  ImageBackground,
 } from 'react-native';
 import { List, Text } from 'react-native-paper';
+
 import Header from '../components/Header';
 import BottomNavigation from '../components/BottomNavigation';
 
 import Colors from '../config/Colors';
+import CardProduto from '../components/CardProduto';
+import { getProdutos } from '../services/produtos.services';
 
-const image = [
-  'https://cdn.pixabay.com/photo/2012/12/21/10/07/sneakers-71623_960_720.jpg',
-  'https://cdn.pixabay.com/photo/2019/01/26/22/48/nike-3957127_960_720.jpg',
-  'https://cdn.pixabay.com/photo/2020/07/15/18/27/sneakers-5408646_960_720.jpg',
-];
+const images = Array(
+  'https://scontent.fplu9-1.fna.fbcdn.net/v/t39.30808-6/305928419_445437100935973_6314165265230874171_n.png?stp=dst-png_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=UbAzPBSn_jAAX94VvQ_&_nc_ht=scontent.fplu9-1.fna&oh=00_AfAcxeNJvWLHLXg-Qxt23RFn1ih2-1PxbwIwMqf0cWnPDQ&oe=636DCDBD',
+  'https://gladius.vteximg.com.br/arquivos/ids/188175/BANNERS-CATEGORIASCAL%C3%87ADOS.png?v=637572066112430000'
+);
 
-const WIDTH = Dimensions.get('window').width;
-const HEIGTH = Dimensions.get('window').height;
-
-const DATA = [
-  {
-    id: 1,
-    nome: 'nike air jordan',
-  },
-  {
-    id: 2,
-    nome: 'nike air force',
-  },
-  {
-    id: 3,
-    nome: 'nike air max',
-  },
-  {
-    id: 4,
-    nome: 'nike air jordan 4',
-  },
-  {
-    id: 4,
-    nome: 'nike shok',
-  },
-   {
-    id: 4,
-    nome: 'yeez',
-  }
-];
-
-const HomePage = () => {
+const HomePage = ({ route }) => {
   const [imgActive, setimgActive] = useState(0);
+  const [produtos, setProdutos] = useState([]);
 
-  onchange = (nativeEvent) => {
-    if (nativeEvent) {
-      const slide = Math.ceil(
-        nativeEvent.contentOffset.x / nativeEvent.layoutMeasurement.width
-      );
-      if (slide != imgActive) {
-        setimgActive(slide);
-      }
-    }
+  const scrollX = useRef(new Animated.Value(0)).current;
+  const WIDTH = Dimensions.get('window').width;
+
+  useEffect(() => {
+    getProdutos().then((dados) => {
+      setProdutos(dados);
+    });
+  }, []);
+
+  const renderItem = ({ item }) => {
+    return <CardProduto passarProduto={item} />;
   };
 
   return (
     <View style={styles.homePage}>
       <Header />
-      <View style={styles.car}>
-        <ScrollView
-          onScroll={({ nativeEvent }) => onchange(nativeEvent)}
-          showsHorizontalScrollIndicator={false}
-          pagingEnabled
-          horizontal
-          style={styles.car}>
-          {image.map((e, index) => (
-            <Image
-              key={e}
-              resizeMode="stretch"
-              style={styles.car}
-              source={{ uri: e }}
-            />
-          ))}
-        </ScrollView>
-        <View style={styles.carDot}>
-          {image.map((e, index) => (
-            <Text
-              key={e}
-              style={imgActive == index ? styles.dotActive : styles.dot}>
-              ●
-            </Text>
-          ))}
+      <SafeAreaView style={styles.container}>
+        <View style={styles.scrollContainer}>
+          <ScrollView
+            horizontal={true}
+            pagingEnabled
+            showsHorizontalScrollIndicator={false}
+            onScroll={Animated.event([
+              {
+                nativeEvent: {
+                  contentOffset: {
+                    x: scrollX,
+                  },
+                },
+              },
+            ])}
+            scrollEventThrottle={1}>
+            {images.map((image, imageIndex) => {
+              return (
+                <View style={{ width: WIDTH, height: '100%' }} key={imageIndex}>
+                  <ImageBackground
+                    source={{ uri: image }}
+                    style={styles.card}></ImageBackground>
+                </View>
+              );
+            })}
+          </ScrollView>
         </View>
+        <View style={styles.indicatorContainer}>
+          {images.map((image, imageIndex) => {
+            const width = scrollX.interpolate({
+              inputRange: [
+                WIDTH * (imageIndex - 1),
+                WIDTH * imageIndex,
+                WIDTH * (imageIndex + 1),
+              ],
+              outputRange: [8, 16, 8],
+              extrapolate: 'clamp',
+            });
+            return (
+              <Animated.View
+                key={imageIndex}
+                style={[styles.normalDot, { width }]}
+              />
+            );
+          })}
+        </View>
+      </SafeAreaView>
+      <View style={styles.catalogo}>
+        <FlatList
+          data={produtos}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+        />
       </View>
-
-      <FlatList
-        showsVerticalScrollIndicator={false}
-        data={DATA}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <View style={styles.catalogo}>
-            <Text style= {styles.catalogotext}>{item.nome}</Text>
-          </View>
-        )}
-      />
 
       <BottomNavigation currentBottomNavigationTabIndex={0} />
     </View>
@@ -116,40 +110,38 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.backgroundColor,
     flex: 1,
   },
-  car: {
-    width: WIDTH,
-    height: HEIGTH * 0.25,
-  },
-  carDot: {
-    position: 'absolute',
-    bottom: 0,
-    flexDirection: 'row',
-    alignSelf: 'center',
-  },
-  dotActive: {
-    margin: 3,
-    color: 'black',
-  },
-  dot: {
-    magin: 3,
-    color: 'white',
-  },
   catalogo: {
-    backgroundColor: '#A9A9A9',
-    height: 80,
-    margin: 5,
-    width: Dimensions.get('window').width * 0.95,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 10
-    ,
+    flex: 1,
   },
-  catalogotext: {
-    fontWeight: 'bold',
-    fontSize: 20
-   
-  }
+  container: {
+    alignItems: 'center',
+  },
+  scrollContainer: {
+    height: 160,
+    alignItems: 'center',
+  },
+  card: {
+    flex: 1,
+    marginVertical: 4,
+    overflow: 'hidden',
+    alignItems: 'center',
+    padding: 15,
 
+  },
+
+  normalDot: {
+    height: 8,
+    width: 8,
+    borderRadius: 4,
+    backgroundColor: 'black',
+    marginHorizontal: 4,
+  },
+  indicatorContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 15,
+    justifyContent: 'center',
+  },
 });
 
 export default HomePage;
