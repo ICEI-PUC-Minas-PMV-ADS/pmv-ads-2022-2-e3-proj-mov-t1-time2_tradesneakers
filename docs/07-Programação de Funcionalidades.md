@@ -626,3 +626,28 @@ Componentes:
 - Visualizar a tela inicial do aplicativo;
 - Clicar em no produto desejado;
 - sera encaminhado para a page do produto desejado;
+
+# Funcionalidades progamadas por Denio Gonçalves de Lima
+
+Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Denio Gonçalves de Lima
+
+## Vídeo de apresentação explicando as funcionalidades:
+
+
+## tela de numeração 
+A tela de numeração e a tela onde ficara disponivel a numeração disponivel dos tênis para o usuario avaliar qual sera a sua.
+
+**Tela de numeração**<br>
+![atualizardados1](./img/Tela-numeracao.jpeg)
+
+
+### Requisitos atendidos
+- Nessa tela nao se encaixa em nenhum requisito, sendo somente uma tela de numeração.
+
+### Artefatos da funcionalidade
+Página:
+- ShoeNumbering.js
+
+Componentes:
+- Header.js
+
