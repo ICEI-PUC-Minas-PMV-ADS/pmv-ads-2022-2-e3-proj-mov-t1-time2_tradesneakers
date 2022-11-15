@@ -1,10 +1,13 @@
 {
   "users": [
     {
-      "email": "a@a.com",
-      "password": "$2a$10$/JrNm4sdi6gKOxSZpbQGFuyf.u4bnQ5M71J8uxAEqaUpAWyd7kQgm",
-      "name": "a",
-      "id": 1
+      "id": 1,
+      "name": "talles.gois",
+      "email": "talles@talles.com",
+      "phone": "31988884444",
+      "firstname": "talles",
+      "lastname": "gois",
+      "password": "$2a$10$VUKUbfMEOLqQikcS/UCeoOEyzHSGvMlnvoCTiNUGLE0zW6bNu.MWq"
     },
     {
       "email": "b@b.com",
@@ -430,6 +433,15 @@
       "dateSentInTicks": 1666368813794,
       "messageHasBeenSeen": false,
       "id": 35
+    },
+    {
+      "message": "oi",
+      "authorId": 1,
+      "destinataryId": 14,
+      "dateSent": "Nov 15 2022 15:15:20",
+      "dateSentInTicks": 1668536120697,
+      "messageHasBeenSeen": false,
+      "id": 36
     }
   ],
   "produtos": [

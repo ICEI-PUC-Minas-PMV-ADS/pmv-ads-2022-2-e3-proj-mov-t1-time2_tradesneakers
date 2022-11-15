@@ -87,6 +87,13 @@ const Main = () => {
           header: () => null,
         }}
         />
+        <Stack.Screen
+        name="AccountOptionsPage"
+        component={AccountOptionsPage}
+        options={{
+          header: () => null,
+        }}        
+        />
       </Stack.Navigator>
   );
 };
