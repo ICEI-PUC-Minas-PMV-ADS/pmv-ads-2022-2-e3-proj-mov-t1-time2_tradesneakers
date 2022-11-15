@@ -19,8 +19,8 @@ const InfoUpdatePage = ({navigation}) => {
   const [nomeDeUsuario, setNomeDeUsuario] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
-  const [senha, setSenha] = useState("******");
-  const [repetirSenha, setRepetirSenha] = useState("******");
+  const [senha, setSenha] = useState("");
+  const [repetirSenha, setRepetirSenha] = useState("");
   const [primeiroNome, setPrimeiroNome] = useState("");
   const [sobrenome, setSobrenome] = useState("");
   const [cep, setCep] = useState("");
@@ -32,11 +32,7 @@ const InfoUpdatePage = ({navigation}) => {
   const {userId} = useUser();
 
   useEffect(() => {
-    getUser(userId).then(response => { setNomeDeUsuario(response.name) });
-    getUser(userId).then(response => { setTelefone(response.phone) });
-    getUser(userId).then(response => { setEmail(response.email) });
-    getUser(userId).then(response => { setPrimeiroNome(response.firstname) });
-    getUser(userId).then(response => { setSobrenome(response.lastname) });
+    getUser(userId).then(response => {  setNomeDeUsuario(response.name), setTelefone(response.phone), setEmail(response.email), setPrimeiroNome(response.firstname), setSobrenome(response.lastname) });
   }, []);
 
   const handleupdateUsers = () =>  {
@@ -75,7 +71,7 @@ const InfoUpdatePage = ({navigation}) => {
         password: senha
       }).then( res => {
             if(res){
-              Alert.alert('Atenção', 'Usuário Cadastrado com sucesso!',[
+              Alert.alert('Atenção', 'Dados atualizados com sucesso!',[
                 { text: "OK", onPress: () => navigation.goBack() }
               ]);
             }
@@ -94,7 +90,6 @@ const InfoUpdatePage = ({navigation}) => {
     }
   }
 
-
   return (
     <View style = {styles.updateUsersPage}>
       <Header
@@ -102,8 +97,9 @@ const InfoUpdatePage = ({navigation}) => {
       />
       <View style={styles.updateUsersPageContainer}>
       <Text style={{fontSize: 24, marginBottom: 16}}>
-        Atualizar Informações
+        Atualizar Dados
       </Text>
+
       <TextInput
       style={styles.updateUsersTextInput}
       label="Nome de usuário"
@@ -177,7 +173,7 @@ const InfoUpdatePage = ({navigation}) => {
       label="CEP"
       value={cep}
       mode= {"outlined"}
-      left={<TextInput.Icon name="" />}
+      left={<TextInput.Icon name="target" />}
       onChangeText={cep => setCep(cep)}
     />
     <TextInput
@@ -185,7 +181,7 @@ const InfoUpdatePage = ({navigation}) => {
       label="Logradouro"
       value={logradouro}
       mode= {"outlined"}
-      left={<TextInput.Icon name="" />}
+      left={<TextInput.Icon name="target" />}
       onChangeText={logradouro => setLogradouro(logradouro)}
     />
     <TextInput
@@ -193,7 +189,7 @@ const InfoUpdatePage = ({navigation}) => {
       label="Cidade"
       value={cidade}
       mode= {"outlined"}
-      left={<TextInput.Icon name="" />}
+      left={<TextInput.Icon name="target" />}
       onChangeText={cidade => setCidade(cidade)}
     />
     <TextInput
@@ -201,7 +197,7 @@ const InfoUpdatePage = ({navigation}) => {
       label="Estado"
       value={estado}
       mode= {"outlined"}
-      left={<TextInput.Icon name="" />}
+      left={<TextInput.Icon name="target" />}
       onChangeText={estado => setEstado(estado)}
     />
     <TextInput
@@ -209,7 +205,7 @@ const InfoUpdatePage = ({navigation}) => {
       label="País"
       value={pais}
       mode= {"outlined"}
-      left={<TextInput.Icon name="" />}
+      left={<TextInput.Icon name="target" />}
       onChangeText={pais => setPais(pais)}
     />
 
