@@ -20,8 +20,8 @@ import CardProduto from '../components/CardProduto';
 import { getProdutos } from '../services/produtos.services';
 
 const images = Array(
-  'https://scontent.fplu9-1.fna.fbcdn.net/v/t39.30808-6/305928419_445437100935973_6314165265230874171_n.png?stp=dst-png_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=UbAzPBSn_jAAX94VvQ_&_nc_ht=scontent.fplu9-1.fna&oh=00_AfAcxeNJvWLHLXg-Qxt23RFn1ih2-1PxbwIwMqf0cWnPDQ&oe=636DCDBD',
-  'https://gladius.vteximg.com.br/arquivos/ids/188175/BANNERS-CATEGORIASCAL%C3%87ADOS.png?v=637572066112430000'
+  'https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/main/docs/img/tenis.baner.jpg',
+  'https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/main/docs/img/BANNERS-CATEGORIASCAL%C3%87ADOS.png'
 );
 
 const HomePage = ({ route }) => {
@@ -31,9 +31,16 @@ const HomePage = ({ route }) => {
   const scrollX = useRef(new Animated.Value(0)).current;
   const WIDTH = Dimensions.get('window').width;
 
-  useEffect(() => {
+ useEffect(() => {
     getProdutos().then((dados) => {
-      setProdutos(dados);
+      let todosOsProdutos = dados;
+      let produtosSelecionados = [];
+      for (let i = 0; i < 4; i++) {
+        let produtoAleatorioIndex = Math.floor(Math.random() * todosOsProdutos.length);
+        produtosSelecionados.push(todosOsProdutos[produtoAleatorioIndex]);
+        todosOsProdutos.splice(produtoAleatorioIndex, 1);
+      }            
+      setProdutos(produtosSelecionados);
     });
   }, []);
 
@@ -111,7 +118,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   catalogo: {
+    width: '100%',
+    padding: 10,
+    height: '100%',
     flex: 1,
+    marginBottom: 50,
   },
   container: {
     alignItems: 'center',
@@ -126,7 +137,6 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     alignItems: 'center',
     padding: 15,
-
   },
 
   normalDot: {
