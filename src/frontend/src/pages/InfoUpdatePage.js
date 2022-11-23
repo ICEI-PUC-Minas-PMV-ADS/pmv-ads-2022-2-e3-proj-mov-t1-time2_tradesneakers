@@ -32,7 +32,7 @@ const InfoUpdatePage = ({navigation}) => {
   const {userId} = useUser();
 
   useEffect(() => {
-    getUser(userId).then(response => {  setNomeDeUsuario(response.name), setTelefone(response.phone), setEmail(response.email), setPrimeiroNome(response.firstname), setSobrenome(response.lastname) });
+    getUser(userId).then(response => {  setNomeDeUsuario(response.name), setTelefone(response.phone), setEmail(response.email), setPrimeiroNome(response.firstname), setSobrenome(response.lastname), setCep(response.postalCode), setCidade(response.city), setEstado(response.state), setPais(response.country) });
   }, []);
 
   const handleupdateUsers = () =>  {
@@ -60,6 +60,26 @@ const InfoUpdatePage = ({navigation}) => {
       informacoesSaoValidas = false;  
       Alert.alert('Atenção','Inserir um email válido!');
     }
+    if (cep.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 0) {
+      informacoesSaoValidas = false;  
+      Alert.alert('Atenção','Inserir cep valido!');
+    }
+    if (logradouro.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 0) {
+      informacoesSaoValidas = false;  
+      Alert.alert('Atenção','Inserir logradouro valido!');
+    }
+    if (cidade.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 0) {
+      informacoesSaoValidas = false;  
+      Alert.alert('Atenção','Inserir cidade valida!');
+    }
+    if (estado.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 2) {
+      informacoesSaoValidas = false;  
+      Alert.alert('Atenção','Inserir estado valida!');
+    }
+    if (pais.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 0) {
+      informacoesSaoValidas = false;  
+      Alert.alert('Atenção','Inserir país valida!');
+    }
     if (informacoesSaoValidas) {
       updateUsers({
         id:userId,
@@ -68,7 +88,12 @@ const InfoUpdatePage = ({navigation}) => {
         phone: telefone,
         firstname: primeiroNome,
         lastname: sobrenome,
-        password: senha
+        password: senha,
+        postalCode: cep,
+        publicPlace: logradouro,
+        city: cidade,
+        state: estado,
+        country: pais
       }).then( res => {
             if(res){
               Alert.alert('Atenção', 'Dados atualizados com sucesso!',[
@@ -81,7 +106,7 @@ const InfoUpdatePage = ({navigation}) => {
                 Alert.alert('Atenção', 'Email já cadastrado!');
               }
               else {
-                Alert.alert('Atenção', "Um erro ocorreu durante o cadastro!");
+                Alert.alert('Atenção', "Um erro ocorreu durante ao atualizar seus dados!");
               }       
             }
           );     
