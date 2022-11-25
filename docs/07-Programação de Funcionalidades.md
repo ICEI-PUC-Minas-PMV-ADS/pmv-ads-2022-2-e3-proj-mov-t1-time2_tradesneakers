@@ -279,11 +279,55 @@ Como o JSON server é um backend simulado que não permite operações mais comp
 ```
 "users": [
     {
-      "email": "Usuario@email.com",
-      "password": "$2a$10$adRRvEnLyMsJSPuAWA2bwenACnDlQCqKfVbCzuUrxjVoEbTtY8tTa",
-      "name": "Usuario",
+      "id": 1,
+      "name": "a",
+      "email": "a@a.com",
+      "phone": "534543534534534",
+      "firstname": "aa",
+      "lastname": "aaa",
+      "password": "$2a$10$mKMX9zbThmYgQiKj10erguWEm2XRLuICBsadUk2OZx5hM8w3i9Njq",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
+    },
+    {
+      "id": 2,
+      "name": "b",
+      "email": "b2@b.com",
       "phone": "99999999",
-      "id": 15
+      "firstname": "b",
+      "lastname": "b",
+      "password": "$2a$10$SB1HiyPF3nKOJJZxtNNnmefFolKWHEg8/SfklxY57bdO2.sqMHYH2",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
+    },
+    {
+      "id": 3,
+      "name": "ddd",
+      "email": "d@d.com",
+      "phone": "3423423423423",
+      "password": "$2a$10$.8txYgJ9t3XiFy0CSYco7u0n43I3tuBrMvpsQO/CelzPTLO2XVXi6",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
+    },
+    {
+      "email": "f@f.com",
+      "password": "$2a$10$sqmJ.2SDLzP7zLumWU2TWe5CFdlH7laJh.3.usC8pUdVRpDBihibm",
+      "name": "f",
+      "id": 4,
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
     },
 ]
 ```
@@ -324,29 +368,55 @@ A tela em questão recupera as informações dos usuários do backend, mostrando
 ```
   "users": [
     {
-      "email": "a@a.com",
-      "password": "$2a$10$/JrNm4sdi6gKOxSZpbQGFuyf.u4bnQ5M71J8uxAEqaUpAWyd7kQgm",
+      "id": 1,
       "name": "a",
-      "id": 1
+      "email": "a@a.com",
+      "phone": "534543534534534",
+      "firstname": "aa",
+      "lastname": "aaa",
+      "password": "$2a$10$mKMX9zbThmYgQiKj10erguWEm2XRLuICBsadUk2OZx5hM8w3i9Njq",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
     },
     {
-      "email": "b@b.com",
-      "password": "$2a$10$EO69.Bu0HC7u4v9MIHvRMu6HTMrdGvAjBVRDPEh7Y9Gv5DR9Ezwzq",
+      "id": 2,
       "name": "b",
-      "id": 2
+      "email": "b2@b.com",
+      "phone": "99999999",
+      "firstname": "b",
+      "lastname": "b",
+      "password": "$2a$10$SB1HiyPF3nKOJJZxtNNnmefFolKWHEg8/SfklxY57bdO2.sqMHYH2",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
     },
     {
       "id": 3,
       "name": "ddd",
       "email": "d@d.com",
       "phone": "3423423423423",
-      "password": "$2a$10$.8txYgJ9t3XiFy0CSYco7u0n43I3tuBrMvpsQO/CelzPTLO2XVXi6"
+      "password": "$2a$10$.8txYgJ9t3XiFy0CSYco7u0n43I3tuBrMvpsQO/CelzPTLO2XVXi6",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
     },
     {
       "email": "f@f.com",
       "password": "$2a$10$sqmJ.2SDLzP7zLumWU2TWe5CFdlH7laJh.3.usC8pUdVRpDBihibm",
       "name": "f",
-      "id": 4
+      "id": 4,
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
     },
   ]
 ```
@@ -376,7 +446,7 @@ Serviços:
 ## Tela de troca de mensagens (RF-04)
 A tela de troca de mensagens poderá ser acessada ao iniciar ou continuar uma conversa com um usuário específico. Esta tela poderá ser acessada tanto da tela de visualizar conversas (para continuar uma conversa já iniciada) quanto da tela de iniciar conversa (para iniciar uma nova conversa), futuramente poderá se iniciar uma conversa também da tela de visualizar produto (que ainda não está completamente implementada). Esta tela consiste em um chat entre dois usuários, o usuário logado e o usuário com o qual este deseja conversar, onde o usuário poderá compor e enviar mensagens de texto para serem lidas pelo outro usuário. Ao enviar uma nova mensagem, ela será adicionada à conversa com a data de envio e o status de visualização (se foi ou não visualizada pelo destinatário). 
 
-**Tela - Tela de troca de mensages**<br>
+**Tela - Tela de troca de mensagens**<br>
 ![viewChatPage](https://user-images.githubusercontent.com/74699119/198853827-eb568912-5702-4e8a-91bb-4e7cf32ffd5f.png)
 
 Estrutura de dados:
@@ -476,6 +546,83 @@ Serviços:
 - Digitar uma mensagem na caixa de texto presente no canto inferior da tela e clicar no icone de enviar;
 - Visualizar a tela de troca de mensagens contendo a nova mensagem enviada;
 - Caso queira testar a visualização de mensagens e o envio de mensagens pelo outro usuário, fazer login na conta do usuário para o qual a mensagem foi enviada e repetir o mesmo processo;
+
+## Tela de compra de produto (RF-05)
+A tela de compra de produto poderá ser acessada ao clicar na opção "comprar" presente na tela de visualizar detalhes do produto. Ao entrar nessa tela, o usuário poderá tanto optar por usar um endereço préviamente cadastrado em sua conta como informar um novo endereço. Ele deverá também informar as informações de seu cartão de crédito para realizar a compra (que é um processo simulado, de modo que o usuário pode preencher qualquer número de 16 dígitos como número do cartão de crédito sem que ocorra uma operação real naquele número). Ao finalizar o preenchimento de todas as informações o usuário deverá clicar no botão "comprar no final da página para efetuar a compra.
+
+**Tela - Tela de compra de produto**<br>
+![comprar2](https://user-images.githubusercontent.com/74699119/204044594-6cb4f245-bcee-41ff-82c9-7aa547d7da72.png)
+
+**Tela - Tela de compra de produto - Informar outro endereço**<br>
+![comprar3](https://user-images.githubusercontent.com/74699119/204044598-a27cc7e4-b15b-47cf-b60f-42d820b9e4ca.png)
+
+**Tela - Tela de compra de produto - Informações preenchidas**<br>
+![comprar4](https://user-images.githubusercontent.com/74699119/204044604-71d18e1e-adf0-4bb2-aeca-c11f11451527.png)
+
+**Tela - Compra realizada com sucesso**<br>
+![comprar5](https://user-images.githubusercontent.com/74699119/204044609-19c25c72-3375-4500-bc84-b1a6538a21b0.png)
+
+Estrutura de dados:
+As informações relativas ao produto que está sendo comprado são recuperadas do backend simulado em JSON server sob a seguinte estrutura de dados:
+
+```
+    {
+      "id": 1,
+      "nome": "Tênis Air Jordan Cinza",
+      "tamanho": 40,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 85.5,
+    }
+```
+Recupera-se também as informações do usuário, visando obter o endereço padrão do mesmo. Essas informações são recuperadas na seguinte estrutura de dados:
+
+```
+    {
+      "id": 1,
+      "name": "a",
+      "email": "a@a.com",
+      "phone": "534543534534534",
+      "firstname": "aa",
+      "lastname": "aaa",
+      "password": "$2a$10$mKMX9zbThmYgQiKj10erguWEm2XRLuICBsadUk2OZx5hM8w3i9Njq",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
+    }
+```
+
+### Requisitos atendidos
+- RF-05
+
+### Artefatos da funcionalidade
+Páginas:
+- BuyProductPage.js
+
+Componentes:
+- Header.js
+
+Serviços:
+- auth.services.js
+- produtos.services.js
+- orders.services.js
+- messages.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Clicar em "Buscar" no menu de navegação inferior;
+- Visualizar a tela de busca de produtos;
+- Inserir o texto na caixa de busca presente no topo da tela para realizar a busca;
+- Caso deseje filtrar os resultados da busca pela numeração do tênis, selecionar um tamanho na caixa de seleção presente ao lado de "Filtrar por tamanho";
+- Visualizar resultados da busca do produto selecionado;
+- Selecionar o produto desejado e clicar no botão "Ver Detalhes";
+- Visualizar tela de detalhes do produto;
+- Clicar em "Comprar";
+- Visualizar tela de compra de produto;
+- Preencher os dados solicitados e clicar em "comprar" para finalizar a compra;
+- Visualizar homepage e a mensagem de "Pagamento efetuado com sucesso!"
 
 # Funcionalidades progamadas por Álvaro Alfaya Fonseca
 
