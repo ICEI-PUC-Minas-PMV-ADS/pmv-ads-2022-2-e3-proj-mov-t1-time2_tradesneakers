@@ -7,7 +7,7 @@ import Colors from '../config/Colors';
 
 import { getProduto } from '../services/produtos.services';
 
-const ProductDetailsPage = ({ route }) => {
+const ProductDetailsPage = ({ route, navigation }) => {
   const [produto, setProduto] = useState();
   const [produtoLoaded, setProdutoLoaded] = useState(false);
   const produtoId = 1;
@@ -20,7 +20,9 @@ const ProductDetailsPage = ({ route }) => {
 
   const handleTrocar = () => {};
 
-  const handleComprar = () => {};
+  const handleComprar = () => {
+    navigation.navigate("BuyProductPage", {produtoId: produtoId});
+  };
 
   useEffect(() => {
     getProduto(produtoId).then((response) => {
