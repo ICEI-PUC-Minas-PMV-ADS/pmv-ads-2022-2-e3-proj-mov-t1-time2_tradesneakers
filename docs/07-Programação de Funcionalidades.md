@@ -154,6 +154,8 @@ Obs: Como não possuímos um serviço de armazenamento separado para hospedar as
       "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 85.5,
+      "marca": "Nike",
+      "idUsuario": 1
     },
     {
       "id": 2,
@@ -162,6 +164,8 @@ Obs: Como não possuímos um serviço de armazenamento separado para hospedar as
       "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QAA...",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 90,
+      "marca": "Nike",
+      "idUsuario": 2
     },
     {
       "id": 3,
@@ -170,6 +174,8 @@ Obs: Como não possuímos um serviço de armazenamento separado para hospedar as
       "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 100,
+      "marca": "Vans",
+      "idUsuario": 3
     },
     {
       "id": 4,
@@ -178,6 +184,8 @@ Obs: Como não possuímos um serviço de armazenamento separado para hospedar as
       "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QA...",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 75,
+      "marca": "Converse",
+      "idUsuario": 4
     },
     {
       "id": 5,
@@ -186,6 +194,8 @@ Obs: Como não possuímos um serviço de armazenamento separado para hospedar as
       "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QA...",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 60,
+      "marca": "Adidas",
+      "idUsuario": 5
     },
     {
       "id": 6,
@@ -194,6 +204,8 @@ Obs: Como não possuímos um serviço de armazenamento separado para hospedar as
       "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlQAAAJSCAYAAAAFwVs0AAAAAXNSR0IArs4c6QA...",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 70,
+      "marca": "Puma",
+      "idUsuario": 6
     },
   ]
 ```
@@ -547,7 +559,7 @@ Serviços:
 - Visualizar a tela de troca de mensagens contendo a nova mensagem enviada;
 - Caso queira testar a visualização de mensagens e o envio de mensagens pelo outro usuário, fazer login na conta do usuário para o qual a mensagem foi enviada e repetir o mesmo processo;
 
-## Tela de compra de produto (RF-05)
+## Tela de compra de produto (RF-05, RF-07)
 A tela de compra de produto poderá ser acessada ao clicar na opção "comprar" presente na tela de visualizar detalhes do produto. Ao entrar nessa tela, o usuário poderá tanto optar por usar um endereço préviamente cadastrado em sua conta como informar um novo endereço. Ele deverá também informar as informações de seu cartão de crédito para realizar a compra (que é um processo simulado, de modo que o usuário pode preencher qualquer número de 16 dígitos como número do cartão de crédito sem que ocorra uma operação real naquele número). Ao finalizar o preenchimento de todas as informações o usuário deverá clicar no botão "comprar no final da página para efetuar a compra.
 
 **Tela - Tela de compra de produto**<br>
@@ -596,6 +608,7 @@ Recupera-se também as informações do usuário, visando obter o endereço padr
 
 ### Requisitos atendidos
 - RF-05
+- RF-07
 
 ### Artefatos da funcionalidade
 Páginas:
@@ -608,7 +621,6 @@ Serviços:
 - auth.services.js
 - produtos.services.js
 - orders.services.js
-- messages.services.js
 
 ### Instruções de acesso
 - Visualizar a tela inicial do aplicativo;
@@ -623,6 +635,140 @@ Serviços:
 - Visualizar tela de compra de produto;
 - Preencher os dados solicitados e clicar em "comprar" para finalizar a compra;
 - Visualizar homepage e a mensagem de "Pagamento efetuado com sucesso!"
+
+## Tela de histórico de pedidos (RF-05)
+A tela de histórico de pedidos permite ao usuário atualmente logado visualizar um histórico de todas as compras e trocas que já realizou no sistema, bem como o status de processamento do pedido (que atualmente fica sempre em "processando" visto que o processo de compra e troca é apenas simulado e não se concretiza de fato). Essa tela poderá ser acessada através do menu de navegação inferior clicando no icone "Pedidos".
+
+**Tela - Tela de histórico de pedidos**<br>
+![historicoPedidos1](https://user-images.githubusercontent.com/74699119/204049222-70e9eeb7-41f4-47ed-9913-9178a821e821.png)
+
+Estrutura de dados:
+As informações relativas ao histórico de pedidos do usuário atualmente logado são recuperadas do backend simulado em JSON server sob a seguinte estrutura de dados:
+
+```
+  "orders": [
+    {
+      "produtoId": 1,
+      "buyerId": 1,
+      "cost": "115,50",
+      "cardNumber": "**** **** **** 999",
+      "address": "Rua X",
+      "datePurchase": "Nov 24 2022 22:12:48",
+      "datePurchaseInTicks": 1669338768195,
+      "status": "Em processamento",
+      "id": 7
+    },
+    {
+      "produtoId": 1,
+      "buyerId": 2,
+      "cost": "120,74",
+      "cardNumber": "**** **** **** 9999",
+      "address": "R, C, UF, P CEP: 99999999",
+      "datePurchase": "Nov 24 2022 22:27:38",
+      "datePurchaseInTicks": 1669339658512,
+      "status": "Em processamento",
+      "id": 12
+    },
+    {
+      "produtoId": 1,
+      "buyerId": 1,
+      "cost": "110,77",
+      "cardNumber": "**** **** **** 9999",
+      "address": "Rua X, Cidade X, XX, Brasil CEP: 99999999",
+      "datePurchase": "Nov 24 2022 22:59:11",
+      "datePurchaseInTicks": 1669341551302,
+      "status": "Em processamento",
+      "id": 13
+    },
+  ]
+```
+Recupera-se também as informações dos produtos, associando-as a cada pedido para que essas informações possam ser mostradas nos detalhes do pedido. Essas informações são recuperadas na seguinte estrutura de dados:
+
+```
+    produtos: [
+    {
+      "id": 1,
+      "nome": "Tênis Air Jordan Cinza",
+      "tamanho": 40,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 85.5,
+      "marca": "Nike",
+      "idUsuario": 1
+    },
+    {
+      "id": 2,
+      "nome": "Tênis Air Jordan Branco e Preto",
+      "tamanho": 38,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QAA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 90,
+      "marca": "Nike",
+      "idUsuario": 2
+    },
+    {
+      "id": 3,
+      "nome": "Tênis Vans Amarelo",
+      "tamanho": 36,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 100,
+      "marca": "Vans",
+      "idUsuario": 3
+    },
+    {
+      "id": 4,
+      "nome": "Tênis All Star Branco",
+      "tamanho": 42,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 75,
+      "marca": "Converse",
+      "idUsuario": 4
+    },
+    {
+      "id": 5,
+      "nome": "Tênis Adidas Preto",
+      "tamanho": 39,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 60,
+      "marca": "Adidas",
+      "idUsuario": 5
+    },
+    {
+      "id": 6,
+      "nome": "Tênis Puma Vermelho",
+      "tamanho": 37,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlQAAAJSCAYAAAAFwVs0AAAAAXNSR0IArs4c6QA...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 70,
+      "marca": "Puma",
+      "idUsuario": 6
+    },
+  ]
+```
+
+### Requisitos atendidos
+- RF-05
+
+### Artefatos da funcionalidade
+Páginas:
+- OrderHistoryPage.js
+
+Componentes:
+- Header.js
+
+Serviços:
+- auth.services.js
+- produtos.services.js
+- orders.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Fazer login com uma conta que já tenha comprado algum produto;
+- Clicar em "Pedidos" no menu de navegação inferior;
+- Visualizar a tela de histórico de pedidos para o usuário atualmente logado;
 
 # Funcionalidades progamadas por Álvaro Alfaya Fonseca
 
