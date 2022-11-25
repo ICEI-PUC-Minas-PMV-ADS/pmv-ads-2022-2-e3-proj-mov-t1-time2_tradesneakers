@@ -11,6 +11,7 @@ import ChatPage from '../pages/ChatPage';
 import NewChatPage from '../pages/NewChatPage';
 import ViewChatPage from '../pages/ViewChatPage';
 import InfoUpdatePage from '../pages/InfoUpdatePage';
+import BuyProductPage from '../pages/BuyProductPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -34,6 +35,13 @@ const Main = () => {
         <Stack.Screen
         name="PostProductPage"
         component={PostProductPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="BuyProductPage"
+        component={BuyProductPage}
         options={{
           header: () => null,
         }}
