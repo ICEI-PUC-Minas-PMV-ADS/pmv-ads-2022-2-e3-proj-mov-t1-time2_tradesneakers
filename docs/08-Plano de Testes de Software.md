@@ -1,15 +1,15 @@
 # Plano de Testes de Software
 Os requisitos para realização dos testes de software são:
 
-Antes da hospedagem do backend.
-- Visual Studio 2022 instalado para rodar o backend em JSON server de forma local;
-- Localtunnel instalado para expor a porta do backend para a internet;
-- Navegador da internet - Chrome, Firefox ou Edge, para acessar a aplicação no Snack.
-
-Após hospedagem do backend ser realizada.
+Utilizando o backend hospedado no heroku.
 - Backend publicado na internet (https://trade-sneakers-backend.herokuapp.com);
 - Navegador da internet - Chrome, Firefox ou Edge;
 - Conectividade de internet para acessar a aplicação no Snack.
+
+Caso deseje rodar o backend de forma local.
+- Visual Studio 2022 instalado para rodar o backend em JSON server de forma local;
+- Localtunnel instalado para expor a porta do backend para a internet;
+- Navegador da internet - Chrome, Firefox ou Edge, para acessar a aplicação no Snack.
 
 Por meio do plano de testes serão validados os requisitos para garantir o funcionamento adequado do programa. Permitindo garantir a confiabilidade e segurança do software e identificando erros e falhas durante o desenvolvimento.
  
