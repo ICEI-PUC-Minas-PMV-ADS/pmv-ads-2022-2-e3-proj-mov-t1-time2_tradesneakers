@@ -33,3 +33,13 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 |-------|-------------------------
 |Objetivo do teste| Verificar a funcionalidade de atualização de dados do usuário. |
 | Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 07     | CT 07 - Realizar compra de produto |
+|-------|-------------------------
+|Objetivo do teste| Verificar a funcionalidade de compra de produtos cadastrados na plataforma. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 08     | CT 08 - Visualizar histórico de compras/trocas de produtos |
+|-------|-------------------------
+|Objetivo do teste| Verificar a funcionalidade de visualização do histórico de pedidos dentro da plataforma. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
