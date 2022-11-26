@@ -87,3 +87,27 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
 <tr><th>Melhoria</th>	
   <th> Usuario sugeriu colocar um botão de dropdown no icone de conta de usuário com a opção logoff. </th></tr>
   </table>
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 08 - Realizar compra de produto</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de compra de produtos pelo usuário.</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram realizar a compra do produto desejado sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 09 - Visualizar histórico de pedidos</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>• Verificar a funcionalidade de visualização do histórico de pedidos pelo usuário.</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar o histórico de pedidos sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
