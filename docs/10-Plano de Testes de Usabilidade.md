@@ -109,3 +109,32 @@ As tabelas abaixo demonstram cada caso de teste:
 <tr><th>Critérios de Êxito</th>	
   <th>•	Após preencher todos os dados e clicar em confirmar os dados deverão ser alterados no banco de dados (db.json). <br>• A aplicação deve permitir que usuário faça o proximo login usando o novo e-mail e nova senha caso o usuário tenha alterado essas informações também.</th></tr>
   </table>
+  
+   <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 08 - Realizar compra de produto</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de compra de produtos pelo usuário.</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário seleciona o produto que deseja comprar, seja nas sugestões de produto da homepage ou buscando o produto na tela de busca conforme descrito no CT-03.<br>
+ 3- O usuário clica em "mais detalhes" no card do produto em questão e é redirecionado para a tela de detalhes do produto.<br>
+ 4- O usuário clica no botão "Comprar" e é redirecionado para a tela de comprar produto.<br>
+ 5- O usuário preenche os dados solicitados e clica em "Comprar"<br>
+ 6- O usuário visualiza a mensagem de "Pagamento efetuado com sucesso!".
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá ser capaz de realizar o processo de compra do produto desejado, obtendo uma mensagem de "Pagamento efetuado com sucesso!" ao fim do processo.</th></tr>
+  </table>
+     
+<table> 
+<tr><th>Caso de Teste </th>
+<th>CT-09 – Visualizar histórico de pedidos</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de visualização do histórico de pedidos pelo usuário.</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realizam login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário clica no icone de "pedidos" presente no menu de navegação inferior.<br>
+ 3- O usuário visualiza os pedidos realizados anteriormente por ele.
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá alcançar a página de histórico de pedidos e visualizar todos os pedidos realizados anteriormente por ele.</th></tr>
+  </table>
