@@ -7,8 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 const CardProduto = (props) => {
   const navigation = useNavigation();
   const produto = props.passarProduto;
-  const produtoId = 1;
-
+  
   const formatarPreco = (preco) => {
     preco = preco.toFixed(2).toString();
     preco = preco.replace('.', ',');
@@ -28,10 +27,7 @@ const CardProduto = (props) => {
       <Button
           style={styles.button}
           onPress={() =>
-            navigation.navigate('ProductDetailsPage', {
-              paramKey: produtoId,
-            })
-          }
+            navigation.navigate('ProductDetailsPage', {produtoId: produto.id})}
         >
         <Text style={{color: 'white', fontWeight: 'bold'}}>Mais detalhes</Text>
         </Button>
