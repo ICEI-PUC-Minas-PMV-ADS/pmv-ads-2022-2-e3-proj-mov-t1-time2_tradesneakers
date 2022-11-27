@@ -11,7 +11,10 @@ import ChatPage from '../pages/ChatPage';
 import NewChatPage from '../pages/NewChatPage';
 import ViewChatPage from '../pages/ViewChatPage';
 import InfoUpdatePage from '../pages/InfoUpdatePage';
+import ProductDetailsPage from '../pages/ProductDetailsPage';
 import BuyProductPage from '../pages/BuyProductPage';
+import LoginHistoryPage from '../pages/LoginHistoryPage';
+import AccountOptionsPage from '../pages/AccountOptionsPage'
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +31,13 @@ const Main = () => {
         <Stack.Screen
         name="SearchPage"
         component={SearchPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="ProductDetailsPage"
+        component={ProductDetailsPage}
         options={{
           header: () => null,
         }}
@@ -89,6 +99,13 @@ const Main = () => {
         }}
         />
         <Stack.Screen
+        name="AccountOptionsPage"
+        component={AccountOptionsPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
         name="InfoUpdatePage"
         component={InfoUpdatePage}
         options={{
@@ -96,11 +113,11 @@ const Main = () => {
         }}
         />
         <Stack.Screen
-        name="AccountOptionsPage"
-        component={AccountOptionsPage}
+        name="LoginHistoryPage"
+        component={LoginHistoryPage}
         options={{
           header: () => null,
-        }}        
+        }}
         />
       </Stack.Navigator>
   );
