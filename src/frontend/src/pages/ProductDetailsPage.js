@@ -8,9 +8,9 @@ import Colors from '../config/Colors';
 import { getProduto } from '../services/produtos.services';
 
 const ProductDetailsPage = ({ route, navigation }) => {
+  const { produtoId } = route.params? route.params : 0;
   const [produto, setProduto] = useState();
   const [produtoLoaded, setProdutoLoaded] = useState(false);
-  const produtoId = 1;
 
   const formatarPreco = (preco) => {
     preco = preco.toFixed(2).toString();
