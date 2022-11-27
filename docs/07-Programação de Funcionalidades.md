@@ -770,6 +770,59 @@ Serviços:
 - Clicar em "Pedidos" no menu de navegação inferior;
 - Visualizar a tela de histórico de pedidos para o usuário atualmente logado;
 
+## Tela de histórico de acesso (RF-01)
+A tela de histórico de acesso permite ao usuário visualizar todos os logins realizados no aplicativo em seu aparelho. Essa funcionalidade utiliza o banco de dados local SQLite, inserindo um novo registro contendo o nome do usuário que realizou login, bem como a data em que este login foi realizado toda a vez que algum usuário realiza login na aplicação. Por utilizar o SQLite, esses dados ficam armazenados diretamente no aparelho em que o login foi realizado, não estando disponíveis no banco de dados compartilhado que as demais funcionalidades utilizam.
+
+**Tela - Acesso a tela de histórico de acesso pela tela de opções da conta**<br>
+![historicoDeLogin1](https://user-images.githubusercontent.com/74699119/204116416-99fe4b35-d64e-4110-98de-d800e5888fc7.png)
+
+**Tela - Tela de histórico de acesso**<br>
+![historicoDeLogin2](https://user-images.githubusercontent.com/74699119/204116417-41e32594-0e87-4a65-b508-8fd3e31b176d.png)
+
+Estrutura de dados:
+As informações relativas ao histórico de acesso são guardadas no banco de dados local SQLite e recuperadas para serem mostradas na tela. Ao serem recuperadas, essas informações são obtidas como um array em formato JSON com a seguinte estrutura de dados contendo a data e o nome do usuário que realizou login nela:
+
+```
+  "[
+    {
+      "id": 1,
+      "usuario": "a",
+      "data": "Nov 26 2022 22:58:16"
+    },
+    {
+      "id": 2,
+      "usuario": "b",
+      "data": "Nov 26 2022 23:05:25"
+    },
+    {
+      "id": 3,
+      "usuario": "Fulano",
+      "data": "Nov 26 2022 23:04:24"
+    },
+  ]
+```
+### Requisitos atendidos
+- RF-01
+
+### Artefatos da funcionalidade
+Páginas:
+- LoginHistoryPage.js
+
+Componentes:
+- Header.js
+
+Serviços:
+- db.services.js
+- registroDeLogin.servicesDb.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Fazer login com uma conta que já tenha comprado algum produto;
+- Clicar no icone de usuário presente no lado direito de cabeçalho (onde a opção "Fazer login" estava antes do login);
+- Visualizar a tela de opções da conta;
+- Clicar em "Histórico de acesso";
+- Visualizar a tela de Histórico de acesso;
+
 # Funcionalidades progamadas por Álvaro Alfaya Fonseca
 
 Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Álvaro Alfaya Fonseca, bem como o vídeo de apresentação explicando o processo de implementação das mesmas.
