@@ -132,9 +132,24 @@ As tabelas abaixo demonstram cada caso de teste:
 <tr><th>Objetivo do teste</th>
   <th>•	Verificar a funcionalidade de visualização do histórico de pedidos pelo usuário.</th></tr>
 <tr><th>Ações esperadas</th>
-  <th>1 - O usuário realizam login na plataforma conforme descrito no CT-02.<br>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
  2- O usuário clica no icone de "pedidos" presente no menu de navegação inferior.<br>
  3- O usuário visualiza os pedidos realizados anteriormente por ele.
 <tr><th>Critérios de Êxito</th>	
   <th>•	O usuário deverá alcançar a página de histórico de pedidos e visualizar todos os pedidos realizados anteriormente por ele.</th></tr>
+  </table>
+
+ <table> 
+<tr><th>Caso de Teste </th>
+<th>CT-010 – Visualizar histórico de acesso do usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de visualização do histórico de acesso pelo usuário.</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário clica no icone de "usuário" presente no canto direito do cabeçalho (onde a opção "Fazer login" estava antes do login).<br>
+ 3- O usuário visualiza a tela de opções da conta.
+ 4- O usuário clica em "Histórico de acesso".
+ 5- O usuário visualiza seu histórico de acesso na aplicação.
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá alcançar a página de histórico de acesso e visualizar os logins realizados anteriormente por ele (incluindo o realizado durante esse teste).</th></tr>
   </table>
