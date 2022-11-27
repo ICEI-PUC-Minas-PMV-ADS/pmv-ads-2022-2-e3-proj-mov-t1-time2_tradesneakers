@@ -43,3 +43,9 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 |-------|-------------------------
 |Objetivo do teste| Verificar a funcionalidade de visualização do histórico de pedidos dentro da plataforma. |
 | Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 09     | CT 09 - Visualizar histórico de acesso do usuário |
+|-------|-------------------------
+|Requisitos Associados | RF-01: Disponibilizar um sistema de login e autenticação, onde o usuário poderá criar uma conta com dados válidos e realizar login.
+|Objetivo do teste| Verificar a funcionalidade de registro dos logins do usuário no histórico de acesso da aplicação. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
