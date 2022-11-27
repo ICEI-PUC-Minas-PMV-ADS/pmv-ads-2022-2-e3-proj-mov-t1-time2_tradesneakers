@@ -26,7 +26,10 @@ de forma segura, rápida e fácil,fazendo um bom ambiente de interação.
 
 ## Instruções de utilização
 
-Como o backend do projeto ainda não se encontra hospedado, o usuário que deseja utilizar a aplicação na versão atual deverá rodar o JSON Server em seu próprio computador através dos seguintes passos:
+Como o backend do projeto agora encontra-se hospedado no endereço https://trade-sneakers-backend.herokuapp.com, a instalação local da aplicação não é necessária, podendo-se apenas acessar o frontend no link https://snack.expo.dev/@sergiomenezes/tradesneakers. Como as aplicações hospedadas no Heroku ficam inativas caso fiquem muito tempo sem serem acessadas, é interessante visitar o link https://trade-sneakers-backend.herokuapp.com antes de rodar a aplicação para reativa-la.
+
+Caso deseje rodar o backend da aplicação localmente, seguir os seguintes passos:
+
 - Fazer download do arquivo db.json presente na pasta https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/tree/main/src/backend.
 - Colocar o arquivo em um diretório e abrir este diretório no VS Code.
 - Instalar as bibliotecas JSON Server e JSON Server auth utilizando os comandos "npm install -g json-server" e 
@@ -42,7 +45,6 @@ Após a realização destas etapas para rodar o backend, o usuário deverá aces
 - Caso deseje rodar a aplicação em um dispositivo físico, baixar o aplicativo "Expo Go" na App Store/Apple Store e escanear o QR code fornecido pelo snack ao clicar na aba de "My device" presente na página do Snack.
 - Caso deseje rodar a aplicação em um emulador de Android ou IoS, clicar na taba "Android" ou "IoS" na página do Snack.
 Observação: Algumas funcionalidades como o sistema de alertas não funciona apropriadamente ao rodar a aplicação no modo "Web" do Snack. Por isto, é recomendado rodar a aplicação nos emuladores de Android, IoS ou em um dispositivo físico através do Expo Go.
-
 
 # Documentação
 
