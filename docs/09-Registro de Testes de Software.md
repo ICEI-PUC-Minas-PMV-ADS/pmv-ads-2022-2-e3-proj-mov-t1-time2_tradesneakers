@@ -21,8 +21,8 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 |Caso de teste 04     | CT 04 - Visualizar as informações e detalhes do produto selecionado na tela de busca |
 |-------|-------------------------
-|Objetivo do teste| Verificar a funcionalidade do botão "Ver Detalhes" após selecionar o produto de id:1, com o tamanho 40, e ao clicar no botão ser redirecionado para a página "ProductDetailsPage" que mostra os detalhes do produto selecionado. |
-| Resultado | O critério de exito do botão foi satisfeito adequadamente, a proposta de visualizar qualquer produto selecionado não foi implementada ainda, optamos por deixar o produto com id:1, tamanho 40, a ser exibido seu detalhes com sucesso ao clicar no botão. A funcionalidade de visualizar qualquer produto selecionado será desenvolvida futuramente. | 
+|Objetivo do teste| Verificar a funcionalidade do botão "Ver Detalhes" após selecionar qualquer produto disponível e ao clicar no botão ser redirecionado para a página "ProductDetailsPage" que mostra os detalhes do produto selecionado. |
+| Resultado | O critério de exito do botão foi satisfeito adequadamente, a proposta de visualizar qualquer produto selecionado foi implementada com sucesso, os detalhes do produto selecionado é exibido com sucesso ao clicar no botão. | 
 
 |Caso de teste 05     | CT 05 - Realizar troca de mensagens entre usuários |
 |-------|-------------------------
