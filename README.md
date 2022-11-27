@@ -28,6 +28,8 @@ de forma segura, rápida e fácil,fazendo um bom ambiente de interação.
 
 Como o backend do projeto agora encontra-se hospedado no endereço https://trade-sneakers-backend.herokuapp.com, a instalação local da aplicação não é necessária, podendo-se apenas acessar o frontend no link https://snack.expo.dev/@sergiomenezes/tradesneakers. Como as aplicações hospedadas no Heroku ficam inativas caso fiquem muito tempo sem serem acessadas, é interessante visitar o link https://trade-sneakers-backend.herokuapp.com antes de rodar a aplicação para reativa-la.
 
+* Observação importante: Como o aplicativo utiliza o expo-sqlite, que não é compatível com a plataforma Web do React Native, a aplicação presente em https://snack.expo.dev/@sergiomenezes/tradesneakers pode ser rodada apenas nos emuladores de Android/IoS ou em dispositivos físicos contendo o sistema operacional Android ou IoS, mas não na versão Web (um erro de "Access to WebDatabase API is denied in third party contexts" ocorre caso tente-se rodar a aplicação na opção "Web".
+
 Caso deseje rodar o backend da aplicação localmente, seguir os seguintes passos:
 
 - Fazer download do arquivo db.json presente na pasta https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/tree/main/src/backend.
