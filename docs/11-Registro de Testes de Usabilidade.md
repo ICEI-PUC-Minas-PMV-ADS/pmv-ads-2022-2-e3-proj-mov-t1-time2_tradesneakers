@@ -111,3 +111,15 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
 <tr><th>Melhoria</th>	
   <th>---------------------------------------</th></tr>
   </table>
+  
+ <table> 
+<tr><th>Caso de Teste </th>
+<th>CT-10 – Visualizar histórico de acesso do usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de visualização do histórico de acesso pelo usuário.</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar o histórico de acesso e visualizar o registro dos logins anteriormente realizados sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
