@@ -23,13 +23,13 @@ Observação: Algumas funcionalidades como o sistema de alertas não funciona ap
 
 Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Sérgio Luiz de Menezes Filho, bem como o vídeo de apresentação explicando o processo de implementação das mesmas.
 
-## Vídeo de apresentação explicando as funcionalidades:
+## Vídeos de apresentação explicando as funcionalidades:
 Segue abaixo os links dos vídeos hospedados no Youtube contendo a apresentação relacionada à progamação de funcionalidades para a etapa 3 e para a etapa 4 do projeto:
 
-Vídeo mostrando as funcionalidades progamadas para a Etapa 3:
+Vídeo mostrando as funcionalidades progamadas para a Etapa 3:<br>
 https://youtu.be/7tLjU90fjfw
 
-Vídeo mostrando as funcionalidades progamadas para a Etapa 4:
+Vídeo mostrando as funcionalidades progamadas para a Etapa 4:<br>
 https://youtu.be/j835g2sfgM8
 
 ## Cadastro de conta de usuário (RF-01)
