@@ -746,8 +746,11 @@ Serviços:
 Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Álvaro Alfaya Fonseca, bem como o vídeo de apresentação explicando o processo de implementação das mesmas.
 
 ## Vídeo de apresentação explicando as funcionalidades:
-
+Vídeo de apresentação da funcionalidade do botão "Ver detalhes":<br>
 https://youtu.be/cPM_4womrFQ
+
+Atualização da funcionalidade do botão "Ver detalhes" que agora mostra os detalhes de qualquer produto selecionado na tela de busca:
+https://youtu.be/_nE-XatC7vY
 
 ## Visualização do produto selecionado na tela de busca (RF-03)
 A tela de visualização do produto selecionado poderá ser acessada quando o usuário selecionar um produto através do filtro na tela de busca e clicando no botão "Ver Detalhes" que estará abaixo da descrição do produto, sendo assim, ele será redirecionado para a tela de visualização do produto selecionado com os detalhes do mesmo e terá a opção de trocar ou comprar o tênis.
