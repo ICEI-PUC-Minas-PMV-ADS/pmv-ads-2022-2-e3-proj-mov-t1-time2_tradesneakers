@@ -2,7 +2,10 @@
 
 ## Instalação do Site
 
-Como o backend do projeto ainda não se encontra hospedado, o usuário que deseja utilizar a aplicação na versão atual deverá rodar o JSON Server em seu próprio computador através dos seguintes passos:
+Como o backend do projeto agora encontra-se hospedado no endereço https://trade-sneakers-backend.herokuapp.com, a instalação local da aplicação não é necessária, podendo-se apenas acessar o frontend no link https://snack.expo.dev/@sergiomenezes/tradesneakers. Como as aplicações hospedadas no Heroku ficam inativas caso fiquem muito tempo sem serem acessadas, é interessante visitar o link https://trade-sneakers-backend.herokuapp.com antes de rodar a aplicação para reativa-la.
+
+Caso deseje rodar o backend da aplicação localmente, seguir os seguintes passos:
+
 - Fazer download do arquivo db.json presente na pasta https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/tree/main/src/backend.
 - Colocar o arquivo em um diretório e abrir este diretório no VS Code.
 - Instalar as bibliotecas JSON Server e JSON Server auth utilizando os comandos "npm install -g json-server" e 
@@ -31,3 +34,8 @@ Observação: Algumas funcionalidades como o sistema de alertas não funciona ap
 #### Adicionado
 - Implementação parcial das funcionalidades relativas a troca de mensagens, visualização de detalhes do produto, atualização de informações cadastrais e tabela de numeração (RFs 04, 03, 09 e 08), além da implementação parcial da homepage.
 - Backend ainda não hospedado na internet, frontend pode ser acessado através do Snack em https://snack.expo.dev/@sergiomenezes/tradesneakers.
+
+### [0.1.2] - 27/11/2022
+#### Adicionado
+- Implementação das funcionalidades de compra de produto, histórico de pedidos e histórico de acesso (RFs 05 e 07, 05 e 01), além do avanço da implementação da tela de visualização de detalhes do produto (RF 03) e da homepage.
+- Backend agora encontra-se hospedado no endereço https://trade-sneakers-backend.herokuapp.com, não sendo mais necessário rodar o backend localmente.
