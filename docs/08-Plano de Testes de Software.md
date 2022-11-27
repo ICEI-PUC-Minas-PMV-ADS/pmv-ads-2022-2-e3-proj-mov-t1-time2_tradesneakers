@@ -72,7 +72,7 @@ Os testes funcionais a serem realizados na solução estão descritos a seguir:
 |Passos | 1) Acessar o navegador. 2) Informar a URL do projeto do Snack. 3) Rodar o projeto no emulador de Android, IoS ou em um aparelho celular através do Expo Go através do QR Code disponibilizado no Snack. 4) Realizar login na plataforma conforme descrito no CT-02. 5) Caso o usuário em questão não tenha realizado nenhuma compra ou troca na plataforma, realizar uma compra conforme descrito no CT-07 para poder visualiza-la posteriormente na tela de histórico de pedidos. 6) Clicar no icone "pedidos" presente no menu de navegação inferior. 7) Visualizar tela de histórico de pedidos.|
 |Critérios de êxito| - O usuário deverá visualizar a tela de histórico de pedidos, contendo detalhes sobre todas as transações de compra ou troca realizadas anteriormente por ele. |
 
-|Caso de teste 09     | CT 08 - Visualizar histórico de compras/trocas de produtos |
+|Caso de teste 09     | CT 09 - Visualizar histórico de acesso do usuário |
 |-------|-------------------------
 |Requisitos Associados | RF-01: Disponibilizar um sistema de login e autenticação, onde o usuário poderá criar uma conta com dados válidos e realizar login.
 |Objetivo do teste| Verificar a funcionalidade de registro dos logins do usuário no histórico de acesso da aplicação. |
