@@ -141,7 +141,7 @@ As tabelas abaixo demonstram cada caso de teste:
 
  <table> 
 <tr><th>Caso de Teste </th>
-<th>CT-010 – Visualizar histórico de acesso do usuário</th></tr>
+<th>CT-10 – Visualizar histórico de acesso do usuário</th></tr>
 <tr><th>Objetivo do teste</th>
   <th>•	Verificar a funcionalidade de visualização do histórico de acesso pelo usuário.</th></tr>
 <tr><th>Ações esperadas</th>
