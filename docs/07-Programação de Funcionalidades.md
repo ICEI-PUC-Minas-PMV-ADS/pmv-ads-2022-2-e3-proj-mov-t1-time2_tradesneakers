@@ -857,7 +857,7 @@ Serviços:
 Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro alex junio gomes de freitas
 
 ## Vídeo de apresentação explicando as funcionalidades:
-
+https://www.youtube.com/watch?v=4kGNdTdvBXE
 
 ## tela de HomePage
 A tela de Homepage e a tela inicial do app onde ficara disponivel para o usario alguns dos produtos disponiveis no app para a compra e troca, onde o usuario pderar selicionar uns do tenis e ira ser redirecionado para a pagina do produto
