@@ -131,4 +131,9 @@ Segue abaixo o print do quadro do Trello ao final da Etapa 3 (editado em um edit
 
 ![TrelloPrint_Etapa3](https://user-images.githubusercontent.com/74699119/198905025-7a1eca44-81ce-41eb-8a64-4fc80dd78d23.png)
 
+### Etapa 4
+
+Segue abaixo o print do quadro do Trello ao final da Etapa 4 (editado em um editor de imagens para mostrar todos os cards em uma única imagem). As tarefas colocadas em "Done" abaixo do Card "Etapa 4" e acima do Card "Etapa 3" correspondem às tarefas que foram finalizadas pelos membros da equipe. Os as tarefas que ainda se encontram em "Doing" correspondem às tarefas que os membros associados a elas não foram capazes de concluir a tempo do prazo de entrega e que portanto, encontram-se ausentes da submissão da tarefa da etapa 4.
+
+![print_trello_e4](https://user-images.githubusercontent.com/74699119/204156202-03965419-0adf-4b8d-b776-8f0abbae9f10.png)
 

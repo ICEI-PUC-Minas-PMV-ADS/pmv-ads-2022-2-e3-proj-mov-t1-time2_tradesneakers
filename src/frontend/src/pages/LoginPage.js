@@ -11,6 +11,8 @@ import {useUser} from '../context/UserContext';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+import { insertRegistroDeLogin } from '../services/registroDeLogin.servicesDb';
+
 const LoginPage = ({navigation}) => {
 
   const {signed, setSigned, setName, setUserId} = useUser();
@@ -20,6 +22,14 @@ const LoginPage = ({navigation}) => {
 
   if (signed) {
     navigation.goBack();
+  }
+
+  function getCurrentDate()
+  {
+    const date = new Date().toString();
+    const separatedDateElements = date.split(" ");
+    const formatedDate = separatedDateElements[1] + " " + separatedDateElements[2] + " " + separatedDateElements[3] + " " + separatedDateElements[4];
+    return formatedDate;
   }
 
   const handleLogin = () => {
@@ -32,7 +42,13 @@ const LoginPage = ({navigation}) => {
         setName(res.user.name);
         setUserId(res.user.id);
         AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
-        navigation.navigate('HomePage')
+        const date = getCurrentDate();
+        insertRegistroDeLogin({
+          usuario: res.user.name,
+          data: date,
+        }).then(
+          navigation.navigate('HomePage')
+        );
       }else{
          Alert.alert('Atenção', 'Usuário ou senha inválidos!');
       }

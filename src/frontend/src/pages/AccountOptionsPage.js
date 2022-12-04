@@ -43,6 +43,11 @@ const AccountOptionsPage = ({navigation}) => {
         </Button>
       </View>
     <View style={styles.botoesContainer}>   
+        <Button style={styles.botaoLogin} mode="contained" onPress={() => navigation.navigate('LoginHistoryPage')}>
+          <Text style={styles.botaoLoginText}>Histórico de acesso</Text>
+        </Button>
+     </View>
+    <View style={styles.botoesContainer}>   
         <Button style={styles.botaoLogOff} mode="outlined" onPress={handleLogoff}>
           <Text style={styles.botaoLogOffText}>Sair</Text>
         </Button>

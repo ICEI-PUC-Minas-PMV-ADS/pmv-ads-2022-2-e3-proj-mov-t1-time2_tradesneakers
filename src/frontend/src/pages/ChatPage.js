@@ -18,6 +18,7 @@ const ChatPage = ({navigation}) => {
   const {userId, signed} = useUser();
 
   if (!signed) {
+    navigation.goBack();
     navigation.navigate("LoginPage")
   }
 

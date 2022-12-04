@@ -61,7 +61,9 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
   <th>Todos usuários conseguiram os detalhes do produto selecionado após clicarem no botão ver detalhes e serem redirecionado para a página.<br>
   </th></tr>
 <tr><th>Melhoria</th>	
-  <th>Desenvolver um método para que os usuários consigam ver os detalhes de todos os produtos que forem selecionados, já que no momento optamos por deixar a visualização apenas do produto id:1</th></tr>
+  <th>Acrescentar mais detalhes na visualização do produto como: marca, id do vendedor.<br>
+    Acrescentar um botão para enviar mensagem ao vendedor.
+   </th></tr>
   </table>
   
   <table> 
@@ -86,4 +88,40 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
   </th></tr>
 <tr><th>Melhoria</th>	
   <th> Usuario sugeriu colocar um botão de dropdown no icone de conta de usuário com a opção logoff. </th></tr>
+  </table>
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 08 - Realizar compra de produto</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de compra de produtos pelo usuário.</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram realizar a compra do produto desejado sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 09 - Visualizar histórico de pedidos</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>• Verificar a funcionalidade de visualização do histórico de pedidos pelo usuário.</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar o histórico de pedidos sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
+  
+ <table> 
+<tr><th>Caso de Teste </th>
+<th>CT-10 – Visualizar histórico de acesso do usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de visualização do histórico de acesso pelo usuário.</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar o histórico de acesso e visualizar o registro dos logins anteriormente realizados sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
   </table>
