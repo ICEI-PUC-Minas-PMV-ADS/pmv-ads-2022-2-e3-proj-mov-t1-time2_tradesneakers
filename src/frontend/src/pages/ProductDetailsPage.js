@@ -18,7 +18,9 @@ const ProductDetailsPage = ({ route, navigation }) => {
     return preco;
   };
 
-  const handleTrocar = () => {};
+  const handleTrocar = () => {
+    navigation.navigate('RegisterOfferPage', { produtoId: produtoId, vendedorId: produto.idUsuario  });
+  };
 
   const handleComprar = () => {
     navigation.navigate("BuyProductPage", {produtoId: produtoId});

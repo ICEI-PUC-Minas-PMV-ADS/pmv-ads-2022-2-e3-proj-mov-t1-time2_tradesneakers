@@ -14,7 +14,9 @@ import InfoUpdatePage from '../pages/InfoUpdatePage';
 import ProductDetailsPage from '../pages/ProductDetailsPage';
 import BuyProductPage from '../pages/BuyProductPage';
 import LoginHistoryPage from '../pages/LoginHistoryPage';
-import AccountOptionsPage from '../pages/AccountOptionsPage'
+import AccountOptionsPage from '../pages/AccountOptionsPage';
+import RegisterOfferPage  from '../pages/RegisterOfferPage';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -119,6 +121,13 @@ const Main = () => {
           header: () => null,
         }}
         />
+         <Stack.Screen
+        name="RegisterOfferPage"
+        component={RegisterOfferPage}
+        options={{
+          header: () => null,
+        }}
+      />
       </Stack.Navigator>
   );
 };
