@@ -70,6 +70,6 @@ Observação: Algumas funcionalidades como o sistema de alertas não funciona ap
 
 <li><a href="src/README.md"> Código Fonte</a></li>
 
-# Apresentação
+# Apresentação da Solução
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+O vídeo de apresentação encontra-se na pasta [presentation](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t1-time2_tradesneakers/tree/main/presentation) sob o nome "Tradesneakers_Apresentacao_Final.mp4".
