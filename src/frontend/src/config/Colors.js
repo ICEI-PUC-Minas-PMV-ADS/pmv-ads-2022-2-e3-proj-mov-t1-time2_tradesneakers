@@ -1,5 +1,6 @@
 export default {
     primaryColor: '#4c7a6d',
+    dangerColor: '#ba2b2b',
     cardColor: '#ffffff',
     cardBorderColor: '#e0e0e0',
     headerColor: "#edf0ed",
