@@ -2,7 +2,7 @@
 Os requisitos para realização dos testes de software são:
 
 Utilizando o backend hospedado no heroku.
-- Backend publicado na internet (https://trade-sneakers-backend.herokuapp.com);
+- Backend publicado na internet (https://tradesneakers-backend.glitch.me/);
 - Navegador da internet - Chrome, Firefox ou Edge;
 - Conectividade de internet para acessar a aplicação no Snack.
 
@@ -78,3 +78,38 @@ Os testes funcionais a serem realizados na solução estão descritos a seguir:
 |Objetivo do teste| Verificar a funcionalidade de registro dos logins realizados no aparelho no histórico de acesso da aplicação. |
 |Passos | 1) Acessar o navegador. 2) Informar a URL do projeto do Snack. 3) Rodar o projeto no emulador de Android, IoS ou em um aparelho celular através do Expo Go através do QR Code disponibilizado no Snack. 4) Realizar login na plataforma conforme descrito no CT-02. 5) Clicar no icone de usuário presente no canto direito do cabeçalho (presente no mesmo local onde "Fazer login" aparecia antes do login 6) Visualizar tela de opções da conta. 7) Selecionar a opção "Histórico de acesso". 8) Visualizar histórico de acesso do aplicativo no aparelho, incluindo o login realizado no passo 4. |
 |Critérios de êxito| - O usuário deverá visualizar a tela de histórico de acesso contendo informações sobre os logins realizados anteriormente no aplicativo naquele aparelho (incluindo o login realizado neste caso de teste). |
+
+|Caso de teste 10     | CT 10 - Visualizar produtos cadastrados pelo usuário |
+|-------|-------------------------
+|Requisitos Associados | RF-02: Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado.. |
+|Objetivo do teste| Verificar a funcionalidade de visualizar produtos cadastrados pelo usuário. |
+|Passos | 1) Acessar o navegador. 2) Informar a URL do projeto do Snack. 3) Rodar o projeto no emulador de Android, IoS ou em um aparelho celular através do Expo Go através do QR Code disponibilizado no Snack. 4) Realizar login na plataforma conforme descrito no CT-02. 5) Clicar no icone "postar" presente no menu de navegação inferior. 6) Visualizar tela de visualizar produtos cadastrados. |
+|Critérios de êxito| - O usuário deverá visualizar a tela visualizar produtos cadastrados, visualizando uma lista de todos os produtos que cadastrou no sistema. |
+
+|Caso de teste 11     | CT 11 - Apagar produto cadastrado pelo usuário |
+|-------|-------------------------
+|Requisitos Associados | RF-02: Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado.. |
+|Objetivo do teste| Verificar a funcionalidade de visualizar produtos cadastrados pelo usuário. |
+|Passos | 1) Acessar o navegador. 2) Informar a URL do projeto do Snack. 3) Rodar o projeto no emulador de Android, IoS ou em um aparelho celular através do Expo Go através do QR Code disponibilizado no Snack. 4) Realizar login na plataforma conforme descrito no CT-02. 5) Clicar no icone "postar" presente no menu de navegação inferior. 6) Visualizar tela de visualizar produtos cadastrados. 7) Selecionar um produto da tela e clicar em "Apagar" 8) Clicar em "Ok" 9) Visualizar tela de visualizar produtos cadastrados, agora sem o produto apagado |
+|Critérios de êxito| - O usuário deverá visualizar a tela de cadastro de produtos, visualizando uma lista de todos os produtos que cadastrou no sistema. |
+
+|Caso de teste 12     | CT 12 - Visualizar proposta de troca |
+|-------|-------------------------
+|Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.|
+|Objetivo do teste| Verificar a funcionalidade de visualizar propostas de troca no sistema. |
+|Passos | 1) Acessar a tela de visualizar produtos cadastrados conforme descrito no CT 10 2) Clicar em "Visualizar propostas de troca" 3) Visualizar telas de propostas de troca |
+|Critérios de êxito| - O usuário deverá visualizar a tela de propostas de troca, visualizando todas as propostas que fez ou recebeu no sistema. |
+
+|Caso de teste 13     | CT 13 - Aceitar ou recusar proposta de troca |
+|-------|-------------------------
+|Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.|
+|Objetivo do teste| Verificar a funcionalidade de visualizar propostas de troca no sistema. |
+|Passos | 1) Acessar a tela de visualizar propostas de troca conforme descrito no CT 12 2) Selecionar uma proposta que tenha sido feita à um produto que você cadastrou e clicar em "Aceitar" ou "Recusar" 3) Visualizar novamente a tela de proposta de troca, agora com o status da proposta atualizado |
+|Critérios de êxito| - O usuário deverá ser capaz de aceitar ou recusar uma proposta e visualizar a proposta com o novo status após a atualização da tela de visualizar propostas. |
+
+|Caso de teste 14     | CT 14 - Pagar taxa de envio e curadoria para uma proposta de troca aceita |
+|-------|-------------------------
+|Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.<br>RF-07: 	Disponibilizar um sistema de pagamento para que os usuários possam pagar os custos relativos ao envio, serviço de curadoria e preço do produto em caso de compra.|
+|Objetivo do teste| Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. |
+|Passos | 1) Acessar a tela de visualizar propostas de troca conforme descrito no CT 12 2) Selecionar uma proposta de troca que já tenha sido aceita. 3) Clicar em "pagar envio" 4) Visualizar a tela de pagar envio do produto para troca 5) Preencher as informações de endereço e cartão de crédito solicitadas. 5) Clicar em "Comprar" 6) Visualizar mensagem de sucesso de compra |
+
