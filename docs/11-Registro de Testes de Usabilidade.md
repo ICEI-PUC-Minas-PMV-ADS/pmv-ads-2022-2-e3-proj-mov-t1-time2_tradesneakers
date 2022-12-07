@@ -123,3 +123,64 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
 <tr><th>Melhoria</th>	
   <th>---------------------------------------</th></tr>
   </table>
+
+ <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 11 - Visualizar produtos cadastrados pelo usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de visualizar produtos cadastrados pelo usuário.</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar a página de visualizar produtos cadastrados sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>O nome "Postar" para essa seção foi considerado pouco intuitivo</th></tr>
+  </table>
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 12 - Apagar produto cadastrado pelo usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de apagar produtos cadastrados pelo usuário.</th></tr>
+<tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar a página de visualizar produtos cadastrados sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
+  
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 13 - Visualizar proposta de troca</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de visualizar propostas de troca no sistema.</th></tr>
+  <tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar a página de visualizar produtos cadastrados sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
+  
+   <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 14 - Aceitar proposta de troca</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>• Verificar a funcionalidade de visualizar e aceitar propostas de troca no sistema..</th></tr>
+  <tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar a página de visualizar produtos cadastrados sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
+  
+   <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 15 - Recusar proposta de troca</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>• Verificar a funcionalidade de visualizar e recusar propostas de troca no sistema..</th></tr>
+  <tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar a página de visualizar produtos cadastrados sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
+    
