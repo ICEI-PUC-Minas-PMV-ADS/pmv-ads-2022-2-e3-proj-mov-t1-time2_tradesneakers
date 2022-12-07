@@ -61,9 +61,7 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
   <th>Todos usuários conseguiram os detalhes do produto selecionado após clicarem no botão ver detalhes e serem redirecionado para a página.<br>
   </th></tr>
 <tr><th>Melhoria</th>	
-  <th>Acrescentar mais detalhes na visualização do produto como: marca, id do vendedor.<br>
-    Acrescentar um botão para enviar mensagem ao vendedor.
-   </th></tr>
+  <th>---------------------------------------</th></tr>
   </table>
   
   <table> 
