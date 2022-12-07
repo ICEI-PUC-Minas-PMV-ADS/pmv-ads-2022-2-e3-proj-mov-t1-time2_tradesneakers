@@ -1009,81 +1009,22 @@ Serviços:
 - Visualizar a tela de visualizar propostas de troca com as informações atualizadas;
 
 ## Tela de pagar envio do produto para troca (RF-05 e RF-07)
-A tela de pagar envio do produto para troca permite ao usuário visualizar todas as propostas de troca que realizou ou que outros usuários realizaram para ele. Essa tela mostra uma lista de todas as propostas de troca, com cards que exibem o produto desejado e o produto ofertado, bem como as informações dos vendedores envolvidos. Caso o usuário seja o recebedor do proposta, aparecem também no card dois botões de "Aceitar" e "Recusar", nos quais ele pode clicar par aceitar ou recusar a oferta. Caso o usuário seja o proponente da oferta, uma mensagem de "Aguardando respsota do vendedor" aparece. Após o vendedor aceitar ou recusar a proposta, uma mensagem de "Proposta aceita/recusada" aparece para ambos os usuários, caso a propsota tenha sido aceita, aparecerá também um botão de "Pagar envio" e duas mensagens indicando o status de pagamento do envio pelo vendedor e pelo proponente. 
+A tela de pagar envio do produto para troca permite ao usuário pagar a taxa de curadoria e taxa de envio relativas a troca que aceitou realizar dentro do sistema. Essa tela funciona essencialmente de forma identica à tela de compra de produto, devendo informar o endereço de envio do produto e as informações do cartão de crédito para pagamento, clicando em "Comprar" ao final do processo exceto pelo fato de que o valor do produto não é incluido por tratar-se de uma troca.
 
-**Tela - Tela de visualizar propostas**<br>
-![propostaTrocaA](https://user-images.githubusercontent.com/74699119/206264759-370edfda-19cb-4649-9d59-c5ed609d1a41.png)
+**Tela - Tela de pagar envio do produto para troca**<br>
+![pagarEnvioA](https://user-images.githubusercontent.com/74699119/206267338-40858f33-6268-40e1-a8a8-8a15466d424d.png)
 
-**Tela - Tela de visualizar propostas - Aguardar resposta**<br>
-![propostaTrocaAguardando](https://user-images.githubusercontent.com/74699119/206264988-fdf9d96e-6d68-4e92-ac3f-7c9f1e156fe8.png)
+**Tela - Tela de pagar envio do produto para troca - Fornecer endereço diferente**<br>
+![pagarEnvioB](https://user-images.githubusercontent.com/74699119/206267347-01ba9646-1cfe-4dbb-90a7-493c18fd886d.png)
 
-**Tela - Tela de visualizar propostas - Aceitar proposta**<br>
-![propostaTrocaB](https://user-images.githubusercontent.com/74699119/206264821-09dd7815-5a69-43ff-a513-f4ee78109a51.png)
-<br>
-![propostaTrocaC](https://user-images.githubusercontent.com/74699119/206264839-1cdc9820-8e34-4197-8f58-f86c3cd17345.png)
-
-**Tela - Tela de visualizar propostas - Recusar proposta**<br>
-![propostaTrocaB2](https://user-images.githubusercontent.com/74699119/206264885-06c15d23-273d-45e2-bcfc-188f513b38a2.png)
-<br>
-![propostaTrocaC2](https://user-images.githubusercontent.com/74699119/206264897-d0b3498a-a153-4b1a-9928-4a2ef4d6e9cc.png)
-
+**Tela - Tela de pagar envio do produto para troca - Pagamento confirmado**<br>
+![pagarEnvioC](https://user-images.githubusercontent.com/74699119/206267357-ae56ebf2-a6a0-4365-b513-4b6348aecd65.png)
 
 Estrutura de dados:
-As informações sobre as propostas cadastradas são recuperadas do JSON server e tem as informações dos produtos envolvidos (desejado e recebido) e dos usuários (vendedor e proponente) incluidas em um objeto Offer para serem exibidas na tela. As informações são recuperadas na seguinte estrutura de dados em JSON:
+
+As informações sobre o produto a ser adquirido são recuperadas em formato JSON no seguinte formato:
 
 ```
-  "tradeOffers": [
-        {
-        "id": 49,
-        "idProdutoDesejado": 1,
-        "idProdutoOferecido": 27,
-        "idUsuario": 25,
-        "idVendedor": 1,
-        "decisaoVendedor": "Aceitar",
-        "vendedorPagou": true,
-        "proponentePagou": false
-        },
-        {
-        "id": 50,
-        "idProdutoDesejado": 2,
-        "idProdutoOferecido": 28,
-        "idUsuario": 1,
-        "idVendedor": 2,
-        "decisaoVendedor": "Aceitar",
-        "vendedorPagou": true,
-        "proponentePagou": false
-        },
-        {
-        "id": 51,
-        "idProdutoDesejado": 2,
-        "idProdutoOferecido": 28,
-        "idUsuario": 1,
-        "idVendedor": 2,
-        "decisaoVendedor": "Aceitar",
-        "vendedorPagou": true,
-        "proponentePagou": false
-        },
-        {
-        "id": 52,
-        "idProdutoDesejado": 1,
-        "idProdutoOferecido": 2,
-        "idUsuario": 2,
-        "idVendedor": 1,
-        "decisaoVendedor": "Aceitar",
-        "vendedorPagou": true,
-        "proponentePagou": false
-        },
-        {
-        "idProdutoDesejado": 6,
-        "idProdutoOferecido": 1,
-        "idUsuario": 1,
-        "idVendedor": 6,
-        "id": 53
-        }
-  ]
-```
-```
-    produtos: [
     {
       "id": 1,
       "nome": "Tênis Air Jordan Cinza",
@@ -1091,90 +1032,26 @@ As informações sobre as propostas cadastradas são recuperadas do JSON server 
       "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "preco": 85.5,
-      "marca": "Nike",
-      "idUsuario": 1
-    },
-    {
-      "id": 2,
-      "nome": "Tênis Air Jordan Branco e Preto",
-      "tamanho": 38,
-      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QAA...",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "preco": 90,
-      "marca": "Nike",
-      "idUsuario": 2
-    },
-    {
-      "id": 3,
-      "nome": "Tênis Vans Amarelo",
-      "tamanho": 36,
-      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAIAAACtIY/OAAAAAXNSR0IArs4c6QA...",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "preco": 100,
-      "marca": "Vans",
-      "idUsuario": 3
-    },
-    {
-      "id": 4,
-      "nome": "Tênis All Star Branco",
-      "tamanho": 42,
-      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QA...",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "preco": 75,
-      "marca": "Converse",
-      "idUsuario": 4
-    },
-    {
-      "id": 5,
-      "nome": "Tênis Adidas Preto",
-      "tamanho": 39,
-      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QA...",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "preco": 60,
-      "marca": "Adidas",
-      "idUsuario": 5
-    },
-    {
-      "id": 6,
-      "nome": "Tênis Puma Vermelho",
-      "tamanho": 37,
-      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlQAAAJSCAYAAAAFwVs0AAAAAXNSR0IArs4c6QA...",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "preco": 70,
-      "marca": "Puma",
-      "idUsuario": 6
-    },
-  ]
+    }
 ```
 
+Recupera-se também as informações do usuário, visando obter o endereço padrão do mesmo. Essas informações são recuperadas na seguinte estrutura de dados:
+
 ```
-  "users": [
     {
-      "email": "a@a.com",
-      "password": "$2a$10$/JrNm4sdi6gKOxSZpbQGFuyf.u4bnQ5M71J8uxAEqaUpAWyd7kQgm",
+      "id": 1,
       "name": "a",
-      "id": 1
-    },
-    {
-      "email": "b@b.com",
-      "password": "$2a$10$EO69.Bu0HC7u4v9MIHvRMu6HTMrdGvAjBVRDPEh7Y9Gv5DR9Ezwzq",
-      "name": "b",
-      "id": 2
-    },
-    {
-      "id": 3,
-      "name": "ddd",
-      "email": "d@d.com",
-      "phone": "3423423423423",
-      "password": "$2a$10$.8txYgJ9t3XiFy0CSYco7u0n43I3tuBrMvpsQO/CelzPTLO2XVXi6"
-    },
-    {
-      "email": "f@f.com",
-      "password": "$2a$10$sqmJ.2SDLzP7zLumWU2TWe5CFdlH7laJh.3.usC8pUdVRpDBihibm",
-      "name": "f",
-      "id": 4
-    },
-  ]
+      "email": "a@a.com",
+      "phone": "534543534534534",
+      "firstname": "aa",
+      "lastname": "aaa",
+      "password": "$2a$10$mKMX9zbThmYgQiKj10erguWEm2XRLuICBsadUk2OZx5hM8w3i9Njq",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
+    }
 ```
 
 ### Requisitos atendidos
@@ -1183,21 +1060,23 @@ As informações sobre as propostas cadastradas são recuperadas do JSON server 
 
 ### Artefatos da funcionalidade
 Páginas:
-- ViewOffersPage.js
+- PayOfferPage.js
 
 Componentes:
 - Header.js
 
 Serviços:
+- produtos.services.js
+- auth.services.js
 - trocas.services.js
 
 ### Instruções de acesso
 - Visualizar a tela inicial do aplicativo;
-- Fazer login com uma conta que já tenha cadastrado algum produto;
+- Fazer login;
 - Clicar no icone "postar" presente no menu de navegação inferior;
 - Visualizar a tela de visualizar propostas de troca;
-- Caso deseje aceitar/recusar uma proposta de troca, clicar no botão "aceitar" ou "recusar";
-- Visualizar a tela de visualizar propostas de troca com as informações atualizadas;
+- Selecionar uma troca que já foi aceita e clicar em "Pagar envio";
+- Visualizar a tela de pagar envio de troca;
 
 # Funcionalidades progamadas por Álvaro Alfaya Fonseca
 
