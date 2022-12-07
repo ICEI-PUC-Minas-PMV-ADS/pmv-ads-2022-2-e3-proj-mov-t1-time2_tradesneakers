@@ -183,4 +183,15 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
 <tr><th>Melhoria</th>	
   <th>---------------------------------------</th></tr>
   </table>
-    
+ 
+     <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 16 - Pagar taxa de envio e curadoria para uma proposta de troca aceita</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>• 	Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. </th></tr>
+  <tr><th>Resultado</th>
+  <th>Todos usuários conseguiram visualizar a página de visualizar produtos cadastrados sem maiores problemas.<br>
+  </th></tr>
+<tr><th>Melhoria</th>	
+  <th>---------------------------------------</th></tr>
+  </table>
