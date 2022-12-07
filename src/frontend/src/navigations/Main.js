@@ -17,6 +17,7 @@ import LoginHistoryPage from '../pages/LoginHistoryPage';
 import AccountOptionsPage from '../pages/AccountOptionsPage';
 import RegisterOfferPage  from '../pages/RegisterOfferPage';
 import SendProductPage from '../pages/SendProductPage';
+import RegisterProductPage from '../pages/RegisterProductPage';
 
 
 const Stack = createNativeStackNavigator();
@@ -48,6 +49,13 @@ const Main = () => {
         <Stack.Screen
         name="PostProductPage"
         component={PostProductPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="RegisterProductPage"
+        component={RegisterProductPage}
         options={{
           header: () => null,
         }}
