@@ -199,7 +199,7 @@ As tabelas abaixo demonstram cada caso de teste:
 <tr><th>Caso de Teste </th>
 <th>CT 14 - Aceitar proposta de troca</th></tr>
 <tr><th>Objetivo do teste</th>
-  <th>• Verificar a funcionalidade de visualizar e aceitar propostas de troca no sistema..</th></tr>
+  <th>• Verificar a funcionalidade de visualizar e aceitar propostas de troca no sistema.</th></tr>
 <tr><th>Ações esperadas</th>
   <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
  2- O usuário acessa a tela de visualizar propostas de troca conforme descrito no CT-13.<br>
@@ -212,12 +212,28 @@ As tabelas abaixo demonstram cada caso de teste:
 <tr><th>Caso de Teste </th>
 <th>CT 15 - Recusar proposta de troca</th></tr>
 <tr><th>Objetivo do teste</th>
-  <th>• Verificar a funcionalidade de visualizar e recusar propostas de troca no sistema..</th></tr>
+  <th>• Verificar a funcionalidade de visualizar e recusar propostas de troca no sistema.</th></tr>
 <tr><th>Ações esperadas</th>
   <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
  2- O usuário acessa a tela de visualizar propostas de troca conforme descrito no CT-13.<br>
  3- O usuário seleciona a proposta de troca que deseja recusar e clica em "Recusar".
 <tr><th>Critérios de Êxito</th>	
   <th>•	O usuário deverá alcançar a página de visualizar propostas de troca e recusar a proposta de troca que desejar.</th></tr>
+  </table>
+     
+     <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 16 - Pagar taxa de envio e curadoria para uma proposta de troca aceita</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>• 	Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. </th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário acessa a tela de visualizar propostas de troca conforme descrito no CT-13.<br>
+ 3- O usuário seleciona uma proposta de troca já aceita pelo vendedor e clica em "pagar envio".<br>
+ 4- O usuário visualiza a tela de pagar taxa de envio e curadoria.<br>
+ 5- O usuário preenche as informações solicitadas e clica em "Comprar".<br>
+ 6- O usuário visualiza a mensagem de sucesso.
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá ser capaz de realizar o pagamento da taxa de envio e curadoria para a troca em questão e obtem uma mensagem de sucesso ao fim do processo.</th></tr>
   </table>
     
