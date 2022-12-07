@@ -18,7 +18,7 @@ import AccountOptionsPage from '../pages/AccountOptionsPage';
 import RegisterOfferPage  from '../pages/RegisterOfferPage';
 import SendProductPage from '../pages/SendProductPage';
 import RegisterProductPage from '../pages/RegisterProductPage';
-
+import ShoeNumbering from '../pages/ShoeNumbering';
 
 const Stack = createNativeStackNavigator();
 
@@ -140,6 +140,13 @@ const Main = () => {
         <Stack.Screen
         name="SendProductPage"
         component={SendProductPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="ShoeNumbering"
+        component={ShoeNumbering}
         options={{
           header: () => null,
         }}
