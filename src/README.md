@@ -41,3 +41,8 @@ Observação: Algumas funcionalidades como o sistema de alertas não funciona ap
 #### Adicionado
 - Implementação das funcionalidades de compra de produto, histórico de pedidos e histórico de acesso (RFs 05 e 07, 05 e 01), além do avanço da implementação da tela de visualização de detalhes do produto (RF 03) e da homepage.
 - Backend agora encontra-se hospedado no endereço https://trade-sneakers-backend.herokuapp.com, não sendo mais necessário rodar o backend localmente.
+
+### [0.1.3] - 7/12/2022
+#### Adicionado
+- Implementação das funcionalidades de cadastro de produto, apagar produto cadastrado, preenchimento das informações de envio do produto, criação de proposta de troca de produto, gerenciamento de propostas de troca e pagamento da taxa de curadoria e envio para trocas (RF 02, RF 02, RF 06, RF 05, RF 05 e RF 07), além da atualização da página de detalhes de produto e da exibição da tela de numeração de calçados (RF 03 e RF 08).
+- Backend agora encontra-se hospedado no endereço https://tradesneakers-backend.glitch.me/, devido ao fato de que a hospedagem no Heroku deixou de ser gratuita.
