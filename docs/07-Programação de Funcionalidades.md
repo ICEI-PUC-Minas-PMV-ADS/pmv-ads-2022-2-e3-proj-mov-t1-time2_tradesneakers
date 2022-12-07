@@ -1090,13 +1090,13 @@ Atualização da funcionalidade do botão "Ver detalhes" que agora mostra os det
 https://youtu.be/_nE-XatC7vY
 
 ## Visualização do produto selecionado na tela de busca (RF-03)
-A tela de visualização do produto selecionado poderá ser acessada quando o usuário selecionar um produto através do filtro na tela de busca e clicando no botão "Ver Detalhes" que estará abaixo da descrição do produto, sendo assim, ele será redirecionado para a tela de visualização do produto selecionado com os detalhes do mesmo e terá a opção de trocar ou comprar o tênis.
+A tela de visualização do produto selecionado poderá ser acessada quando o usuário selecionar um produto através do filtro na tela de busca e clicando no botão "Ver Detalhes" que estará abaixo da descrição do produto, sendo assim, ele será redirecionado para a tela de visualização do produto selecionado com os detalhes do mesmo, nome do vendedor, um botão para enviar mensagem ao vendedor, ver a tabela de numeração do tênis e terá a opção de trocar ou comprar o tênis.
 
 **Tela - Tela de busca com o botão "Ver Detalhes" no produto selecionado**<br>
 ![botao-ver-detalhes](https://user-images.githubusercontent.com/91163177/198849506-164de7e4-d10f-436a-bc18-6052b17c0541.png)
 
 **Tela - Tela de visualização do produto selecionado após clicar no botão "Ver Detalhes"**<br>
-![pagina-details-product](https://user-images.githubusercontent.com/91163177/198849539-84ee7c7e-00b2-458b-bc3e-038c8841a176.png)
+![pagina-details-product](https://user-images.githubusercontent.com/91163177/206273894-03433e30-843a-4f62-ba50-6f8b9e213960.png)
 
 Estrutura de dados:
 As informações sobre o produto selecionado na tela de busca e também mostrado na tela de visualização são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
