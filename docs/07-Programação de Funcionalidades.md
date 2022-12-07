@@ -748,6 +748,137 @@ Serviços:
 - Clicar em "Histórico de acesso";
 - Visualizar a tela de Histórico de acesso;
 
+## Tela de visualizar produtos cadastrados (RF-02)
+A tela de visualizar produtos cadastrados permite ao usuário visualizar todos os produtos cadastrados por ele no sistema, além de ligar a outras telas como a de preencher detalhes do envio do produto (através do botão "Preencher/Alterar dados de envio"), ir para a tela de cadastro de produto (através do botão "Cadastar novo produto"), ir para a tela de propostas de troca (Através do botão "Visualizar propostas de troca") e também apagar produtos que ele mesmo cadastrou (clicando no botão "Apagar" no card do produto em questão). O usuário poderá também realizar buscas por nome e tamanho do produto nessa tela, similar ao que ocorre na tela de busca de produtos, mas ela só retornará produtos que foram cadastrados pelo próprio usuário. Essa tela é acessada clicando no icone "Postar" presente no menu de navegação inferior. 
+
+**Tela - Tela de visualizar produtos cadastrados**<br>
+![visualizarprodutocadastradoA](https://user-images.githubusercontent.com/74699119/206263149-9136afab-77d6-4a75-ac12-5f9583162191.png)
+
+**Tela - Tela de visualizar produtos cadastrados - Apagar produto cadastrado**<br>
+![visualizarprodutocadastradoB](https://user-images.githubusercontent.com/74699119/206263168-a09e4088-5a7c-476a-9dce-dda4c0297280.png)
+<br/>
+![visualizarprodutocadastradoC](https://user-images.githubusercontent.com/74699119/206263174-c946fe56-130e-46e4-bef4-5dc457eab3fa.png)
+<br/>
+![visualizarprodutocadastradoD](https://user-images.githubusercontent.com/74699119/206263196-286596a9-e1aa-4fb9-ba5c-961997c188d7.png)
+<br/>
+![visualizarprodutocadastradoE](https://user-images.githubusercontent.com/74699119/206263206-f8d9ff4e-05f5-4172-b819-02b19f0aff2d.png)
+<br/>
+
+Estrutura de dados:
+As informações sobre os produtos cadastrados são recuperadas da mesma forma que na tela de busca de produtos, com a diferença de que são filtradas pelo atributo idUsuario para garantir que apenas produtos cadastrados pelo usuário atual (idUsuario igual ao id do usuário logado atualmente) sejam exibidos. As informações são recuperadas na seguinte estrutura de dados em JSON:
+
+```
+    produtos: [
+    {
+      "id": 7,
+      "nome": "Tenis do Alex 1",
+      "marca": "Alex",
+      "tamanho": "40",
+      "imagem": "data:image/png;base64,/9j/4QKkRXhpZgAATU0AKgAAAAgACAEAAAQAAAABAAAAgAEQAAIAAAAPAAAAbgEBAAQAAAABAAA...",
+      "descricao": "Lorem ipsum",
+      "preco": "100,00",
+      "idUsuario": 25,
+      "envioEndereco": "Rua X, Cidade X, XX, Brasil CEP: 99999999",
+      "envioCodigoDeRastreamento": "asdasdasd",
+      "statusDeRecebimento": "Aguardando recebimento do produto."
+    },
+    {
+      "nome": "Tenis do Alex 2",
+      "marca": "Alex",
+      "tamanho": "36",
+      "imagem": "data:image/png;base64,/9j/4QBYRXhpZgAATU0AKgAAAAgABAEAAAQAAAABAAAAMgEBAAQAAAABAAAAKIdpAAQAAAABAAAAP...",
+      "descricao": "Lorem ipsum",
+      "preco": "50,00",
+      "idUsuario": 25,
+      "statusDeRecebimento": "Aguardando envio do produto.",
+      "id": 8
+    },
+  ]
+```
+### Requisitos atendidos
+- RF-02
+
+### Artefatos da funcionalidade
+Páginas:
+- PostProductPage.js
+
+Componentes:
+- Header.js
+- SearchBar.js
+- CardProdutoRegistrado.js
+
+Serviços:
+- produtos.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Fazer login com uma conta que já tenha cadastrado algum produto;
+- Clicar no icone "postar" presente no menu de navegação inferior;
+- Visualizar a tela de visualizar produtos cadastrados;
+- Caso deseje apagar um produto, clicar no botão "Apagar" no card do produto;
+- Visualizar a tela de visualizar produtos cadastrados, agora sem o produto apagado;
+
+## Tela de visualizar produtos cadastrados (RF-02)
+A tela de visualizar produtos cadastrados permite ao usuário visualizar todos os produtos cadastrados por ele no sistema, além de ligar a outras telas como a de preencher detalhes do envio do produto (através do botão "Preencher/Alterar dados de envio"), ir para a tela de cadastro de produto (através do botão "Cadastar novo produto"), ir para a tela de propostas de troca (Através do botão "Visualizar propostas de troca") e também apagar produtos que ele mesmo cadastrou (clicando no botão "Apagar" no card do produto em questão). O usuário poderá também realizar buscas por nome e tamanho do produto nessa tela, similar ao que ocorre na tela de busca de produtos, mas ela só retornará produtos que foram cadastrados pelo próprio usuário. Essa tela é acessada clicando no icone "Postar" presente no menu de navegação inferior. 
+
+**Tela - Tela de visualizar produtos cadastrados**<br>
+
+**Tela - Tela de visualizar produtos cadastrados - Após apagar produto cadastrado**<br>
+
+Estrutura de dados:
+As informações sobre os produtos cadastrados são recuperadas da mesma forma que na tela de busca de produtos, com a diferença de que são filtradas pelo atributo idUsuario para garantir que apenas produtos cadastrados pelo usuário atual (idUsuario igual ao id do usuário logado atualmente) sejam exibidos. As informações são recuperadas na seguinte estrutura de dados em JSON:
+
+```
+    produtos: [
+    {
+      "id": 7,
+      "nome": "Tenis do Alex 1",
+      "marca": "Alex",
+      "tamanho": "40",
+      "imagem": "data:image/png;base64,/9j/4QKkRXhpZgAATU0AKgAAAAgACAEAAAQAAAABAAAAgAEQAAIAAAAPAAAAbgEBAAQAAAABAAA...",
+      "descricao": "Lorem ipsum",
+      "preco": "100,00",
+      "idUsuario": 25,
+      "envioEndereco": "Rua X, Cidade X, XX, Brasil CEP: 99999999",
+      "envioCodigoDeRastreamento": "asdasdasd",
+      "statusDeRecebimento": "Aguardando recebimento do produto."
+    },
+    {
+      "nome": "Tenis do Alex 2",
+      "marca": "Alex",
+      "tamanho": "36",
+      "imagem": "data:image/png;base64,/9j/4QBYRXhpZgAATU0AKgAAAAgABAEAAAQAAAABAAAAMgEBAAQAAAABAAAAKIdpAAQAAAABAAAAP...",
+      "descricao": "Lorem ipsum",
+      "preco": "50,00",
+      "idUsuario": 25,
+      "statusDeRecebimento": "Aguardando envio do produto.",
+      "id": 8
+    },
+  ]
+```
+### Requisitos atendidos
+- RF-02
+
+### Artefatos da funcionalidade
+Páginas:
+- PostProductPage.js
+
+Componentes:
+- Header.js
+- SearchBar.js
+- CardProdutoRegistrado.js
+
+Serviços:
+- produtos.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Fazer login com uma conta que já tenha cadastrado algum produto;
+- Clicar no icone "postar" presente no menu de navegação inferior;
+- Visualizar a tela de visualizar produtos cadastrados;
+- Caso deseje apagar um produto, clicar no botão "Apagar" no card do produto;
+- Visualizar a tela de visualizar produtos cadastrados, agora sem o produto apagado;
+
 # Funcionalidades progamadas por Álvaro Alfaya Fonseca
 
 Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Álvaro Alfaya Fonseca, bem como o vídeo de apresentação explicando o processo de implementação das mesmas.
