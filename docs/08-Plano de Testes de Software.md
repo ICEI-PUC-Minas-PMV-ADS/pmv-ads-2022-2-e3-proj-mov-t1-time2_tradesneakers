@@ -89,7 +89,7 @@ Os testes funcionais a serem realizados na solução estão descritos a seguir:
 |Caso de teste 11     | CT 11 - Apagar produto cadastrado pelo usuário |
 |-------|-------------------------
 |Requisitos Associados | RF-02: Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado.. |
-|Objetivo do teste| Verificar a funcionalidade de visualizar produtos cadastrados pelo usuário. |
+|Objetivo do teste| Verificar a funcionalidade de apagar produtos cadastrados pelo usuário. |
 |Passos | 1) Acessar o navegador. 2) Informar a URL do projeto do Snack. 3) Rodar o projeto no emulador de Android, IoS ou em um aparelho celular através do Expo Go através do QR Code disponibilizado no Snack. 4) Realizar login na plataforma conforme descrito no CT-02. 5) Clicar no icone "postar" presente no menu de navegação inferior. 6) Visualizar tela de visualizar produtos cadastrados. 7) Selecionar um produto da tela e clicar em "Apagar" 8) Clicar em "Ok" 9) Visualizar tela de visualizar produtos cadastrados, agora sem o produto apagado |
 |Critérios de êxito| - O usuário deverá visualizar a tela de cadastro de produtos, visualizando uma lista de todos os produtos que cadastrou no sistema. |
 
