@@ -184,7 +184,7 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
   <th>---------------------------------------</th></tr>
   </table>
  
-     <table> 
+   <table> 
 <tr><th>Caso de Teste </th>
 <th>CT 16 - Pagar taxa de envio e curadoria para uma proposta de troca aceita</th></tr>
 <tr><th>Objetivo do teste</th>
