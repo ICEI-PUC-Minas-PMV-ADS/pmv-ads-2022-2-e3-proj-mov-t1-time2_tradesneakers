@@ -49,3 +49,33 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 |Requisitos Associados | RF-01: Disponibilizar um sistema de login e autenticação, onde o usuário poderá criar uma conta com dados válidos e realizar login.
 |Objetivo do teste| Verificar a funcionalidade de registro dos logins realizados no aplicativo para o aparelho em questão no histórico de acesso da aplicação. |
 | Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 10     | CT 10 - Visualizar produtos cadastrados pelo usuário |
+|-------|-------------------------
+|Requisitos Associados | RF-02: Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado.. |
+|Objetivo do teste| Verificar a funcionalidade de visualizar produtos cadastrados pelo usuário. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 11     | CT 11 - Apagar produto cadastrado pelo usuário |
+|-------|-------------------------
+|Requisitos Associados | RF-02: Disponibilizar aos usuários uma plataforma aonde possam cadastrar seus tênis usados para visualização por outros usuários que possam estar interessados, adicionando fotos, descrição e preço desejado.. |
+|Objetivo do teste| Verificar a funcionalidade de visualizar produtos cadastrados pelo usuário. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 12     | CT 12 - Visualizar proposta de troca |
+|-------|-------------------------
+|Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.|
+|Objetivo do teste| Verificar a funcionalidade de visualizar propostas de troca no sistema. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 13     | CT 13 - Aceitar ou recusar proposta de troca |
+|-------|-------------------------
+|Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.|
+|Objetivo do teste| Verificar a funcionalidade de visualizar propostas de troca no sistema. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 14     | CT 14 - Pagar taxa de envio e curadoria para uma proposta de troca aceita |
+|-------|-------------------------
+|Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.<br>RF-07: 	Disponibilizar um sistema de pagamento para que os usuários possam pagar os custos relativos ao envio, serviço de curadoria e preço do produto em caso de compra.|
+|Objetivo do teste| Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
