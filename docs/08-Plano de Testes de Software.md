@@ -100,14 +100,21 @@ Os testes funcionais a serem realizados na solução estão descritos a seguir:
 |Passos | 1) Acessar a tela de visualizar produtos cadastrados conforme descrito no CT 10 2) Clicar em "Visualizar propostas de troca" 3) Visualizar telas de propostas de troca |
 |Critérios de êxito| - O usuário deverá visualizar a tela de propostas de troca, visualizando todas as propostas que fez ou recebeu no sistema. |
 
-|Caso de teste 13     | CT 13 - Aceitar ou recusar proposta de troca |
+|Caso de teste 13     | CT 13 - Aceitar proposta de troca |
 |-------|-------------------------
 |Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.|
-|Objetivo do teste| Verificar a funcionalidade de visualizar propostas de troca no sistema. |
-|Passos | 1) Acessar a tela de visualizar propostas de troca conforme descrito no CT 12 2) Selecionar uma proposta que tenha sido feita à um produto que você cadastrou e clicar em "Aceitar" ou "Recusar" 3) Visualizar novamente a tela de proposta de troca, agora com o status da proposta atualizado |
+|Objetivo do teste| Verificar a funcionalidade de visualizar e aceitar propostas de troca no sistema. |
+|Passos | 1) Acessar a tela de visualizar propostas de troca conforme descrito no CT 12 2) Selecionar uma proposta que tenha sido feita à um produto que você cadastrou e clicar em "Aceitar" 3) Visualizar novamente a tela de proposta de troca, agora com o status da proposta atualizado |
 |Critérios de êxito| - O usuário deverá ser capaz de aceitar ou recusar uma proposta e visualizar a proposta com o novo status após a atualização da tela de visualizar propostas. |
 
-|Caso de teste 14     | CT 14 - Pagar taxa de envio e curadoria para uma proposta de troca aceita |
+|Caso de teste 14     | CT 14 - Recusar proposta de troca |
+|-------|-------------------------
+|Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.|
+|Objetivo do teste| Verificar a funcionalidade de visualizar e recusar propostas de troca no sistema. |
+|Passos | 1) Acessar a tela de visualizar propostas de troca conforme descrito no CT 12 2) Selecionar uma proposta que tenha sido feita à um produto que você cadastrou e clicar em "Recusar" 3) Visualizar novamente a tela de proposta de troca, agora com o status da proposta atualizado |
+|Critérios de êxito| - O usuário deverá ser capaz de aceitar ou recusar uma proposta e visualizar a proposta com o novo status após a atualização da tela de visualizar propostas. |
+
+|Caso de teste 15     | CT 15 - Pagar taxa de envio e curadoria para uma proposta de troca aceita |
 |-------|-------------------------
 |Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.<br>RF-07: 	Disponibilizar um sistema de pagamento para que os usuários possam pagar os custos relativos ao envio, serviço de curadoria e preço do produto em caso de compra.|
 |Objetivo do teste| Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. |
