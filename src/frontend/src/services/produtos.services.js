@@ -18,6 +18,23 @@ export const getProdutos = async () => {
   }
 }
 
+export const getCurrentUserProdutos = async (userId) => {
+  try{
+    return await API.get(`${BASE_URL}/produtos`).then( 
+      response => {
+        return response.data.filter(p => p.idUsuario == userId);
+      },
+      error =>{
+        console.log(error);
+        return  null;
+      }
+    );
+  }catch(error){
+    console.log(error);
+    return null;
+  }
+}
+
 export const insertProduto = async (param) => {
   try{
     return await API.post(`${BASE_URL}/660/produtos`, param).then( 
