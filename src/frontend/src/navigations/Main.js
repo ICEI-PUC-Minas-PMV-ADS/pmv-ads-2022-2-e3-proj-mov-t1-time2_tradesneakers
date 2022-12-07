@@ -13,12 +13,14 @@ import ViewChatPage from '../pages/ViewChatPage';
 import InfoUpdatePage from '../pages/InfoUpdatePage';
 import ProductDetailsPage from '../pages/ProductDetailsPage';
 import BuyProductPage from '../pages/BuyProductPage';
+import RegisterOfferPage from '../pages/RegisterOfferPage';
+import ViewOffersPage from '../pages/ViewOffersPage';
 import LoginHistoryPage from '../pages/LoginHistoryPage';
-import AccountOptionsPage from '../pages/AccountOptionsPage';
-import RegisterOfferPage  from '../pages/RegisterOfferPage';
-import SendProductPage from '../pages/SendProductPage';
-import RegisterProductPage from '../pages/RegisterProductPage';
-import ShoeNumbering from '../pages/ShoeNumbering';
+import AccountOptionsPage from '../pages/AccountOptionsPage'
+import ShoeNumbering from '../pages/ShoeNumbering'
+import SendProductPage from '../pages/SendProductPage'
+import RegisterProductPage from '../pages/RegisterProductPage'
+import PayOfferPage from '../pages/PayOfferPage'
 
 const Stack = createNativeStackNavigator();
 
@@ -63,6 +65,34 @@ const Main = () => {
         <Stack.Screen
         name="BuyProductPage"
         component={BuyProductPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="PayOfferPage"
+        component={PayOfferPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="RegisterOfferPage"
+        component={RegisterOfferPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="ViewOffersPage"
+        component={ViewOffersPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
+        name="SendProductPage"
+        component={SendProductPage}
         options={{
           header: () => null,
         }}
@@ -126,20 +156,6 @@ const Main = () => {
         <Stack.Screen
         name="LoginHistoryPage"
         component={LoginHistoryPage}
-        options={{
-          header: () => null,
-        }}
-        />
-        <Stack.Screen
-        name="RegisterOfferPage"
-        component={RegisterOfferPage}
-        options={{
-          header: () => null,
-        }}
-        />
-        <Stack.Screen
-        name="SendProductPage"
-        component={SendProductPage}
         options={{
           header: () => null,
         }}
