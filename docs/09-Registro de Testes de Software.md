@@ -68,13 +68,19 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 |Objetivo do teste| Verificar a funcionalidade de visualizar propostas de troca no sistema. |
 | Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
 
-|Caso de teste 13     | CT 13 - Aceitar ou recusar proposta de troca |
+|Caso de teste 13     | CT 13 - Aceitar proposta de troca |
 |-------|-------------------------
 |Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.|
-|Objetivo do teste| Verificar a funcionalidade de visualizar propostas de troca no sistema. |
+|Objetivo do teste| Verificar a funcionalidade de visualizar e aceitar propostas de troca no sistema. |
 | Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
 
-|Caso de teste 14     | CT 14 - Pagar taxa de envio e curadoria para uma proposta de troca aceita |
+|Caso de teste 14     | CT 14 - Recusar proposta de troca |
+|-------|-------------------------
+|Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.|
+|Objetivo do teste| Verificar a funcionalidade de visualizar e recusar propostas de troca no sistema. |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 15     | CT 15 - Pagar taxa de envio e curadoria para uma proposta de troca aceita |
 |-------|-------------------------
 |Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.<br>RF-07: 	Disponibilizar um sistema de pagamento para que os usuários possam pagar os custos relativos ao envio, serviço de curadoria e preço do produto em caso de compra.|
 |Objetivo do teste| Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. |
