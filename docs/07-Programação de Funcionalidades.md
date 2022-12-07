@@ -1361,3 +1361,48 @@ Serviços:
 - Visualizar tela de formulário de envio para curadoria;
 - Preencher os dados solicitados e clicar em "Confirmar" para finalizar o cadastro;
 - Visualizar homepage e a mensagem de "Tênis cadastro para curadoria com sucesso!"
+
+# Funcionalidades progamadas por Alex junio Gomes de freitas
+
+Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Alex junio Gomes de freitas
+
+## Vídeo de apresentação explicando as funcionalidades:
+
+
+## tela de troca
+A tela de troca onde o usuario pode oferecer seu tenis ja cadastrado no app em troca com o de outro usurio
+
+**Tela de troca**<br>
+![atualizardados1](./img/tela%20de%20troca.png)
+
+Estrutura de dados: 
+As informações sobre o produto selecionado na tela HomePage são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
+```
+   produtos: 
+    {
+    "idProdutoDesejado": 3,
+    "idProdutoOferecido": 7,
+    "idUsuario": 25,
+    "idVendedor": 3,
+    "id": 45
+  }
+
+```
+
+
+### Requisitos atendidos
+- RF-004
+
+### Artefatos da funcionalidade
+Página:
+RegisterOfferPage.js
+
+Componentes:
+- produtos.services.js
+- troca.services.js
+- header.js
+
+### Instruções de acesso
+- na tela de detalhe do produto clicar no botao de troca
+- ja na tela de troca selecionar um dos tenis ja cadastrado no site para oferece-lo em troca
+
