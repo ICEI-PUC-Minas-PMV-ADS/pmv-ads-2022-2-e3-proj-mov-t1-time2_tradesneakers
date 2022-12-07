@@ -153,3 +153,71 @@ As tabelas abaixo demonstram cada caso de teste:
 <tr><th>Critérios de Êxito</th>	
   <th>•	O usuário deverá alcançar a página de histórico de acesso e visualizar os logins realizados anteriormente no aplicativo naquele aparelho (incluindo o realizado durante esse teste).</th></tr>
   </table>
+
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 11 - Visualizar produtos cadastrados pelo usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de visualizar produtos cadastrados pelo usuário.</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário clica no icone de "postar", presente no menu de navegação inferior.<br>
+ 3- O usuário visualiza a tela de produtos cadastrados.
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá alcançar a página de visualizar produtos cadastrados, sendo capaz de visualizar todos os produtos cadastrados por aquela conta.</th></tr>
+  </table>
+
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 12 - Apagar produto cadastrado pelo usuário</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de apagar produtos cadastrados pelo usuário.</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário clica no icone de "postar", presente no menu de navegação inferior.<br>
+ 3- O usuário visualiza a tela de produtos cadastrados.<br>
+ 4- O usuário seleciona um produto e clica no botão "Apagar".<br>
+ 5- O usuário visualiza novamente a tela de produtos cadastrados, dessa vez sem o produto apagado.
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá alcançar a página de visualizar produtos cadastrados e ser capaz de apagar os produtos que desejar nela, visualizando a tela sem o produto após ela ser atualizada.</th></tr>
+  </table>
+
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 13 - Visualizar proposta de troca</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>•	Verificar a funcionalidade de visualizar propostas de troca no sistema.</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário acessa a tela de visualizar produtos cadastrados conforme descrito no CT-11.<br>
+ 3- O usuário visualiza a tela de propostas de troca
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá alcançar a página de visualizar propostas de troca.</th></tr>
+  </table>
+    
+  <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 14 - Aceitar proposta de troca</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>• Verificar a funcionalidade de visualizar e aceitar propostas de troca no sistema..</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário acessa a tela de visualizar propostas de troca conforme descrito no CT-13.<br>
+ 3- O usuário seleciona a proposta de troca que deseja aceitar e clica em "Aceitar".
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá alcançar a página de visualizar propostas de troca e aceitar a proposta de troca que desejar.</th></tr>
+  </table>
+
+   <table> 
+<tr><th>Caso de Teste </th>
+<th>CT 15 - Recusar proposta de troca</th></tr>
+<tr><th>Objetivo do teste</th>
+  <th>• Verificar a funcionalidade de visualizar e recusar propostas de troca no sistema..</th></tr>
+<tr><th>Ações esperadas</th>
+  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+ 2- O usuário acessa a tela de visualizar propostas de troca conforme descrito no CT-13.<br>
+ 3- O usuário seleciona a proposta de troca que deseja recusar e clica em "Recusar".
+<tr><th>Critérios de Êxito</th>	
+  <th>•	O usuário deverá alcançar a página de visualizar propostas de troca e recusar a proposta de troca que desejar.</th></tr>
+  </table>
+    
