@@ -53,6 +53,13 @@ const Main = () => {
         }}
         />
         <Stack.Screen
+        name="RegisterProductPage"
+        component={RegisterProductPage}
+        options={{
+          header: () => null,
+        }}
+        />
+        <Stack.Screen
         name="BuyProductPage"
         component={BuyProductPage}
         options={{
