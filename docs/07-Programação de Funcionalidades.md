@@ -922,3 +922,103 @@ Página:
 Componentes:
 - Header.js
 
+# Funcionalidades progamadas por Mychel Costa da Silva
+
+Nesta seção se encontra a documentação das funcionalidades progamadas pelo membro Mychel Costa da Silva
+
+## Vídeo de apresentação explicando as funcionalidades:
+_
+
+## Tela de formulário de envio para curadoria (RF-06)
+A tela pode ser acessada ao clicar na opção "Preencher dados de envio" no card do produto desejando na tela da aba "Postar". Ao entrar nesta tela, o usuário poderá usar um endereço já cadastrado em sua conta ou informar um novo endereço, importante para confirmar os dados do remetente. Ele também deverá cadastrar o código de rastreio do pacote com o tênis que foi enviando para a curadoria no campo espeficicado. Depois de preencher o formulário, o usuário irá clicar em "Confirmar" para que o seu tênis seja cadastrado para a curadoria.
+
+**Formulário de envio para curadoria (1/4)**  
+  
+![Formulário de envio para curadoria](https://user-images.githubusercontent.com/91169665/206067502-a92c7c51-ba68-4233-a74c-18ed7819d0e1.png)
+  
+**Formulário de envio para curadoria: Informar outro endereço (2/4)**  
+  
+![Formulário de envio para curadoria: Informar outro endereço](https://user-images.githubusercontent.com/91169665/206067569-57cf120d-e84b-4469-a69d-df83d0e76773.png)
+  
+**Formulário de envio para curadoria: Informações preenchidas (3/4)**  
+  
+![Formulário de envio para curadoria: Informações preenchidas](https://user-images.githubusercontent.com/91169665/206067599-d597872e-e858-4e97-bbdb-c3205444a600.png)
+  
+**Tênis cadastro para curadoria com sucesso (4/4)**  
+  
+![Tênis cadastro para curadoria com sucesso](https://user-images.githubusercontent.com/91169665/206067657-833fed88-bde7-4399-9d83-0661e7026299.png)
+  
+**Estrutura de dados:**  
+  
+As informações do produto que está sendo enviado são recuperadas do backend simulado em JSON Server com a seguinte estrutura de dados:
+
+```
+    {
+      "id": 5,
+      "nome": "Tênis Adidas Preto",
+      "tamanho": 39,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QAAAARnQU1...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 60,
+      "marca": "Adidas",
+      "idUsuario": 5
+    }
+```
+
+As informações do usuário também são recuperadas para obter o endereço padrão do mesmo. Essas informações são recuperadas na seguinte estrutura de dados:
+
+```
+    {
+      "id": 1,
+      "name": "a",
+      "email": "a@a.com",
+      "phone": "534543534534534",
+      "firstname": "aa",
+      "lastname": "aaa",
+      "password": "$2a$10$mKMX9zbThmYgQiKj10erguWEm2XRLuICBsadUk2OZx5hM8w3i9Njq",
+      "postalCode": 99999999,
+      "publicPlace": "Rua X",
+      "city": "Cidade X",
+      "state": "XX",
+      "country": "Brasil"
+    }
+```
+
+Após confirmar o cadastro, as informações relativas ao produto que está sendo enviado são atualizadas no backend sob a seguinte estrutura de dados:
+```
+    {
+      "id": 5,
+      "nome": "Tênis Adidas Preto",
+      "marca": "Adidas",
+      "tamanho": 39,
+      "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsEAAAJSCAYAAAAiQxiZAAAAAXNSR0IArs4c6QAAAARnQU1...",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "preco": 60,
+      "idUsuario": 5,
+      "envioEndereco": "Rua B, Sao Paulo, SP, Brasil CEP: 54321000",
+      "envioCodigoDeRastreamento": "BR123456789"
+    }
+```
+
+### Requisitos atendidos
+- RF-06
+
+### Artefatos da funcionalidade
+Páginas:  
+- SendProductPage.js
+
+Componentes:  
+- Header.js
+
+Serviços:  
+- auth.services.js
+- produtos.services.js
+
+### Instruções de acesso
+- Visualizar a tela inicial do aplicativo;
+- Clicar em "Postar" no menu de navegação inferior;
+- Visualizar a tela de cadastro de produtos;
+- Selecionar o produto desejado e clicar no botão "Preencher dados de envio";
+- Visualizar tela de formulário de envio para curadoria;
+- Preencher os dados solicitados e clicar em "Confirmar" para finalizar o cadastro;
+- Visualizar homepage e a mensagem de "Tênis cadastro para curadoria com sucesso!"
