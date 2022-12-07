@@ -137,3 +137,9 @@ Segue abaixo o print do quadro do Trello ao final da Etapa 4 (editado em um edit
 
 ![print_trello_e4](https://user-images.githubusercontent.com/74699119/204156202-03965419-0adf-4b8d-b776-8f0abbae9f10.png)
 
+### Etapa 5
+
+Segue abaixo o print do quadro do Trello ao final da Etapa 5 (editado em um editor de imagens para mostrar todos os cards em uma única imagem). As tarefas colocadas em "Done" abaixo do Card "Etapa 5" e acima do Card "Etapa 4" correspondem às tarefas que foram finalizadas pelos membros da equipe. Como todas as tarefas foram entregues por todos os membros nesta etapa e o backlog já foi concluído, não há nenhum card nas demais seções. 
+
+![print_trello_e5](https://user-images.githubusercontent.com/74699119/206309442-d3da5663-9abc-48d7-80a3-a5e96c9520a8.png)
+
