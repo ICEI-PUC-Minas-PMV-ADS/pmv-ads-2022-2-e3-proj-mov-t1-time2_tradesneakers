@@ -17,6 +17,7 @@ import LoginHistoryPage from '../pages/LoginHistoryPage';
 import AccountOptionsPage from '../pages/AccountOptionsPage';
 import RegisterOfferPage  from '../pages/RegisterOfferPage';
 import SendProductPage from '../pages/SendProductPage';
+import RegisterProductPage from '../pages/RegisterProductPage';
 
 
 const Stack = createNativeStackNavigator();
