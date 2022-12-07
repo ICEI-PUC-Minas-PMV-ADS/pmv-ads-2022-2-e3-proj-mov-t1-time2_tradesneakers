@@ -221,19 +221,52 @@ As tabelas abaixo demonstram cada caso de teste:
   <th>•	O usuário deverá alcançar a página de visualizar propostas de troca e recusar a proposta de troca que desejar.</th></tr>
   </table>
      
-     <table> 
-<tr><th>Caso de Teste </th>
-<th>CT 16 - Pagar taxa de envio e curadoria para uma proposta de troca aceita</th></tr>
-<tr><th>Objetivo do teste</th>
-  <th>• 	Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. </th></tr>
-<tr><th>Ações esperadas</th>
-  <th>1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
- 2- O usuário acessa a tela de visualizar propostas de troca conforme descrito no CT-13.<br>
- 3- O usuário seleciona uma proposta de troca já aceita pelo vendedor e clica em "pagar envio".<br>
- 4- O usuário visualiza a tela de pagar taxa de envio e curadoria.<br>
- 5- O usuário preenche as informações solicitadas e clica em "Comprar".<br>
- 6- O usuário visualiza a mensagem de sucesso.
-<tr><th>Critérios de Êxito</th>	
-  <th>•	O usuário deverá ser capaz de realizar o pagamento da taxa de envio e curadoria para a troca em questão e obtem uma mensagem de sucesso ao fim do processo.</th></tr>
-  </table>
+<table> 
+  <tr>
+    <th>Caso de Teste </th>
+    <th>CT 16 - Pagar taxa de envio e curadoria para uma proposta de troca aceita</th>
+  </tr>
+  <tr>
+    <th>Objetivo do teste</th>
+    <th>• 	Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. </th>
+  </tr>
+  <tr>
+    <th>Ações esperadas</th>
+    <th>
+      1 - O usuário realiza login na plataforma conforme descrito no CT-02.<br>
+      2- O usuário acessa a tela de visualizar propostas de troca conforme descrito no CT-13.<br>
+      3- O usuário seleciona uma proposta de troca já aceita pelo vendedor e clica em "pagar envio".<br>
+      4- O usuário visualiza a tela de pagar taxa de envio e curadoria.<br>
+      5- O usuário preenche as informações solicitadas e clica em "Comprar".<br>
+      6- O usuário visualiza a mensagem de sucesso.
+    </th>
+  <tr>
+    <th>Critérios de Êxito</th>	
+    <th>•	O usuário deverá ser capaz de realizar o pagamento da taxa de envio e curadoria para a troca em questão e obtem uma mensagem de sucesso ao fim do processo.</th>
+  </tr>
+</table>
+
+<table> 
+  <tr>
+    <th>Caso de Teste </th>
+    <th>CT 17 - Cadastrar produto para curadoria</th>
+  </tr>
+  <tr>
+    <th>Objetivo do teste</th>
+    <th>• 	Verificar a funcionalidade de registrar o envio do tênis para curadoria. </th>
+  </tr>
+  <tr>
+    <th>Ações esperadas</th>
+    <th>
+      1) Acessar a tela de visualizar produtos cadastrados pelo usuário como no CT 11.<br>
+      2) Selecionar um produto da tela e clicar no botão "Preencher dados de envio".<br>
+      3) Visualizar tela de formulário de envio para curadoria.<br>
+      4) Preencher os dados solicitados e clicar em "Confirmar" para finalizar o cadastro.<br>
+      5) Visualizar homepage e a mensagem de "Tênis cadastro para curadoria com sucesso!".
+    </th>
+  <tr>
+    <th>Critérios de Êxito</th>	
+    <th>•	O usuário deverá visualizar o formulário e concluir com sucesso o cadastro do produto para curadoria.</th>
+  </tr>
+</table>
     

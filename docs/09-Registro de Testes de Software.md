@@ -85,3 +85,9 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 |Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.<br>RF-07: 	Disponibilizar um sistema de pagamento para que os usuários possam pagar os custos relativos ao envio, serviço de curadoria e preço do produto em caso de compra.|
 |Objetivo do teste| Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. |
 | Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |
+
+|Caso de teste 16     | CT 16 - Cadastrar produto para curadoria |
+|-------|-------------------------
+|Requisitos Associados | RF-006	Disponibilizar um formulário de envio das mercadorias, que ocorreira primeiro para a empresa (que realizará a curadoria dos produtos para determinar se estão em bom estado) e depois para os clientes. |
+|Objetivo do teste| Verificar a funcionalidade de registrar o envio do tênis para curadoria |
+| Resultado | Todos os critérios de exito foram satisfeitos adequadamente. |

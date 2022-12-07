@@ -119,4 +119,11 @@ Os testes funcionais a serem realizados na solução estão descritos a seguir:
 |Requisitos Associados | RF-05: Disponibilizar uma funcionalidade onde os usuários poderão escolher comprar um produto cadastrado ou fazer “ofertas” de troca do produto por outro produto cadastrado. Sendo que o usuário ao qual a oferta de troca foi feita poderá visualizar todas as ofertas em aberto e optar por aceitar ou recusar as mesmas.<br>RF-07: 	Disponibilizar um sistema de pagamento para que os usuários possam pagar os custos relativos ao envio, serviço de curadoria e preço do produto em caso de compra.|
 |Objetivo do teste| Verificar a funcionalidade de pagar taxa de envio e curadoria para uma proposta de troca aceita no snack. |
 |Passos | 1) Acessar a tela de visualizar propostas de troca conforme descrito no CT 12 2) Selecionar uma proposta de troca que já tenha sido aceita. 3) Clicar em "pagar envio" 4) Visualizar a tela de pagar envio do produto para troca 5) Preencher as informações de endereço e cartão de crédito solicitadas. 5) Clicar em "Comprar" 6) Visualizar mensagem de sucesso de compra |
+|Critérios de êxito| - O usuário deverá ser capaz de pagar taxa de envio e curadoria para uma proposta de troca aceita. |
 
+|Caso de teste 16     | CT 16 - Cadastrar produto para curadoria |
+|-------|-------------------------
+|Requisitos Associados | RF-006	Disponibilizar um formulário de envio das mercadorias, que ocorreira primeiro para a empresa (que realizará a curadoria dos produtos para determinar se estão em bom estado) e depois para os clientes. |
+|Objetivo do teste| Verificar a funcionalidade de registrar o envio do tênis para curadoria |
+|Passos | 1) Acessar a tela de visualizar produtos cadastrados pelo usuário como no CT 10. 2) Selecionar um produto da tela e clicar no botão "Preencher dados de envio". 3) Visualizar tela de formulário de envio para curadoria. 4) Preencher os dados solicitados e clicar em "Confirmar" para finalizar o cadastro. 5) Visualizar homepage e a mensagem de "Tênis cadastro para curadoria com sucesso!". |
+|Critérios de êxito| - O formulário deve ser visualizado e os dados do produto no JSON devem ser atualizados com o endereço e código de rastreio ao concluir o cadastro.  |

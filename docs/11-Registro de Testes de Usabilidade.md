@@ -195,3 +195,24 @@ Os resultados obtidos nos testes de usabilidade estão descritos nas tabelas aba
 <tr><th>Melhoria</th>	
   <th>---------------------------------------</th></tr>
   </table>
+
+<table> 
+  <tr>
+    <th>Caso de Teste </th>
+    <th>CT 17 - Cadastrar produto para curadoria</th>
+  </tr>
+  <tr>
+    <th>Objetivo do teste</th>
+    <th>• 	Verificar a funcionalidade de registrar o envio do tênis para curadoria.</th>
+  </tr>
+  <tr>
+    <th>Resultado</th>
+    <th>
+      Todos usuários conseguiram visualizar o formulário e registrar o envio do produto para curadoria com sucesso.<br>
+    </th>
+  </tr>
+  <tr>
+    <th>Melhoria</th>	
+    <th>---------------------------------------</th>
+  </tr>
+</table>
