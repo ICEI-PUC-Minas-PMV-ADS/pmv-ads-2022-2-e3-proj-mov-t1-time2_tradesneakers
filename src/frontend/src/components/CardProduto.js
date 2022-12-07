@@ -3,16 +3,12 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import { Button } from 'react-native-paper';
 import Colors from '../config/Colors';
 import { useNavigation } from '@react-navigation/native';
+import { formatarPreco } from '../config/CommonFunctions';
+
 
 const CardProduto = (props) => {
   const navigation = useNavigation();
   const produto = props.passarProduto;
-  
-  const formatarPreco = (preco) => {
-    preco = preco.toFixed(2).toString();
-    preco = preco.replace('.', ',');
-    return preco;
-  };
 
   return (
     <View style={styles.cardProduto}>
@@ -27,7 +23,10 @@ const CardProduto = (props) => {
       <Button
           style={styles.button}
           onPress={() =>
-            navigation.navigate('ProductDetailsPage', {produtoId: produto.id})}
+            navigation.navigate('ProductDetailsPage', {
+              produtoId: produto.id,
+            })
+          }
         >
         <Text style={{color: 'white', fontWeight: 'bold'}}>Mais detalhes</Text>
         </Button>

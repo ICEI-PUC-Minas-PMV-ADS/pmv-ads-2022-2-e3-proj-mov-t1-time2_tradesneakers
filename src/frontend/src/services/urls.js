@@ -1,2 +1,2 @@
 // Inserir URL do backend aqui
-export const BASE_URL = 'https://trade-sneakers-backend.herokuapp.com';
+export const BASE_URL = 'https://tradesneakers-backend.glitch.me';

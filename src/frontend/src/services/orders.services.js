@@ -14,7 +14,7 @@ export const getOrders = async (userId) => {
                 for (let i = 0; i < orders.length; i++) {
                   orders[i].produto = produtos.find(p => p.id == orders[i].produtoId);
                 }
-                return orders;
+                return orders.reverse();
               },
               error =>{
                 console.log(error);
