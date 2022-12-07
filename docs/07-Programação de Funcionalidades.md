@@ -1098,6 +1098,12 @@ A tela de visualização do produto selecionado poderá ser acessada quando o us
 **Tela - Tela de visualização do produto selecionado após clicar no botão "Ver Detalhes"**<br>
 ![pagina-details-product](https://user-images.githubusercontent.com/91163177/206273894-03433e30-843a-4f62-ba50-6f8b9e213960.png)
 
+**Tela - Tela de visualização do produto selecionado após clicar no botão "Enviar Mensagem"**<br>
+![enviar-mensagem](https://user-images.githubusercontent.com/91163177/206277193-67421f02-2852-43b1-a90c-2be46bd181c0.png)
+
+**Tela - Tela de visualização do produto selecionado após clicar no botão "Ver Tabela de Numeração"**<br>
+![ver-tabela-de-numeracao](https://user-images.githubusercontent.com/91163177/206277372-8eafd0e2-03af-4ae6-8c93-ce00a6b5a722.png)
+
 Estrutura de dados:
 As informações sobre o produto selecionado na tela de busca e também mostrado na tela de visualização são recuperadas em formato JSON da API fake criada pelo JSON server na seguinte estrutura:
 
@@ -1131,7 +1137,7 @@ Serviços:
 - Inserir o texto na caixa de busca presente no topo da tela para realizar a busca;
 - Caso deseje filtrar os resultados da busca pela numeração do tênis, selecionar um tamanho na caixa de seleção presente ao lado de "Filtrar por tamanho";
 - Visualizar resultados da busca do produto selecionado e clicar no botão "Ver Detalhes";
-- Após clicar no botão será redirecionado para a página de visualização dos detalhes do produto selecionado onde o usuário trocar ou comprar o tênis.
+- Após clicar no botão será redirecionado para a página de visualização dos detalhes do produto selecionado onde o usuário poderá trocar ou comprar o tênis, enviar mensagem ao vendedor e também ver a tabela de numeração.
 
 # Funcionalidades progamadas por Talles Monteiro Góis
 
