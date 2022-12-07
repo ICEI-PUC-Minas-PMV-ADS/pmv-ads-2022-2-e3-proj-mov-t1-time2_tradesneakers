@@ -9,7 +9,7 @@ import * as ImagePicker from 'expo-image-picker';
 
 import Colors from '../config/Colors';
 
-const RegisterProductPage = () => {
+const RegisterProductPage = ({navigation}) => {
   const {userId} = useUser();
   const [modeloTenis, setmodeloTenis] = useState("");
   const [marcaTenis, setmarcaTenis] = useState("");
@@ -19,23 +19,12 @@ const RegisterProductPage = () => {
   const [urlImg, seturlImg] = useState("");
   const [image, setImage] = useState(null);
   const handleinsertProduto = () => {
-    insertProduto({
-      nome: modeloTenis,
-      marca: marcaTenis,
-      tamanho: tamanhoTenis,
-      imagem: image ,
-      descricao: descricaoTenis,
-      preco: precoTenis,
-      idUsuario: userId,
-      statusDeRecebimento: "Aguardando recebimento do produto",
-    }).then(window.alert("Produto cadastrado com sucesso!"))
-
     let informacoesSaoValidas = true;
-    if (modeloTenis.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 3) {
+    if (modeloTenis.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 1) {
       informacoesSaoValidas = false;
       Alert.alert('Atenção','Inserir modelo do Tênis');
     }
-    if (marcaTenis.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 8) {
+    if (marcaTenis.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 1) {
       informacoesSaoValidas = false;
       Alert.alert('Atenção','Inserir marca do Tênis!');
     }
@@ -43,42 +32,33 @@ const RegisterProductPage = () => {
       informacoesSaoValidas = false;
       Alert.alert('Atenção','Inserir tamanho valido!');
     }
-    if (descricaoTenis.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 10) {
+    if (descricaoTenis.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 1) {
       informacoesSaoValidas = false;
       Alert.alert('Atenção','Inserir descrição do Tênis!');
     }
-    if (precoTenis.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 5) {
+    if (precoTenis.replace(/^\s+|\s+$|\s+(?=\s)/g, "").length < 1) {
       informacoesSaoValidas = false;
       Alert.alert('Atenção','Inserir valor do Tênis!');
     }
 
     if (informacoesSaoValidas) {
-      insertProduto({
-        modelo: modeloTenis,
+        insertProduto({
         nome: modeloTenis,
         marca: marcaTenis,
         tamanho: tamanhoTenis,
         imagem: image ,
         descricao: descricaoTenis,
         preco: precoTenis,
-
+        idUsuario: userId,
+        statusDeRecebimento: "Aguardando recebimento do produto",
       }).then( res => {
+            navigation.navigate('PostProductPage');
             if(res){
-              Alert.alert('Atenção', 'Produto cadastrado com sucesso!',[
-                { text: "OK", onPress: () => navigation.goBack() }
-              ]);
+              Alert.alert('Atenção', 'Produto cadastrado com sucesso!');
             }
             else{
-              getEmailAlreadyUsed(email).then(response => {
-              if (response) {
-                Alert.alert('Atenção', 'Email já cadastrado!');
-              }
-              else {
                 Alert.alert('Atenção', "Um erro ocorreu durante o cadastro!");
-              }
             }
-          );
-        }
       });
     }
   }
@@ -106,31 +86,34 @@ const RegisterProductPage = () => {
         Adicionar Tênis
       </Text>
       <TextInput
-      style={styles.modeloTenisTextInput}
+      style={styles.tenisTextInput}
       label="Modelo"
       value={modeloTenis}
       mode= {"outlined"}
       onChangeText={modeloTenis => setmodeloTenis(modeloTenis)}
     />
     <TextInput
-      style={styles.marcaTenisTextInput}
+      style={styles.tenisTextInput}
       label="Marca"
       value={marcaTenis}
       mode= {"outlined"}
       onChangeText={marcaTenis => setmarcaTenis(marcaTenis)}
     />
     <TextInput
-      style={styles.tamanhoTenisTextInput}
+      style={styles.tenisTextInput}
       label="Tamanho"
       value={tamanhoTenis}
       mode= {"outlined"}
+      keyboardType="numeric"
+      maxLength={2}
       onChangeText={tamanhoTenis => settamanhoTenis(tamanhoTenis)}
     />
     <TextInput
-      style={styles.precoTenisTextInput}
+      style={styles.tenisTextInput}
       label="Preço"
       value={precoTenis}
       mode= {"outlined"}
+      keyboardType="numeric"
       onChangeText={precoTenis => setprecoTenis(precoTenis)}
     />
     <TextInput
@@ -143,10 +126,10 @@ const RegisterProductPage = () => {
       onChangeText={descricaoTenis => setdescricaoTenis(descricaoTenis)}
     />
     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-    <Button style={styles.botaoAdicionaImg} mode="contained" onPress={pickImage}>
-      Adicione uma imagem
-    </Button>
-      {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
+      {image && <Image source={{ uri: image }} style={{ width: 250, height: 200 }} />}
+      <Button style={styles.botaoAdicionaImg} mode="contained" onPress={pickImage}>
+        Adicione uma imagem
+      </Button>
     </View>
     <Button style={styles.botaoPaginaRegistrar} mode="contained" onPress={handleinsertProduto}>
       Confirmar
@@ -168,10 +151,18 @@ const styles = StyleSheet.create({
     borderRadius: 16
   },
     botaoAdicionaImg: {
-    width: "100%",
+    width: 300,
     marginTop: 8,
     backgroundColor: Colors.primaryColor,
     borderRadius: 16
+  },
+  tenisTextInput: {
+    width: "95%",
+    height: 40
+  },
+    descricaoTenisTextInput: {
+    width: "95%",
+    height: 120
   },
 });
 
